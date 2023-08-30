@@ -227,6 +227,9 @@ flex: 1 0 calc(20% - 0.5rem);
 .approver-container ul{
   gap: 35px;
 }
+.company-profile-list li input{
+  width: 200px;
+}
 
 .approver-container ul li label{
    position: absolute;
@@ -379,14 +382,25 @@ position: relative;
     list-style-type: none;
     padding: 0;
     margin-top: 2rem;
-    gap: 100px;
+    gap: 10px;
+    
+    
 }
 .company-profile-list input{
   width: 100%;
     padding: 10px;
     
-    border-radius: 25px;
-    border: 2px solid grey;
+    
+}
+.last-two-input{
+  display: flex;
+  gap: 10px;
+ 
+ 
+}
+.three-input li input{
+border-radius: 25px;
+    border: 2px solid grey; 
 }
 
 .supervisor-inputbox-list{
@@ -429,6 +443,24 @@ position: relative;
   display: flex;
   justify-content: center;
   
+}
+.file-input-2{
+  margin-left: 0px;
+ 
+}
+.file-input-3{
+  margin-left: 30px;
+ 
+}
+.company-profile-list li  label{
+  position: absolute;
+  color: grey;
+  top: -6px;
+  z-index: 1;
+  left: 30px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
 }
 
 

@@ -188,8 +188,8 @@ const Company_Profile = () => {
             </ul>
 
             <div className="approver-container">
-              <ul className="company-profile-list">
-                <li >
+              <ul className="company-profile-list  three-input">
+                <li>
                   <label htmlFor="">Approver Name</label>
                   <input
                     type="text"
@@ -219,12 +219,7 @@ const Company_Profile = () => {
                     name="company_approver_reply_email"
                   />
                 </li>
-              </ul>
-            </div>
-
-            <ul className="company-profile-list">
-              <li>
-                <div className="file-input-container">
+                <li>
                   <label htmlFor="file-input-signature">Signature</label>
                   <input
                     type="file"
@@ -232,21 +227,25 @@ const Company_Profile = () => {
                     className="file-input"
                     onChange={handleFilesignature}
                   />
-                  <label
+                  {/* <label
                     htmlFor="file-input-signature"
                     className="file-input-label"
                   >
                     Choose File
-                  </label>
-                </div>
-                {signature && (
+                  </label> */}
+
+                  {/* {signature && (
                   <div>
                     <p>Selected file: {signature.name}</p>
                   </div>
-                )}
-              </li>
+                )} */}
+                </li>
+              </ul>
+            </div>
+
+            <ul className="company-profile-list  last-two-input">
               <li>
-                <div className="file-input-container">
+                <div className="file-input-container file-input-2">
                   <label htmlFor="file-input-logo">Company Logo</label>
                   <input
                     type="file"
@@ -254,18 +253,18 @@ const Company_Profile = () => {
                     className="file-input"
                     onChange={handleFilelogo}
                   />
-                  <label htmlFor="file-input-logo" className="file-input-label">
+                  {/* <label htmlFor="file-input-logo" className="file-input-label">
                     Choose File
-                  </label>
+                  </label> */}
                 </div>
-                {logo && (
+                {/* {logo && (
                   <div>
                     <p>Selected file: {logo.name}</p>
                   </div>
-                )}
+                )} */}
               </li>
               <li>
-                <div className="file-input-container">
+                <div className="file-input-container file-input-3">
                   <label htmlFor="file-input-hrlogo">HR Logo</label>
                   <input
                     type="file"
@@ -273,18 +272,18 @@ const Company_Profile = () => {
                     className="file-input"
                     onChange={handleFileHrlogo}
                   />
-                  <label
+                  {/* <label
                     htmlFor="file-input-hrlogo"
                     className="file-input-label"
                   >
                     Choose File
-                  </label>
+                  </label> */}
                 </div>
-                {hrLogo && (
+                {/* {hrLogo && (
                   <div>
                     <p>Selected file: {hrLogo.name}</p>
                   </div>
-                )}
+                )} */}
               </li>
             </ul>
           </div>
