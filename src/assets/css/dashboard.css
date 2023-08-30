@@ -190,6 +190,8 @@ body {
 }
 .Culture-inputbox-list li{
 position: relative;
+flex: 1 0 calc(18.28% - 0.5rem); 
+  max-width: calc(18.28% - 0.5rem);
 }
 .Culture-inputbox-listli {
   flex: 0 0 60px;
@@ -199,10 +201,10 @@ position: relative;
 .Culture-inputbox-list li label{
   
   position: absolute;
-color: grey;
+  color: grey;
   top: -7px;
   z-index: 1;
-  left: 35px;
+  left: 15px;
   font-size: 12px;
   background-color: white;
   padding: 0 5px;
