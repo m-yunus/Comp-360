@@ -188,12 +188,12 @@ body {
   list-style-type: none;
   padding: 0;
   margin-top: 2rem;
-  gap: 2rem;
+ gap: 35px;
 }
 .Culture-inputbox-list li{
 position: relative;
-flex: 1 0 calc(18.28% - 0.5rem); 
-  max-width: calc(18.28% - 0.5rem);
+flex: 1 0 calc(20% - 0.5rem); 
+  max-width: calc(20% - 0.5rem);
 }
 .Culture-inputbox-listli {
   flex: 0 0 60px;
@@ -214,16 +214,36 @@ flex: 1 0 calc(18.28% - 0.5rem);
 }
 
 .Culture-inputbox-list input{
-  width: 100%;
+  width: 200px;
   padding: 10px;
   position: relative;
   border-radius: 25px;
   border: 2px solid grey;
   
 }
+.company-profile-list li{
+  position: relative;
+}
+.approver-container ul{
+  gap: 35px;
+}
+
+.approver-container ul li label{
+   position: absolute;
+  color: gray;
+  top: -7px;
+  z-index: 1;
+  left: 15px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
+}
 
 .Culture-inputbox-list input[type="text"]::placeholder {
   text-transform: capitalize;
+}
+.Culture-inputbox-list input[name="company_profile"] {
+  width: 670px;
 }
 .radio-input-container {
   display: flex;
@@ -353,12 +373,13 @@ position: relative;
 
 }
 .company-profile-list{
+  
   display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin-top: 2rem;
-    gap: 2rem;
+    gap: 100px;
 }
 .company-profile-list input{
   width: 100%;
@@ -367,6 +388,7 @@ position: relative;
     border-radius: 25px;
     border: 2px solid grey;
 }
+
 .supervisor-inputbox-list{
   display: flex;
   flex-wrap: wrap;
