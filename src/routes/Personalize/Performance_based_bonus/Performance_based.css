@@ -1,11 +1,11 @@
 .Performance_based_list {
     display: flex;
-   
     list-style-type: none;
     padding: 0;
-    margin-top: 2rem;
+    margin-top: -1rem;
     gap: 2rem;
     align-items: center;
+    
   }
   .Performance_based_list li{
   position: relative;
@@ -20,7 +20,7 @@
     color: grey;
     top: -7px;
     z-index: 1;
-    left: 35px;
+    left: 20px;
     font-size: 12px;
     background-color: white;
     padding: 0 5px;
