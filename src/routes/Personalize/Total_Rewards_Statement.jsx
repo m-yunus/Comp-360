@@ -91,92 +91,110 @@ const Total_Rewards_Statement = () => {
           </button>
         </div>
         <div className="content-container">
-          <div className="heading-container">
-            <h4>Total Cash</h4>
-            <div className="underline-grey"></div>
+          <div>
+            <div className="heading-container">
+              <h4>Total Cash</h4>
+              <div style={{ width: "80px" }} className="underline-grey"></div>
+            </div>
+            <ul className="Culture-inputbox-list">
+              <li>
+                <input
+                  type="number"
+                  placeholder="new column"
+                  name="total_cash"
+                  value={totalCashInput}
+                  onChange={(e) => setTotalCashInput(e.target.value)}
+                />
+              </li>
+              <li>
+                <button
+                  style={{
+                    color: "white",
+                    borderRadius: "5px",
+                    background: "#2074d4",
+                    padding: "10px",
+                    border: "none",
+                    marginLeft: "120px",
+                    marginTop: "-3px",
+                  }}
+                  onClick={handletotalcash}
+                >
+                  Add
+                </button>
+              </li>
+            </ul>
           </div>
 
-          <ul className="Culture-inputbox-list">
-            <li>
-              <input
-                type="number"
-                placeholder="new column"
-                name="total_cash"
-                value={totalCashInput}
-                onChange={(e) => setTotalCashInput(e.target.value)}
-              />
-            </li>
-            <li>
-              <button
-                style={{
-                  background: "#2074d4",
-                  padding: "10px",
-                  border: "none",
-                }}
-                onClick={handletotalcash}
-              >
-                Add
-              </button>
-            </li>
-          </ul>
-          <div className="heading-container">
-            <h4>Benefits</h4>
-            <div className="underline-grey"></div>
+          <div style={{ marginLeft: "100px" }}>
+            <div className="heading-container">
+              <h4>Benefits</h4>
+              <div style={{ width: "65px" }} className="underline-grey"></div>
+            </div>
+
+            <ul className="Culture-inputbox-list">
+              <li>
+                <input
+                  type="number"
+                  placeholder="new column"
+                  name="total_benefits"
+                  value={benefitsInput}
+                  onChange={(e) => setBenefitsInput(e.target.value)}
+                />
+              </li>
+
+              <li>
+                <button
+                  style={{
+                    color: "white",
+                    borderRadius: "5px",
+                    background: "#2074d4",
+                    padding: "10px",
+                    border: "none",
+                    marginLeft: "120px",
+                    marginTop: "-3px",
+                  }}
+                  onClick={handletotalbenefits}
+                >
+                  Add
+                </button>
+              </li>
+            </ul>
           </div>
+          <div>
+            <div className="heading-container">
+              <h4>Additional Columns for Analytics</h4>
+              <div style={{ width: "260px" }} className="underline-grey"></div>
+            </div>
 
-          <ul className="Culture-inputbox-list">
-            <li>
-              <input
-                type="number"
-                placeholder="new column"
-                name="total_benefits"
-                value={benefitsInput}
-                onChange={(e) => setBenefitsInput(e.target.value)}
-              />
-            </li>
+            <ul className="Culture-inputbox-list">
+              <li>
+                <input
+                  type="number"
+                  placeholder="new column"
+                  name="additional_analysis"
+                  value={additionalAnalysisInput}
+                  onChange={(e) => setAdditionalAnalysisInput(e.target.value)}
+                />
+              </li>
 
-            <li>
-              <button
-                style={{
-                  background: "#2074d4",
-                  padding: "10px",
-                  border: "none",
-                }}
-                onClick={handletotalbenefits}
-              >
-                Add
-              </button>
-            </li>
-          </ul>
-          <div className="heading-container">
-            <h4>additional analysis</h4>
-            <div className="underline-grey"></div>
+              <li>
+                <button
+                  style={{
+                    color: "white",
+                    borderRadius: "5px",
+                    background: "#2074d4",
+                    padding: "10px",
+                    border: "none",
+                    marginLeft: "120px",
+                    marginTop: "-3px",
+                  }}
+                  onClick={handleadditionalanalysis}
+                >
+                  Add
+                </button>
+              </li>
+            </ul>
           </div>
-
-          <ul className="Culture-inputbox-list">
-            <li>
-              <input
-                type="number"
-                placeholder="new column"
-                name="additional_analysis"
-                value={additionalAnalysisInput}
-                onChange={(e) => setAdditionalAnalysisInput(e.target.value)}
-              />
-            </li>
-
-            <li>
-              <button
-                style={{
-                  background: "#2074d4",
-                  padding: "10px",
-                  border: "none",
-                }}
-                onClick={handleadditionalanalysis}
-              >
-                Add
-              </button>
-            </li>
-          </ul>
         </div>
       </div>
       {isSuccess && <SuccessModal status="Success" />}

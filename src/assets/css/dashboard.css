@@ -166,6 +166,11 @@ body {
   height: 100%;
   border-radius: 8px;
   padding: 30px;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  
+  
 }
 .heading-container {
   display: flex;
