@@ -183,12 +183,13 @@ body {
   background-color: grey
 }
 .Culture-inputbox-list {
+  
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin-top: 2rem;
- gap: 35px;
+  gap: 35px;
 }
 .Culture-inputbox-list li{
 position: relative;
@@ -492,6 +493,12 @@ border-radius: 25px;
 .checkbox-input-container {
   display: flex;
   gap: 1rem;
+  align-items: center;
+  
+  margin-top: -10px;
+  
+ 
+  
 }
 
 .checkbox-group {
@@ -507,6 +514,7 @@ border-radius: 25px;
 .checkbox-group .checkbox-label {
   opacity: 1;
   cursor: pointer;
+ 
 }
 
 .checkbox-group input[type="checkbox"]:checked + .checkbox-label {
@@ -521,6 +529,8 @@ border-radius: 25px;
 .checkbox-exclusion .checkbox-label {
   opacity: 1;
   cursor: pointer;
+  margin-left: -80px;
+ 
 }
 
 
