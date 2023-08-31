@@ -16,9 +16,8 @@
     margin-bottom: 10px;
   }
   .Performance_based_list li label{
-    
     position: absolute;
-  color: grey;
+    color: grey;
     top: -7px;
     z-index: 1;
     left: 35px;

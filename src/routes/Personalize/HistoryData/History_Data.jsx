@@ -1,6 +1,7 @@
 import { useState } from "react";
 import * as XLSX from "xlsx";
 import "./Historydata.css";
+import {AiOutlineDownload} from "react-icons/ai"
 const History_Data = () => {
   const [uploadedFile, setUploadedFile] = useState(null);
   const [tableData, setTableData] = useState([]);
@@ -47,12 +48,12 @@ const History_Data = () => {
             <h4>History data</h4>
             <div className="underline-grey"></div>
           </div>
-          <a href="/path/to/your/template.xlsx" download>
-            <button className="download-button">Download Template</button>
+          <a style={{textDecoration:"none"}} href="/path/to/your/template.xlsx" download>
+            <button className="download-button">Download Template <AiOutlineDownload className="history-data-download-icon"/></button>
           </a>
-          <label className="upload-label">
+          <label style={{color:"gray", backgroundColor:"white"}} className="upload-label ">Already have the template? 
             <input type="file" accept=".xlsx" onChange={handleUpload} />
-            Upload Now
+           
           </label>
           {uploadedFile && tableData.length > 0 && (
             <div className="uploaded-table-container">
