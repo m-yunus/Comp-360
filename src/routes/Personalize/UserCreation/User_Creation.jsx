@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./usercreation.css";
 import { AiFillDelete } from "react-icons/ai";
+
 import axios from "axios";
 import { BaseUrl } from "../../../ApiService/ApiService";
 import { FaEdit } from "react-icons/fa";
@@ -79,6 +80,8 @@ const User_Creation = () => {
       setSelectedAccessOption("Country");
     }
   };
+   
+
 
   const handleDelete = (index) => {
     const updatedAccessItems = accessItems.filter((_, i) => i !== index);
@@ -320,11 +323,15 @@ const User_Creation = () => {
                       value={`${item.option}: ${item.value}`}
                       readOnly
                     />
+
+                    <span >
+                      <FaEdit className="user-creation-edit" />
+                    </span>
                     <span
                       onClick={() => handleDelete(index)}
                       style={{ cursor: "pointer", fontSize: "20px" }}
                     >
-                      <AiFillDelete />
+                      <AiFillDelete className="user-creation-delete" />
                     </span>
                   </div>
                 ))}

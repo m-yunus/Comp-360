@@ -43,26 +43,43 @@
     display: flex;
     gap: 20px;
     margin: 10px;
+    margin-left: 0;
   }
   .access-row{
     display: flex;
     gap: 30px;
     margin: 10px;
+    
+    margin-left: 0px;
   }
   .access-row input,select{
   padding: 5px;
   border-radius: 5px;
+  
   }
 
   .accesitem-container{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: -20px;
+    margin-bottom: 15px;
   }
-  .access-tem{
+  .user-creation-delete{
+    margin-left: -25px;
+  }
+  .user-creation-edit{
+    margin-left: -45px;
+  }
+  .access-item{
     display: flex;
     align-items: center;
-    padding: 1vw;
+   
+    
+  }
+  .access-item input{
+width: 200px;
+height: 35px;
   }
   /* Add these styles to your usercreation.css or a separate CSS file */
 
