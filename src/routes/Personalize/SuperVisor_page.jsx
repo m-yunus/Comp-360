@@ -117,23 +117,23 @@ const SuperVisor_page = () => {
                     onChange={handlePolicyFileChange}
                   />
 
-                  <label
+                  {/* <label
                     htmlFor="file-input-policy"
                     className="file-input-label"
                   >
                     Choose File
-                  </label>
+                  </label> */}
                 </div>
 
-                {loadPolicy && (
+                {/* {loadPolicy && (
                   <div>
                     <p>Selected file: {loadPolicy.name}</p>
                   </div>
-                )}
+                )} */}
               </li>
 
               <li>
-                <div className="file-input-container">
+                <div className="file-input-container ">
                   <label htmlFor="">Load Learning Material</label>
                   <input
                     type="file"
@@ -142,27 +142,31 @@ const SuperVisor_page = () => {
                     onChange={handleLearningChange}
                   />
 
-                  <label
+                  {/* <label
                     htmlFor="file-input-learning"
                     className="file-input-label"
                   >
                     Choose File
-                  </label>
+                  </label> */}
                 </div>
 
-                {learningMaterial && (
+                {/* {learningMaterial && (
                   <div>
                     <p>Selected file: {learningMaterial.name}</p>
                   </div>
-                )}
+                )} */}
               </li>
               <li>
-                <input
-                  type="text"
-                  placeholder="paste Video Url"
-                  value={videoUrl}
-                  onChange={handleVideoUrlChange}
-                />
+                <div>
+                  <label htmlFor="" className="supervisor-video-url">Paste video url</label>
+                  <input
+                    className="supervisor-page-video-url"
+                    type="text"
+                    // placeholder="paste Video Url"
+                    value={videoUrl}
+                    onChange={handleVideoUrlChange}
+                  />
+                </div>
               </li>
             </ul>
             <div className="heading-container" style={{ marginTop: "3rem" }}>
@@ -241,7 +245,7 @@ const SuperVisor_page = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ marginLeft: "8rem" }}
+                    style={{ marginLeft: "23.5rem" }}
                   >
                     <input
                       type="radio"
