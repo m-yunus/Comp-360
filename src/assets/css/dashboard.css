@@ -155,6 +155,7 @@ body {
   color: #fff;
   font-size: 14px;
   cursor: pointer;
+  height: 10p;
 }
 
 .update-button:hover {
@@ -221,6 +222,10 @@ flex: 1 0 calc(20% - 0.5rem);
   border-radius: 25px;
   border: 2px solid grey;
   
+}
+.Culture-inputbox-list  button{
+  height: 40px;
+  margin-top: 5px;
 }
 .company-profile-list li{
   position: relative;
@@ -514,6 +519,7 @@ border-radius: 25px;
 .checkbox-group .checkbox-label {
   opacity: 1;
   cursor: pointer;
+  
  
 }
 
@@ -533,7 +539,9 @@ border-radius: 25px;
  
 }
 
-
+.checkbox-exclusion input{
+  margin-left: -70px;
+}
 
 .checkbox-exclusion input[type="checkbox"]:checked {
   
@@ -544,6 +552,7 @@ border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-top: -30px;
 
 }
 
