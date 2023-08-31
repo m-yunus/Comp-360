@@ -96,6 +96,7 @@ const ExclusionCriteria = () => {
           </div>
           <ul className="Culture-inputbox-list">
             <li>
+              <label htmlFor="">Select criteria</label>
               <input
                 type="text"
                 placeholder="Select Criteria"
@@ -104,14 +105,15 @@ const ExclusionCriteria = () => {
               />
             </li>
             <li>
+              <label htmlFor="">Criteria value</label>
               <input
                 type="text"
-                placeholder="Select Value"
+                // placeholder="Select Value"
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
               />
             </li>
-            <li>
+            {/* <li> */}
               <div className="checkbox-input-container">
                 <div className="checkbox-exclusion">
                   <input
@@ -134,12 +136,12 @@ const ExclusionCriteria = () => {
                   <span className="checkbox-label">Bonus</span>
                 </div>
               </div>
-            </li>
-            <li>
+            {/* </li> */}
+            {/* <li> */}
               <button className="update-button" onClick={handleAdd}>
                 Add
               </button>
-            </li>
+            {/* </li> */}
           </ul>
           <div className="heading-container" style={{ marginTop: "1rem" }}>
             <h4>Exclusion list</h4>

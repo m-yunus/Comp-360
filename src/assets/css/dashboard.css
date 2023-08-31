@@ -170,6 +170,8 @@ body {
   display: flex;
   margin-bottom: 1rem;
   flex-direction: column;
+  margin-left: -1.5rem;
+  
 }
 
 .underline-grey {
@@ -177,19 +179,22 @@ body {
   margin-top: 5px;
   height: 2px;
   border-radius: 25px;
-  width: 122px;
+  width: 142px;
   background-color: grey
 }
 .Culture-inputbox-list {
+  
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin-top: 2rem;
-  gap: 2rem;
+  gap: 35px;
 }
 .Culture-inputbox-list li{
 position: relative;
+flex: 1 0 calc(20% - 0.5rem); 
+  max-width: calc(20% - 0.5rem);
 }
 .Culture-inputbox-listli {
   flex: 0 0 60px;
@@ -199,10 +204,10 @@ position: relative;
 .Culture-inputbox-list li label{
   
   position: absolute;
-color: grey;
+  color: grey;
   top: -7px;
   z-index: 1;
-  left: 35px;
+  left: 15px;
   font-size: 12px;
   background-color: white;
   padding: 0 5px;
@@ -210,15 +215,39 @@ color: grey;
 }
 
 .Culture-inputbox-list input{
-  width: 100%;
+  width: 200px;
   padding: 10px;
   position: relative;
   border-radius: 25px;
   border: 2px solid grey;
+  
+}
+.company-profile-list li{
+  position: relative;
+}
+.approver-container ul{
+  gap: 35px;
+}
+.company-profile-list li input{
+  width: 200px;
+}
+
+.approver-container ul li label{
+   position: absolute;
+  color: gray;
+  top: -7px;
+  z-index: 1;
+  left: 15px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
 }
 
 .Culture-inputbox-list input[type="text"]::placeholder {
   text-transform: capitalize;
+}
+.Culture-inputbox-list input[name="company_profile"] {
+  width: 670px;
 }
 .radio-input-container {
   display: flex;
@@ -229,13 +258,15 @@ color: grey;
   display: flex;
   align-items: center;
   gap: 8px; /* Adjust the value as needed */
+  
 }
 
+
 .radio-button-group input[type="radio"] {
-  margin-right: 4px; /* Adjust the spacing between the radio buttons and labels */
+  margin-right:3px; /* Adjust the spacing between the radio buttons and labels */
 }
 .radio-input-container{
-  gap: 30px;
+  gap: 50px;
 }
 .salary-list{
   flex-direction: column;
@@ -260,6 +291,7 @@ color: grey;
   padding: 10px;
   border-radius: 25px;
   border: 2px solid grey;
+
 }
 
 .Salary-list input[type="text"]::placeholder {
@@ -275,10 +307,10 @@ position: relative;
 .Salary-inputbox-list .component-box label{
   
   position: absolute;
-color: grey;
+ color: grey;
   top: -7px;
   z-index: 1;
-  left: 35px;
+  left: 15px;
   font-size: 12px;
   background-color: white;
   padding: 0 5px;
@@ -311,22 +343,67 @@ color: grey;
 
 .salary-table td {
   padding: 8px;
+
+  position: relative;
+
+}
+
+.salary-table td input {
+ margin-left: 10px;
+
+ position: relative;
+}
+
+.salary-table  td .integration-input-title{
+  position: absolute;
+  color: grey;
+  top: 1.1px;
+  z-index: 1;
+  left: 30px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
+
+}
+.salary-table  td .integration-input-title-photos{
+  position: absolute;
+  color: grey;
+  top:-8px;
+  z-index: 1;
+  left: 20px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
+
 }
 .company-profile-list{
+  
   display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin-top: 2rem;
-    gap: 2rem;
+    gap: 10px;
+    
+    
 }
 .company-profile-list input{
   width: 100%;
     padding: 10px;
     
-    border-radius: 25px;
-    border: 2px solid grey;
+    
 }
+.last-two-input{
+  display: flex;
+  gap: 10px;
+ 
+ 
+}
+.three-input li input{
+border-radius: 25px;
+    border: 2px solid grey; 
+}
+
 .supervisor-inputbox-list{
   display: flex;
   flex-wrap: wrap;
@@ -356,28 +433,72 @@ color: grey;
 .file-input-container {
   position: relative;
   display: inline-block;
+   width: 200px;
+   margin-left: 162px;
+   height: 40px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid grey;
+ 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
 }
+.file-input-2{
+  margin-left: 0px;
+ 
+}
+.file-input-3{
+  margin-left: 30px;
+ 
+}
+.company-profile-list li  label{
+  position: absolute;
+  color: grey;
+  top: -6px;
+  z-index: 1;
+  left: 30px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
+}
+
 
 .file-input {
   position: absolute;
-  left: -9999px;
+  
 }
 
-.file-input-label {
+/* .file-input-label {
   display: inline-block;
-  padding: 10px 20px;
+  margin-left: -240px;
+  padding: 5px 5px;
   background-color: #2074d4;
   color: #fff;
+  width: 140px;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .file-input-label:hover {
   background-color: #185dbf;
+} */
+.integration-file-name{
+ font-size: 15px;
+ margin-left: 185px;
+ margin-top: 5px;
 }
 .checkbox-input-container {
   display: flex;
   gap: 1rem;
+  align-items: center;
+  
+  margin-top: -10px;
+  
+ 
+  
 }
 
 .checkbox-group {
@@ -393,6 +514,7 @@ color: grey;
 .checkbox-group .checkbox-label {
   opacity: 1;
   cursor: pointer;
+ 
 }
 
 .checkbox-group input[type="checkbox"]:checked + .checkbox-label {
@@ -407,6 +529,8 @@ color: grey;
 .checkbox-exclusion .checkbox-label {
   opacity: 1;
   cursor: pointer;
+  margin-left: -80px;
+ 
 }
 
 

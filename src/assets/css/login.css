@@ -131,6 +131,8 @@
     @media (max-width: 900px) {
       .left-section .quotes {
         height: 15%;
+        padding: 36px;
+        
       }
     }
 

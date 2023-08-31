@@ -126,91 +126,100 @@ const Company_Profile = () => {
 
             <ul className="Culture-inputbox-list">
               <li>
+                <label htmlFor="">Name</label>
                 <input
                   type="text"
-                  placeholder="Name"
+                  // placeholder="Name"
                   value={companyformData.company_name}
                   onChange={handleInputChange}
                   name="company_name"
                 />
               </li>
               <li>
+                <label htmlFor="">Industry</label>
                 <input
                   type="text"
-                  placeholder="Industry"
+                  // placeholder="Industry"
                   value={companyformData.company_industry}
                   onChange={handleInputChange}
                   name="company_industry"
                 />
               </li>
               <li>
+                <label htmlFor="">Phone</label>
                 <input
                   type="text"
-                  placeholder="Phone"
+                  // placeholder="Phone"
                   value={companyformData.company_phone}
                   onChange={handleInputChange}
                   name="company_phone"
                 />
               </li>
               <li>
+                <label htmlFor="">E-mail</label>
                 <input
                   type="text"
-                  placeholder="E-mail"
+                  // placeholder="E-mail"
                   value={companyformData.company_email}
                   name="company_email"
                   onChange={handleInputChange}
                 />
               </li>
               <li>
+                <label htmlFor="">Address</label>
                 <input
                   type="text"
-                  placeholder="Address"
+                  // placeholder="Address"
                   value={companyformData.company_address}
                   onChange={handleInputChange}
                   name="company_address"
                 />
               </li>
-              <li>
+              <li className="company-profile-long">
+                <label htmlFor="">Company Profile</label>
                 <input
                   type="text"
-                  placeholder="Company Profile"
+                  // placeholder="Company Profile"
                   value={companyformData.company_profile}
                   name="company_profile"
                   onChange={handleInputChange}
                 />
               </li>
-              <li>
-                <input
-                  type="text"
-                  placeholder="Approver name"
-                  value={companyformData.company_approver_name}
-                  onChange={handleInputChange}
-                  name="company_approver_name"
-                />
-              </li>
-              <li>
-                <input
-                  type="text"
-                  placeholder="Approver email"
-                  value={companyformData.company_approver_email}
-                  onChange={handleInputChange}
-                  name="company_approver_email"
-                />
-              </li>
-              <li>
-                <input
-                  type="text"
-                  placeholder="Replay email"
-                  value={companyformData.company_approver_reply_email}
-                  onChange={handleInputChange}
-                  name="company_approver_reply_email"
-                />
-              </li>
             </ul>
 
-            <ul className="company-profile-list">
-              <li>
-                <div className="file-input-container">
+            <div className="approver-container">
+              <ul className="company-profile-list  three-input">
+                <li>
+                  <label htmlFor="">Approver Name</label>
+                  <input
+                    type="text"
+                    // placeholder="Approver name"
+                    value={companyformData.company_approver_name}
+                    onChange={handleInputChange}
+                    name="company_approver_name"
+                  />
+                </li>
+                <li>
+                  <label htmlFor="">Approver Email</label>
+                  <input
+                    type="text"
+                    // placeholder="Approver email"
+                    value={companyformData.company_approver_email}
+                    onChange={handleInputChange}
+                    name="company_approver_email"
+                  />
+                </li>
+                <li>
+                  <label htmlFor="">Replay Email</label>
+                  <input
+                    type="text"
+                    // placeholder="Replay email"
+                    value={companyformData.company_approver_reply_email}
+                    onChange={handleInputChange}
+                    name="company_approver_reply_email"
+                  />
+                </li>
+                <li>
                   <label htmlFor="file-input-signature">Signature</label>
                   <input
                     type="file"
@@ -218,21 +227,25 @@ const Company_Profile = () => {
                     className="file-input"
                     onChange={handleFilesignature}
                   />
-                  <label
+                  {/* <label
                     htmlFor="file-input-signature"
                     className="file-input-label"
                   >
                     Choose File
-                  </label>
-                </div>
-                {signature && (
+                  </label> */}
+
+                  {/* {signature && (
                   <div>
                     <p>Selected file: {signature.name}</p>
                   </div>
-                )}
-              </li>
+                )} */}
+                </li>
+              </ul>
+            </div>
+
+            <ul className="company-profile-list  last-two-input">
               <li>
-                <div className="file-input-container">
+                <div className="file-input-container file-input-2">
                   <label htmlFor="file-input-logo">Company Logo</label>
                   <input
                     type="file"
@@ -240,18 +253,18 @@ const Company_Profile = () => {
                     className="file-input"
                     onChange={handleFilelogo}
                   />
-                  <label htmlFor="file-input-logo" className="file-input-label">
+                  {/* <label htmlFor="file-input-logo" className="file-input-label">
                     Choose File
-                  </label>
+                  </label> */}
                 </div>
-                {logo && (
+                {/* {logo && (
                   <div>
                     <p>Selected file: {logo.name}</p>
                   </div>
-                )}
+                )} */}
               </li>
               <li>
-                <div className="file-input-container">
+                <div className="file-input-container file-input-3">
                   <label htmlFor="file-input-hrlogo">HR Logo</label>
                   <input
                     type="file"
@@ -259,18 +272,18 @@ const Company_Profile = () => {
                     className="file-input"
                     onChange={handleFileHrlogo}
                   />
-                  <label
+                  {/* <label
                     htmlFor="file-input-hrlogo"
                     className="file-input-label"
                   >
                     Choose File
-                  </label>
+                  </label> */}
                 </div>
-                {hrLogo && (
+                {/* {hrLogo && (
                   <div>
                     <p>Selected file: {hrLogo.name}</p>
                   </div>
-                )}
+                )} */}
               </li>
             </ul>
           </div>

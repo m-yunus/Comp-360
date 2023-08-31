@@ -122,7 +122,7 @@ console.log(selectedCountryData);
                 </select>
               </li>
               <li>
-                <label htmlFor="number">Select Number</label>
+                <label htmlFor="number">Select number</label>
                 <input
                   type="text"
                   name="number"
@@ -136,7 +136,7 @@ console.log(selectedCountryData);
                 />
               </li>
               <li>
-                <label htmlFor="currency">Select Currency</label>
+                <label htmlFor="currency">Select currency</label>
                 <input
                   type="text"
                   name="currency"
@@ -150,7 +150,7 @@ console.log(selectedCountryData);
                 />
               </li>
               <li>
-                <label htmlFor="percentage">Select Percentage</label>
+                <label htmlFor="percentage">Select percentage</label>
                 <select className="countrySelection" name="percentage">
                   <option value="No_decimal">No Decimals</option>
                   <option value="One_decimal">One Decimal</option>
@@ -173,7 +173,7 @@ console.log(selectedCountryData);
                 />
               </li>
               <li>
-                <label htmlFor="Timezone">Select Timezone</label>
+                <label htmlFor="Timezone">Select time zone</label>
                 <input type="text" name="timezone" value={ipCountry.timezone} />
               </li>
             </ul>

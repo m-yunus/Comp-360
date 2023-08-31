@@ -99,7 +99,10 @@ const Integration_with_HRIS = () => {
                     <h5>Get Data From</h5>
                   </td>
                   <td>
-                    <input type="text" placeholder="location" />
+                    <label className="integration-input-title" htmlFor="">
+                      Location
+                    </label>
+                    <input type="text" />
                   </td>
                 </tr>
                 <tr>
@@ -107,7 +110,10 @@ const Integration_with_HRIS = () => {
                     <h5>Store letters</h5>
                   </td>
                   <td>
-                    <input type="text" placeholder="location" />
+                    <label className="integration-input-title" htmlFor="">
+                      Location
+                    </label>
+                    <input type="text" />
                   </td>
                 </tr>
                 <tr>
@@ -115,7 +121,10 @@ const Integration_with_HRIS = () => {
                     <h5>store Payroll extract </h5>
                   </td>
                   <td>
-                    <input type="text" placeholder="location" />
+                    <label className="integration-input-title" htmlFor="">
+                      Location
+                    </label>
+                    <input type="text" />
                   </td>
                 </tr>
               </tbody>
@@ -132,20 +141,26 @@ const Integration_with_HRIS = () => {
                   </td>
                   <td>
                     <div className="file-input-container">
+                      <label className="integration-input-title-photos" htmlFor="">
+                        Location
+                      </label>
                       <input
                         type="file"
                         id="file-input"
                         className="file-input"
                         onChange={handleFileChange}
                       />
-                      <label htmlFor="file-input" className="file-input-label">
-                        Choose File
-                      </label>
-                    </div>
 
+                      <label
+                        htmlFor="file-input"
+                        className="file-input-label"
+                      ></label>
+                    </div>
                     {selectedFile && (
                       <div>
-                        <p>Selected file: {selectedFile.name}</p>
+                        <p className="integration-file-name">
+                          Selected file: {selectedFile.name}
+                        </p>
                       </div>
                     )}
                   </td>
