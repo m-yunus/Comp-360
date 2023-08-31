@@ -80,10 +80,13 @@ const Addition_matrix = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Additional Matrix</h4>
-              <div className="underline-grey"></div>
+              <div style={{ width: "130px" }} className="underline-grey"></div>
             </div>
 
-            <div className="radio-button-group">
+            <div
+              style={{ marginTop: "-15px", marginBottom: "50px" }}
+              className="radio-button-group"
+            >
               <input
                 type="radio"
                 name="addition_matrix"
@@ -102,37 +105,43 @@ const Addition_matrix = () => {
               No
             </div>
 
-            <ul className="Culture-inputbox-list">
-              <li>Matrix name</li>
-              <li>
-                <input
-                  type="text"
-                  name="matrix_name"
-                  placeholder="matrix name"
-                  value={matrixValues.matrix_name}
-                  onChange={handleInputChange}
-                />
-              </li>
-              <li>Factor one</li>
-              <li>
-                <input
-                  type="text"
-                  name="factor_one"
-                  placeholder="factor one"
-                  value={matrixValues.factor_one}
-                  onChange={handleInputChange}
-                />
-              </li>
-              <li>Factor Two</li>
-              <li>
-                <input
-                  type="text"
-                  name="factor_two"
-                  placeholder="factor two"
-                  value={matrixValues.factor_two}
-                  onChange={handleInputChange}
-                />
-              </li>
+            <ul style={{flexDirection:"column" , }} className="Culture-inputbox-list additional-input ">
+              <div style={{ display: "flex" }}>
+                <li>Matrix name</li>
+                <li>
+                  <input
+                    type="text"
+                    name="matrix_name"
+                    placeholder="matrix name"
+                    value={matrixValues.matrix_name}
+                    onChange={handleInputChange}
+                  />
+                </li>
+              </div>
+              <div style={{ display: "flex" }}>
+                <li>Factor one</li>
+                <li>
+                  <input
+                    type="text"
+                    name="factor_one"
+                    placeholder="factor one"
+                    value={matrixValues.factor_one}
+                    onChange={handleInputChange}
+                  />
+                </li>
+              </div>
+              <div style={{ display: "flex" }}>
+                <li>Factor Two</li>
+                <li>
+                  <input
+                    type="text"
+                    name="factor_two"
+                    placeholder="factor two"
+                    value={matrixValues.factor_two}
+                    onChange={handleInputChange}
+                  />
+                </li>
+              </div>
             </ul>
           </div>
         </form>
