@@ -68,10 +68,11 @@ const Turn_Around_time = () => {
               <li>
                 <h5>TAT for supervisors</h5>
               </li>
-              <li>
+              <li style={{marginTop:"-10px"}}>
+                <label htmlFor="">Turn around time</label>
                 <input
                   type="number"
-                  placeholder="Turn Around Time"
+                  // placeholder="Turn Around Time"
                   value={tatValue}
                   onChange={(e) => setTatValue(e.target.value)}
                 />

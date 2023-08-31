@@ -90,7 +90,7 @@ const Total_Rewards_Statement = () => {
             Save
           </button>
         </div>
-        <div className="content-container">
+        <div style={{display:"flex"}} className="content-container  ">
           <div>
             <div className="heading-container">
               <h4>Total Cash</h4>
