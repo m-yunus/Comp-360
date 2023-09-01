@@ -45,8 +45,9 @@
 }
 .radiobuttons{
     display: flex;
-    gap: 50px;
+    
     width: 70%;
+    align-items: center;
 }
 .inputcontainer input{
     border: 1px solid #8080804f;
@@ -58,6 +59,18 @@
     gap: 20px;
     align-items: center;
     width: 70%;
+    position: relative;
+    
+}
+.inputcontainer label{
+    position: absolute;
+  color: grey;
+  top: -7px;
+  z-index: 1;
+  left: 10px;
+  font-size: 12px;
+  background-color: white;
+  padding: 0 5px;
 }
 .labels{
     width: 30%;
