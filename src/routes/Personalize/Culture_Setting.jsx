@@ -102,10 +102,10 @@ console.log(selectedCountryData);
           <div className="content-container">
             <div className="heading-container">
               <h4>Culture Setting</h4>
-              <div className="underline-grey"></div>
+              <div style={{width:"115px"}} className="underline-grey"></div>
             </div>
 
-            <ul className="Culture-inputbox-list">
+            <ul  className="Culture-inputbox-list culture-settings">
               <li>
                 <label htmlFor="country">Select country</label>
                 <select
@@ -179,10 +179,10 @@ console.log(selectedCountryData);
             </ul>
             <div className="heading-container" style={{ paddingTop: "1rem" }}>
               <h4>Rounding Rule</h4>
-              <div className="underline-grey"></div>
+              <div style={{width:"115px"}} className="underline-grey"></div>
             </div>
 
-            <ul className="Culture-inputbox-list">
+            <ul className="Culture-inputbox-list rounding-rule-input">
               <li>
                 <label htmlFor="rounding-percentage">Select Percerntage</label>
                 <select className="countrySelection" name="rounding-percentage">

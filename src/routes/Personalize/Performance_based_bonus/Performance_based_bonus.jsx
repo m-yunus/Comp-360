@@ -71,15 +71,16 @@ const Performance_based_bonus = () => {
           </div>
           <div className="content-container">
             <div className="heading-container">
-              <h4>Total Cash</h4>
-              <div className="underline-grey"></div>
+              <h4>Performance based bonus</h4>
+              <div style={{ width: "200px" }} className="underline-grey"></div>
             </div>
 
             <ul className="Performance_based_list">
               <li>
-                <h5>Multipliers for Performance based bonus</h5>
+                <h5>Multipliers for Performance-based bonus</h5>
               </li>
               <li>
+                <label htmlFor="">Formula</label>
                 <input
                   type="number"
                   name="multiple_performance"
@@ -96,6 +97,10 @@ const Performance_based_bonus = () => {
               <li>
                 <div className="radio-Performance">
                   <h4>Bonus recommendation for the next cycle (Th.)</h4>
+                  <div
+                    style={{ width: "360px", marginTop: "-1px" }}
+                    className="underline-grey"
+                  ></div>
                   <div className="radio-button-performance">
                     <input
                       type="radio"
@@ -117,72 +122,82 @@ const Performance_based_bonus = () => {
                 </div>
               </li>
             </ul>
-
-            <div className="heading-container">
-              <h4>salary-mid</h4>
-              <div className="underline-grey"></div>
-            </div>
-            <ul className="Salary-inputbox-list salary-list">
-              <li>
-                <div className="radio-input-container">
-                  <div className="radio-button-group">
-                    <input
-                      type="radio"
-                      name="salary_mid"
-                      value="true"
-                      checked={bonusValues.salary_mid}
-                      onChange={handleRadioChange}
-                    />{" "}
-                    Auto
-                    <input
-                      type="radio"
-                      name="salary_mid"
-                      value="false"
-                      checked={!bonusValues.salary_mid}
-                      onChange={handleRadioChange}
-                    />{" "}
-                    Manual
-                  </div>
+            <div style={{ display: "flex", marginTop: "20px" }}>
+              <div>
+                <div className="heading-container">
+                  <h4>salary-mid</h4>
+                  <div style={{width:"80px"}} className="underline-grey"></div>
                 </div>
-              </li>
-            </ul>
-
-            <div className="heading-container">
-              <h4>Calculate arrears (First time increases)</h4>
-              <div className="underline-grey"></div>
-            </div>
-            <ul className="Salary-inputbox-list salary-list">
-              <li>
-                <div className="radio-input-container">
-                  <div className="radio-button-group">
-                    <input
-                      type="radio"
-                      name="calculate_arrear"
-                      value="true"
-                      checked={bonusValues.calculate_arrear}
-                      onChange={handleRadioChange}
-                    />{" "}
-                    Yes
-                    <input
-                      type="radio"
-                      name="calculate_arrear"
-                      value="false"
-                      checked={!bonusValues.calculate_arrear}
-                      onChange={handleRadioChange}
-                    />{" "}
-                    No
-                  </div>
+                <ul
+                  style={{ marginTop: "-10px" }}
+                  className="Salary-inputbox-list salary-list"
+                >
+                  <li>
+                    <div className="radio-input-container">
+                      <div className="radio-button-group">
+                        <input
+                          type="radio"
+                          name="salary_mid"
+                          value="true"
+                          checked={bonusValues.salary_mid}
+                          onChange={handleRadioChange}
+                        />{" "}
+                        Auto
+                        <input
+                          type="radio"
+                          name="salary_mid"
+                          value="false"
+                          checked={!bonusValues.salary_mid}
+                          onChange={handleRadioChange}
+                        />{" "}
+                        Manual
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div style={{ marginLeft: "380px" }}>
+                <div className="heading-container">
+                  <h4>Calculate arrears (First time increases)</h4>
+                  <div style={{width:"300px"}} className="underline-grey"></div>
                 </div>
-              </li>
-            </ul>
+                <ul
+                  style={{ marginTop: "-10px" }}
+                  className="Salary-inputbox-list salary-list"
+                >
+                  <li>
+                    <div className="radio-input-container">
+                      <div className="radio-button-group">
+                        <input
+                          type="radio"
+                          name="calculate_arrear"
+                          value="true"
+                          checked={bonusValues.calculate_arrear}
+                          onChange={handleRadioChange}
+                        />{" "}
+                        Yes
+                        <input
+                          type="radio"
+                          name="calculate_arrear"
+                          value="false"
+                          checked={!bonusValues.calculate_arrear}
+                          onChange={handleRadioChange}
+                        />{" "}
+                        No
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-            <div className="heading-container">
+            <div style={{marginTop:"10px"}} className="heading-container">
               <h4>Step Increment</h4>
-              <div className="underline-grey"></div>
+              <div style={{width:"120px"}} className="underline-grey"></div>
             </div>
             <ul className="Salary-inputbox-list salary-list">
               <li>
-                <div className="radio-input-container">
+                <div style={{marginTop:"-20px"}} className="radio-input-container">
                   <div className="radio-button-group">
                     <input
                       type="radio"
