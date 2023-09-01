@@ -191,6 +191,42 @@ body {
 .additional-input li input{
   margin-top: -10px;
 }
+.culture-settings{
+ 
+  align-items: center;
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.culture-settings li input,
+.rounding-rule-input select{
+  width: 150px
+}
+.culture-settings li select{
+  width: 150px;
+}
+.rounding-rule-input{
+ 
+  display: flex;
+  gap: 20px;
+  
+}
+.Culture-inputbox-list.culture-settings li {
+  position: relative;
+  flex: 1 0 calc(17% - 0.5rem);
+  max-width: calc(17% - 0.5rem);
+}
+@media(max-width:1110px){
+.Culture-inputbox-list.culture-settings li {
+  position: relative;
+  flex: 1 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+.rounding-rule-input{
+justify-content: space-between;
+}
+}
 
 .Culture-inputbox-list {
   
@@ -200,6 +236,7 @@ body {
   padding: 0;
   margin-top: 2rem;
   gap: 35px;
+  
 }
 .Culture-inputbox-list li{
 position: relative;
@@ -635,4 +672,12 @@ border-radius: 25px;
   color: red;
   font-size: 18px;
   cursor: pointer;
+}
+
+
+@media (max-width: 1100px) {
+ 
+  
+
+
 }
