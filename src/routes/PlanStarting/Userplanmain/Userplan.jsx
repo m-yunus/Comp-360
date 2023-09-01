@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Navbar from "../../../layout/Navbar";
 import "./userplanmain.css";
-import { FaPlayCircle, FaSun, FaUser } from "react-icons/fa";
+import { FaPhotoVideo, FaPlayCircle, FaSun, FaUser } from "react-icons/fa";
+import { BsPlayCircle, BsHeadset, BsFillShareFill } from "react-icons/bs";
+import {BiMessageDetail} from "react-icons/bi"
+import { AiOutlineFileImage } from "react-icons/ai";
 import Countdown from "react-countdown";
 import {
   addDays,
@@ -13,8 +16,11 @@ import { useEffect, useState } from "react";
 import { useDataContext } from "../../../Context/Context";
 import { MdSettings } from "react-icons/md";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import logoonly from "../../../assets/images/logo/logo-only.png"
 
 const Userplan = () => {
+
+  const [showButtons,setShowButtons] = useState(false);
   const { data ,user} = useDataContext();
 const isDateString=data?.date;
 const dateObject = new Date(isDateString);
@@ -37,12 +43,18 @@ const formattedNewDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}$
           <li> {hours} </li>
 
           <li>{minutes} </li>
-          <li>{seconds}</li>
+          {/* <li>{seconds}</li> */}
         </ul>
       );
     }
   };
   const percentage = 45;
+
+  const toggleButtons = () => {
+    setShowButtons(!showButtons);
+  };
+
+  
 
   // const timeDifference = differenceInDays(targetTime, new Date());
   // const endOfToday = addDays(new Date(), 1);
@@ -63,19 +75,18 @@ const formattedNewDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}$
 
       <div className="landing-container">
         <div className="content-plan">
-          <Link to="/PlanData">
+          <Link style={{ textDecoration: "none" }} to="/PlanData">
             {" "}
             <button className="beginhere">
-              Beginhere <FaPlayCircle style={{ fontSize: "1rem" }} />
+              Begin here <BsPlayCircle style={{ fontSize: "1.1rem" }} />
             </button>
           </Link>
         </div>
+
         <div className="timer-wrapper">
           <div className="country-section">
             <FaUser style={{ color: "grey" }} />
-            <div className="country">
-          {data?.cultural?.country}
-            </div>
+            <div className="country">{data?.cultural?.country}</div>
           </div>
           <div className="tat-timer">
             <div className="tat-days">
@@ -87,25 +98,39 @@ const formattedNewDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}$
               <Countdown date={targetTime} renderer={renderer} />
               {/* <p>{timeDifference} days, {hoursLeft} hours, {minutesLeft} minutes left</p> */}
             </div>
-       
           </div>
-          <div style={{    width: "100%",
-    padding: "4rem",
-    display:" flex",
-    alignItems: "center",
-    height: "280px",
-    justifyContent: "center"}}>
-      <CircularProgressbar
-        value={percentage}
-        text={`${percentage}%`}
-        styles={buildStyles({
-          pathColor: `#3e98c7`,
-          textColor: '#f88',
-          trailColor: '#d6d6d6',
-        })}
-      />
-    </div>
+          <div
+            style={{
+              width: "100%",
+              padding: "4rem",
+              display: " flex",
+              alignItems: "center",
+              height: "280px",
+              justifyContent: "center",
+            }}
+          >
+            <CircularProgressbar
+              value={percentage}
+              text={`${percentage}%`}
+              styles={buildStyles({
+                pathColor: `#3e98c7`,
+                textColor: "#f88",
+                trailColor: "#d6d6d6",
+              })}
+            />
+          </div>
         </div>
+      </div>
+      <div>
+        <button className="fixed-button" onClick={toggleButtons}><img src={logoonly} alt="" /></button>
+        {showButtons && (
+          <div className="additional-buttons">
+            <button><BsHeadset/></button>
+            <button><BsFillShareFill/></button>
+            <button><BiMessageDetail/></button>
+            <button><AiOutlineFileImage/></button>
+          </div>
+        )}
       </div>
     </div>
   );
