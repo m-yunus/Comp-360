@@ -65,7 +65,7 @@ const Integration_with_HRIS = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Integration With HRIS</h4>
-              <div className="underline-grey"></div>
+              <div style={{width:"160px"}} className="underline-grey"></div>
             </div>
             <table className="salary-table">
               <tbody>
@@ -140,7 +140,7 @@ const Integration_with_HRIS = () => {
                     <h5>User Photos </h5>
                   </td>
                   <td>
-                    <div className="file-input-container">
+                    <div className="file-input-container  user-photos-input">
                       <label className="integration-input-title-photos" htmlFor="">
                         Location
                       </label>
@@ -156,13 +156,13 @@ const Integration_with_HRIS = () => {
                         className="file-input-label"
                       ></label>
                     </div>
-                    {selectedFile && (
+                    {/* {selectedFile && (
                       <div>
                         <p className="integration-file-name">
                           Selected file: {selectedFile.name}
                         </p>
                       </div>
-                    )}
+                    )} */}
                   </td>
                 </tr>
               </tbody>
