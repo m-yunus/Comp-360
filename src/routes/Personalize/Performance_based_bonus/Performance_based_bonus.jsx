@@ -116,7 +116,13 @@ const Performance_based_bonus = () => {
                     style={{ width: "350px", marginTop: "-1px" }}
                     className="underline-grey"
                   ></div>
-                  <div className="radio-button-performance">
+                  <div
+                    style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: "14px",
+                    }}
+                    className="radio-button-performance"
+                  >
                     <input
                       type="radio"
                       name="bonus_recommendation"
@@ -198,7 +204,7 @@ const Performance_based_bonus = () => {
                         />{" "}
                         Yes
                         <input
-                        style={{marginLeft:"30px"}}
+                          style={{ marginLeft: "30px" }}
                           type="radio"
                           name="calculate_arrear"
                           value="false"
@@ -233,7 +239,7 @@ const Performance_based_bonus = () => {
                     />{" "}
                     All
                     <input
-                    style={{marginLeft:"19px"}}
+                      style={{ marginLeft: "19px" }}
                       type="radio"
                       name="step_increment"
                       value="false"

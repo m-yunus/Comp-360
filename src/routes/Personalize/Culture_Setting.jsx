@@ -210,6 +210,7 @@ console.log(selectedCountryData);
               </li>
             </ul>
           </div>
+          <SuccessModal/>
         </form>
       </div>
       {isSuccess && <SuccessModal status="Success" />}
