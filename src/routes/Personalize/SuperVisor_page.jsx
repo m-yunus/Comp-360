@@ -104,7 +104,7 @@ const SuperVisor_page = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Supervisor Landing Page</h4>
-              <div className="underline-grey"></div>
+              <div style={{width:"190px"}} className="underline-grey"></div>
             </div>
             <ul className="supervisor-inputbox-list">
               <li>
@@ -169,9 +169,9 @@ const SuperVisor_page = () => {
                 </div>
               </li>
             </ul>
-            <div className="heading-container" style={{ marginTop: "3rem" }}>
+            <div className="heading-container" style={{ marginTop: "1rem" }}>
               <h4>Supervisor Recommendation Page</h4>
-              <div className="underline-grey"></div>
+              <div style={{width:"260px"}} className="underline-grey"></div>
             </div>
             <ul className="Salary-inputbox-list salary-list">
               <li>
@@ -211,7 +211,7 @@ const SuperVisor_page = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "43px" }}
+                    style={{ paddingLeft: "45.5px" }}
                   >
                     <input
                       type="radio"
@@ -245,7 +245,7 @@ const SuperVisor_page = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ marginLeft: "23.5rem" }}
+                    style={{ marginLeft: "20rem" }}
                   >
                     <input
                       type="radio"
@@ -275,7 +275,7 @@ const SuperVisor_page = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "43px" }}
+                    style={{ paddingLeft: "6px" }}
                   >
                     <input
                       type="radio"

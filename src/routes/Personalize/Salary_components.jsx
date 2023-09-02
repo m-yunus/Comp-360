@@ -92,11 +92,11 @@ const Salary_components = () => {
               <li>
                 <div className="radio-input-container">
                   <label>
-                    <span>Merit Should Be Applied on? </span>
+                    <span>Merit should be applied on? </span>
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "46px" }}
+                    style={{ marginLeft: "44px" }}
                   >
                     <input
                       type="radio"
@@ -123,7 +123,7 @@ const Salary_components = () => {
                         })
                       }
                     />{" "}
-                    selectedcomponent
+                    Selected Component
                   </div>
                 </div>
               </li>

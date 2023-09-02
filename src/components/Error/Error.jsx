@@ -1,11 +1,19 @@
-
-import "./Error.css"
-const Error = ({status}) => {
+import "./Error.css";
+import { VscError } from "react-icons/vsc";
+const Error = ({ status }) => {
   return (
     <div className="popup">
-    {status}
-</div>
-  )
-}
+      <div className="total">
+        <div className="error">
+          <VscError style={{ fontSize: "6rem" }} />
 
-export default Error
+          <h1>{status}</h1>
+        </div>
+      </div>
+
+      {status}
+    </div>
+  );
+};
+
+export default Error;

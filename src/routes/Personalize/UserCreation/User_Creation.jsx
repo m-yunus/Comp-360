@@ -174,8 +174,8 @@ const User_Creation = () => {
         </div>
         <div className="content-container">
           <div className="heading-container">
-            <h4>user creation</h4>
-            <div className="underline-grey"></div>
+            <h4>User Creation</h4>
+            <div style={{ width: "100px" }} className="underline-grey"></div>
           </div>
           <table className="user-table">
             <thead>
@@ -220,8 +220,11 @@ const User_Creation = () => {
           <div className="custom-modal">
             <div className="usermodal-content">
               <div className="heading-container">
-                <h4>user creation</h4>
-                <div className="underline-grey"></div>
+                <h4>User Creation</h4>
+                <div
+                  style={{ width: "100px" }}
+                  className="underline-grey"
+                ></div>
               </div>
               <div className="text-fields-row">
                 <input
@@ -261,7 +264,8 @@ const User_Creation = () => {
                 />
               </div>
               <div className="radio-row">
-                <h5>Do You want to limit the accees for the user</h5>
+                <span >Do You want to limit the access for the user</span>
+                
                 <label>
                   <input
                     type="radio"
@@ -275,7 +279,7 @@ const User_Creation = () => {
                       }))
                     }
                   />
-                  yes
+                  Yes
                 </label>
                 <label>
                   <input
@@ -312,8 +316,8 @@ const User_Creation = () => {
                 <button onClick={handleRestrict}>Restrict</button>
               </div>
               <div className="heading-container">
-                <h4>Access granted</h4>
-                <div className="underline-grey"></div>
+                <h4>Access Granted</h4>
+                <div style={{width:"120px"}} className="underline-grey"></div>
               </div>
               <div className="accesitem-container">
                 {accessItems.map((item, index) => (
@@ -324,7 +328,7 @@ const User_Creation = () => {
                       readOnly
                     />
 
-                    <span >
+                    <span>
                       <FaEdit className="user-creation-edit" />
                     </span>
                     <span

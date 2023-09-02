@@ -135,14 +135,3 @@
         
       }
     }
-
-    .countrySelection{
-      width: 100%;
-    padding: 10px;
-    position: relative;
-    border-radius: 25px;
-    border: 2px solid grey;
-    }
-    .countrySelection label{
-      left: 14px;
-    }

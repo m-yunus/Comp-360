@@ -6,6 +6,7 @@
     max-width: 1000px; /* Adjust the maximum width as needed */
     margin: 0 auto;
    
+   
     
    
     
@@ -16,9 +17,11 @@
   }
   .Culture-inputbox-container ul li{
 
-    font-size: 14px;
+    font-size: 13px;
     align-items: center;
     display: flex;
+    font-family: 'Inter', sans-serif;
+
   }
   
   .Culture-inputbox-list {
@@ -43,6 +46,9 @@
   }
   
   .terminology-input{
-    margin-left: -90px;
+    margin-left: -80px;
     
   }
+
+
+

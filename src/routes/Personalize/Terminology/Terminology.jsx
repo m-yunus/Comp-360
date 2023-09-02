@@ -76,7 +76,7 @@ const Terminology = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Terminologies</h4>
-              <div style={{ width: "110px" }} className="underline-grey"></div>
+              <div style={{ width: "105px" }} className="underline-grey"></div>
             </div>
             <div className="Culture-inputbox-container">
               <ul className="Culture-inputbox-list">

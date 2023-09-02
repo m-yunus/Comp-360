@@ -73,7 +73,7 @@ const HR_Review_Settings = () => {
                   <label>
                     <span>Do You Want to allow HR to override all?</span>
                   </label>
-                  <div className="radio-button-group hr-1">
+                  <div style={{marginRight:"40px"}}  className="radio-button-group hr-1">
                     <input
                       type="radio"
                       name="HROverride"
@@ -100,7 +100,7 @@ const HR_Review_Settings = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "105px" }}
+                    style={{ paddingLeft: "91px" }}
                   >
                     <input
                       type="radio"
@@ -128,7 +128,7 @@ const HR_Review_Settings = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "98px" }}
+                    style={{ paddingLeft: "84px" }}
                   >
                     <input
                       type="radio"
@@ -156,7 +156,7 @@ const HR_Review_Settings = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "140px" }}
+                    style={{ paddingLeft: "127px" }}
                   >
                     <input
                       type="radio"

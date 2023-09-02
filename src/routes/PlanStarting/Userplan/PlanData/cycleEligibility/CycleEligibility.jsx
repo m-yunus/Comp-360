@@ -61,6 +61,7 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
       />
       <div className="cyclewrapper">
         <div className="cycle">
+          <h3 style={{ marginLeft: "20px" }}>Merit Cycle</h3>
           <div className="cyclecontainer">
             <div className="labels">
               <h5>What is merit cycle</h5>
@@ -86,7 +87,7 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                 />
                 Half-Yearly
               </label>
-              <label>
+              <label style={{ marginLeft: "-15px" }}>
                 <input
                   type="radio"
                   name="merit"
@@ -94,7 +95,7 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                   checked={cycleFrequency === "projectbased"}
                   onChange={() => handleCycleFrequencyChange("projectbased")}
                 />
-               Project Based
+                Project Based
               </label>
             </div>
           </div>
@@ -102,36 +103,34 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
           <div className="cyclecontainer">
             <h5>What is the Period ?</h5>
             <div className="input-wrapper">
+              <div className="inputcontainer">
+                <label>From date</label>
+                <input
+                  type="date"
+                  value={startDate}
+                  onChange={(e) => setStartDate(e.target.value)}
+                />
+              </div>
 
-          
-            <div className="inputcontainer">
-              <label>Start Date:</label>
-              <input
-                type="date"
-                value={startDate}
-                onChange={(e) => setStartDate(e.target.value)}
-              />
+              <div style={{ left: "-18rem" }} className="inputcontainer">
+                <label>To date</label>
+                <input
+                  type="date"
+                  value={endDate}
+                  onChange={(e) => setEndDate(e.target.value)}
+                />
+              </div>
             </div>
-
-            <div className="inputcontainer">
-              <label>End Date:</label>
-              <input
-                type="date"
-                value={endDate}
-                onChange={(e) => setEndDate(e.target.value)}
-              />
-            </div>
-          </div>
           </div>
           <hr />
 
           <div className="heading-container">
-            <h4>Eligibility</h4>
+            <h3 style={{ marginLeft: "22px" }}>Eligibility</h3>
           </div>
-          <div className="cyclecontainer">
+          <div style={{ marginTop: "-35px" }} className="cyclecontainer">
             <h5>How do you want to define eligibility?</h5>
-            <div className="radiobuttons">
-              <label>
+            <div style={{gap:"10px"}} className="radiobuttons">
+              <label style={{ width: "200px" }}>
                 <input
                   type="radio"
                   value="joinedUntil"
@@ -140,7 +139,7 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                 />
                 Joined Until
               </label>
-              <label>
+              <label style={{ width: "500px" }}>
                 <input
                   type="radio"
                   value="MinServiceduringMeritCycle"
@@ -149,8 +148,8 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                 />
                 Min Service During the Merit Cycle
               </label>
-              <div className="inputcontainer">
-                <label>Start Date:</label>
+              <div style={{marginLeft:"-60px"}} className="inputcontainer">
+                <label>From date</label>
                 <input
                   type="date"
                   value={eligibilityDate}
@@ -158,15 +157,18 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                 />
               </div>
             </div>
-         
-              
-         
           </div>
         </div>
       </div>
       <div className="button-container">
-        {currentStep > 0 && <button onClick={onBack} className="back_button">Back</button>}
-        <button onClick={handleContinue} className="continue_button">Continue</button>
+        {currentStep > 0 && (
+          <button onClick={onBack} className="back_button">
+            Back
+          </button>
+        )}
+        <button onClick={handleContinue} className="continue_button">
+          Continue
+        </button>
       </div>
     </>
   );

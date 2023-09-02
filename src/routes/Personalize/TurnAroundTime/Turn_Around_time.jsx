@@ -61,16 +61,19 @@ const Turn_Around_time = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Turn Around Time</h4>
-              <div className="underline-grey"></div>
+              <div style={{ width: "135px" }} className="underline-grey"></div>
             </div>
 
             <ul className="Culture-inputbox-list">
               <li>
-                <h5>TAT for supervisors</h5>
+                <span style={{ fontFamily: "'Inter', sans-serif" ,fontSize:"14px"}}>
+                  TAT for supervisors
+                </span>
               </li>
-              <li style={{marginTop:"-10px"}}>
+              <li style={{ marginTop: "-10px" }}>
                 <label htmlFor="">Turn around time</label>
                 <input
+                style={{width:"150px"}}
                   type="number"
                   // placeholder="Turn Around Time"
                   value={tatValue}
