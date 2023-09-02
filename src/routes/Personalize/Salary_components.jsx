@@ -96,7 +96,7 @@ const Salary_components = () => {
                   </label>
                   <div
                     className="radio-button-group"
-                    style={{ paddingLeft: "44 px" }}
+                    style={{ marginLeft: "44px" }}
                   >
                     <input
                       type="radio"

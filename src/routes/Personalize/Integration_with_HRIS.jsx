@@ -65,13 +65,13 @@ const Integration_with_HRIS = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Integration With HRIS</h4>
-              <div style={{width:"160px"}} className="underline-grey"></div>
+              <div style={{ width: "165px" }} className="underline-grey"></div>
             </div>
             <table className="salary-table">
               <tbody>
                 <tr>
                   <td>
-                    <h5>Do You Want Integration with HRIS?</h5>
+                    <span>Do you want to integration with HRIS?</span>
                   </td>
                   <td>
                     <div className="radio-button-group">
@@ -96,7 +96,7 @@ const Integration_with_HRIS = () => {
                 </tr>
                 <tr>
                   <td>
-                    <h5>Get Data From</h5>
+                    <span>Get data from</span>
                   </td>
                   <td>
                     <label className="integration-input-title" htmlFor="">
@@ -107,7 +107,7 @@ const Integration_with_HRIS = () => {
                 </tr>
                 <tr>
                   <td>
-                    <h5>Store letters</h5>
+                    <span>Store letters</span>
                   </td>
                   <td>
                     <label className="integration-input-title" htmlFor="">
@@ -118,7 +118,7 @@ const Integration_with_HRIS = () => {
                 </tr>
                 <tr>
                   <td>
-                    <h5>store Payroll extract </h5>
+                    <span>Store Payroll extract </span>
                   </td>
                   <td>
                     <label className="integration-input-title" htmlFor="">
@@ -131,17 +131,20 @@ const Integration_with_HRIS = () => {
             </table>
             <div className="heading-container">
               <h4>User Photos</h4>
-              <div className="underline-grey"></div>
+              <div style={{ width: "90px" }} className="underline-grey"></div>
             </div>
-            <table className="salary-table">
+            <table className="salary-table user-photos">
               <tbody>
                 <tr>
-                  <td>
-                    <h5>User Photos </h5>
+                  <td >
+                    <span>Get photo from</span>
                   </td>
                   <td>
                     <div className="file-input-container  user-photos-input">
-                      <label className="integration-input-title-photos" htmlFor="">
+                      <label
+                        className="integration-input-title-photos"
+                        htmlFor=""
+                      >
                         Location
                       </label>
                       <input
