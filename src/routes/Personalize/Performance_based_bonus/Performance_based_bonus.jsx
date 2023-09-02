@@ -72,16 +72,24 @@ const Performance_based_bonus = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Performance based bonus</h4>
-              <div style={{ width: "200px" }} className="underline-grey"></div>
+              <div style={{ width: "195px" }} className="underline-grey"></div>
             </div>
 
             <ul className="Performance_based_list">
               <li>
-                <h5>Multipliers for Performance-based bonus</h5>
+                <span
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "14px",
+                  }}
+                >
+                  Multipliers for Performance-based bonus
+                </span>
               </li>
               <li>
                 <label htmlFor="">Formula</label>
                 <input
+                  style={{ width: "150px" }}
                   type="number"
                   name="multiple_performance"
                   placeholder="formula"
@@ -96,9 +104,16 @@ const Performance_based_bonus = () => {
               </li>
               <li>
                 <div className="radio-Performance">
-                  <h4>Bonus recommendation for the next cycle (Th.)</h4>
+                  <h4
+                    style={{
+                      fontWeight: "600",
+                      fontFamily: "'Nunito Sans', sans-serif",
+                    }}
+                  >
+                    Bonus recommendation for the next cycle (Th.)
+                  </h4>
                   <div
-                    style={{ width: "360px", marginTop: "-1px" }}
+                    style={{ width: "350px", marginTop: "-1px" }}
                     className="underline-grey"
                   ></div>
                   <div className="radio-button-performance">
@@ -126,7 +141,10 @@ const Performance_based_bonus = () => {
               <div>
                 <div className="heading-container">
                   <h4>salary-mid</h4>
-                  <div style={{width:"80px"}} className="underline-grey"></div>
+                  <div
+                    style={{ width: "80px" }}
+                    className="underline-grey"
+                  ></div>
                 </div>
                 <ul
                   style={{ marginTop: "-10px" }}
@@ -156,10 +174,13 @@ const Performance_based_bonus = () => {
                   </li>
                 </ul>
               </div>
-              <div style={{ marginLeft: "380px" }}>
+              <div style={{ marginLeft: "354px" }}>
                 <div className="heading-container">
                   <h4>Calculate arrears (First time increases)</h4>
-                  <div style={{width:"300px"}} className="underline-grey"></div>
+                  <div
+                    style={{ width: "290px" }}
+                    className="underline-grey"
+                  ></div>
                 </div>
                 <ul
                   style={{ marginTop: "-10px" }}
@@ -177,6 +198,7 @@ const Performance_based_bonus = () => {
                         />{" "}
                         Yes
                         <input
+                        style={{marginLeft:"30px"}}
                           type="radio"
                           name="calculate_arrear"
                           value="false"
@@ -191,13 +213,16 @@ const Performance_based_bonus = () => {
               </div>
             </div>
 
-            <div style={{marginTop:"10px"}} className="heading-container">
+            <div style={{ marginTop: "10px" }} className="heading-container">
               <h4>Step Increment</h4>
-              <div style={{width:"120px"}} className="underline-grey"></div>
+              <div style={{ width: "120px" }} className="underline-grey"></div>
             </div>
             <ul className="Salary-inputbox-list salary-list">
               <li>
-                <div style={{marginTop:"-20px"}} className="radio-input-container">
+                <div
+                  style={{ marginTop: "-20px" }}
+                  className="radio-input-container"
+                >
                   <div className="radio-button-group">
                     <input
                       type="radio"
@@ -208,6 +233,7 @@ const Performance_based_bonus = () => {
                     />{" "}
                     All
                     <input
+                    style={{marginLeft:"19px"}}
                       type="radio"
                       name="step_increment"
                       value="false"

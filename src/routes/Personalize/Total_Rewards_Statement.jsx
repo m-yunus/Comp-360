@@ -3,6 +3,7 @@ import { BaseUrl } from "../../ApiService/ApiService";
 import axios from "axios";
 import SuccessModal from "../../components/Loginsuccess/SuccessModal";
 import Error from "../../components/Error/Error";
+import "../../assets/css/dashboard.css"
 
 const Total_Rewards_Statement = () => {
   const [totalCashArray, setTotalCashArray] = useState([]);
@@ -111,6 +112,7 @@ const Total_Rewards_Statement = () => {
               </li>
               <li>
                 <button
+                  className="total-rewards-add-button"
                   style={{
                     color: "white",
                     borderRadius: "10px",
@@ -122,6 +124,7 @@ const Total_Rewards_Statement = () => {
                     border: "none",
                     marginLeft: "130px",
                     marginTop: "-3px",
+                    cursor: "pointer",
                   }}
                   onClick={handletotalcash}
                 >
@@ -153,6 +156,7 @@ const Total_Rewards_Statement = () => {
 
               <li>
                 <button
+                  className="total-rewards-add-button"
                   style={{
                     color: "white",
                     borderRadius: "10px",
@@ -164,6 +168,7 @@ const Total_Rewards_Statement = () => {
                     border: "none",
                     marginLeft: "130px",
                     marginTop: "-3px",
+                    cursor: "pointer",
                   }}
                   onClick={handletotalbenefits}
                 >
@@ -172,7 +177,7 @@ const Total_Rewards_Statement = () => {
               </li>
             </ul>
           </div>
-          <div style={{marginTop:"-100px"}}>
+          <div style={{ marginTop: "-100px" }}>
             <div className="heading-container">
               <h4>Additional Columns for Analytics</h4>
               <div style={{ width: "250px" }} className="underline-grey"></div>
@@ -194,6 +199,7 @@ const Total_Rewards_Statement = () => {
 
               <li>
                 <button
+                  className="total-rewards-add-button"
                   style={{
                     color: "white",
                     borderRadius: "10px",
@@ -205,6 +211,7 @@ const Total_Rewards_Statement = () => {
                     border: "none",
                     marginLeft: "130px",
                     marginTop: "-3px",
+                    cursor: "pointer",
                   }}
                   onClick={handleadditionalanalysis}
                 >

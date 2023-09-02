@@ -160,6 +160,11 @@ body {
   border-radius: 10px;
 }
 
+
+.total-rewards-add-button:hover{
+  background-color: #185dbf!important;
+}
+
 .update-button:hover {
   background-color: #185dbf;
 }
@@ -245,6 +250,7 @@ justify-content: space-between;
   gap: 35px;
   
 }
+
 .Culture-inputbox-list li{
 position: relative;
 flex: 1 0 calc(20% - 0.5rem); 

@@ -7,8 +7,10 @@
     align-items: center;
     
   }
-  .Performance_based_list li{
+  .Performance_based_list li {
   position: relative;
+  
+
   }
   .Performance_based_listli {
     flex: 0 0 60px;
@@ -20,7 +22,7 @@
     color: grey;
     top: -7px;
     z-index: 1;
-    left: 20px;
+    left: 10px;
     font-size: 12px;
     background-color: white;
     padding: 0 5px;
@@ -44,6 +46,7 @@
     align-items: flex-start;
     flex-direction: column;
   }
+ 
   .input_performance{
 display: flex;
 
