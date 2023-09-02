@@ -92,19 +92,19 @@ const ExclusionCriteria = () => {
         <div className="content-container">
           <div className="heading-container">
             <h4>Exclusion Criteria</h4>
-            <div className="underline-grey"></div>
+            <div style={{width:"130px"}} className="underline-grey"></div>
           </div>
-          <ul className="Culture-inputbox-list">
+          <ul style={{gap:"50px"}} className="Culture-inputbox-list">
             <li>
               <label htmlFor="">Select criteria</label>
               <input
                 type="text"
-                placeholder="Select Criteria"
+                // placeholder="Select Criteria"
                 value={criteria}
                 onChange={(e) => setCriteria(e.target.value)}
               />
             </li>
-            <li>
+            <li >
               <label htmlFor="">Criteria value</label>
               <input
                 type="text"
@@ -138,14 +138,14 @@ const ExclusionCriteria = () => {
               </div>
             {/* </li> */}
             {/* <li> */}
-              <button className="update-button" onClick={handleAdd}>
+              <button style={{height:"35px" , marginLeft:"-20px"}}  className="update-button" onClick={handleAdd}>
                 Add
               </button>
             {/* </li> */}
           </ul>
           <div className="heading-container" style={{ marginTop: "1rem" }}>
-            <h4>Exclusion list</h4>
-            <div className="underline-grey"></div>
+            <h4>Exclusion List</h4>
+            <div style={{width:"100px"}} className="underline-grey"></div>
           </div>
           <ul className="exclusion-list">
             {exclusionList.map((exclusion, index) => (

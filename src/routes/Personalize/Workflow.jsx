@@ -70,13 +70,20 @@ const Workflow = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Work Flow</h4>
-              <div style={{width:"80px"}} className="underline-grey"></div>
+              <div style={{ width: "80px" }} className="underline-grey"></div>
             </div>
 
-            <ul className="Salary-inputbox-list salary-list">
+            <ul style={{marginTop:"-1rem"}} className="Salary-inputbox-list salary-list">
               <li>
                 <label>
-                  <span className="unni">How Many Levels Of approval required?</span>
+                  <span
+                    style={{
+                      fontFamily: " 'Inter', sans-serif",
+                      fontSize: "14px",
+                    }}
+                  >
+                    How Many Levels Of approval required?
+                  </span>
                 </label>
               </li>
               <li>
@@ -88,7 +95,15 @@ const Workflow = () => {
                       checked={checkboxStates.supervisor}
                       onChange={handleCheckboxChange}
                     />
-                    <span className="checkbox-label">Supervisor</span>
+                    <span
+                      style={{
+                        fontFamily: " 'Inter', sans-serif",
+                        fontSize: "14px",
+                      }}
+                      className="checkbox-label"
+                    >
+                      Supervisor
+                    </span>
                   </div>
                   <div className="checkbox-group">
                     <input
@@ -97,7 +112,15 @@ const Workflow = () => {
                       checked={checkboxStates.manager}
                       onChange={handleCheckboxChange}
                     />
-                    <span className="checkbox-label">Manager</span>
+                    <span
+                      style={{
+                        fontFamily: " 'Inter', sans-serif",
+                        fontSize: "14px",
+                      }}
+                      className="checkbox-label"
+                    >
+                      Manager
+                    </span>
                   </div>
                   <div className="checkbox-group">
                     <input
@@ -106,7 +129,15 @@ const Workflow = () => {
                       checked={checkboxStates.sub_hr}
                       onChange={handleCheckboxChange}
                     />
-                    <span className="checkbox-label">Sub HR</span>
+                    <span
+                      style={{
+                        fontFamily: " 'Inter', sans-serif",
+                        fontSize: "14px",
+                      }}
+                      className="checkbox-label"
+                    >
+                      Sub HR
+                    </span>
                   </div>
                   <div className="checkbox-group">
                     <input
@@ -115,7 +146,15 @@ const Workflow = () => {
                       checked={checkboxStates.hr}
                       onChange={handleCheckboxChange}
                     />
-                    <span className="checkbox-label">HR</span>
+                    <span
+                      style={{
+                        fontFamily: " 'Inter', sans-serif",
+                        fontSize: "14px",
+                      }}
+                      className="checkbox-label"
+                    >
+                      HR
+                    </span>
                   </div>
                 </div>
               </li>
