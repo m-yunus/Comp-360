@@ -94,7 +94,7 @@ const ExclusionCriteria = () => {
             <h4>Exclusion Criteria</h4>
             <div style={{width:"130px"}} className="underline-grey"></div>
           </div>
-          <ul style={{gap:"50px"}} className="Culture-inputbox-list">
+          <ul style={{gap:"10px"}} className="Culture-inputbox-list exclusion-criteria">
             <li>
               <label htmlFor="">Select criteria</label>
               <input
@@ -138,7 +138,7 @@ const ExclusionCriteria = () => {
               </div>
             {/* </li> */}
             {/* <li> */}
-              <button style={{height:"35px" , marginLeft:"-20px"}}  className="update-button" onClick={handleAdd}>
+              <button style={{height:"35px" , marginLeft:"10px"}}  className="update-button" onClick={handleAdd}>
                 Add
               </button>
             {/* </li> */}
