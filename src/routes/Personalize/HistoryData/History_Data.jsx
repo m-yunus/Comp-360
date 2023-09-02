@@ -46,37 +46,55 @@ const History_Data = () => {
         <div className="content-container">
           <div className="heading-container">
             <h4>History data</h4>
-            <div className="underline-grey"></div>
+            <div style={{ width: "90px" }} className="underline-grey"></div>
           </div>
-          <a style={{textDecoration:"none"}} href="/path/to/your/template.xlsx" download>
-            <button className="download-button">Download Template <AiOutlineDownload className="history-data-download-icon"/></button>
-          </a>
-          <label style={{color:"gray", backgroundColor:"white"}} className="upload-label ">Already have the template? 
-            <input type="file" accept=".xlsx" onChange={handleUpload} />
-           
-          </label>
-          {uploadedFile && tableData.length > 0 && (
-            <div className="uploaded-table-container">
-              <table>
-                <thead>
-                  <tr>
-                    {Object.keys(tableData[0]).map((header, index) => (
-                      <th key={index}>{header}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {tableData.map((row, rowIndex) => (
-                    <tr key={rowIndex}>
-                      {Object.values(row).map((cellValue, cellIndex) => (
-                        <td key={cellIndex}>{cellValue}</td>
+
+          <div style={{ marginTop:"130px"}}>
+            <a
+              style={{ textDecoration: "none" }}
+              href="/path/to/your/template.xlsx"
+              download
+            >
+              <button className="download-button">
+                Download Template{" "}
+                <AiOutlineDownload className="history-data-download-icon" />
+              </button>
+            </a>
+            <label
+              style={{
+                color: "gray",
+                backgroundColor: "white",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "14px",
+              }}
+              className="upload-label "
+            >
+              Already have the template?
+              <input type="file" accept=".xlsx" onChange={handleUpload} />
+            </label>
+            {uploadedFile && tableData.length > 0 && (
+              <div className="uploaded-table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      {Object.keys(tableData[0]).map((header, index) => (
+                        <th key={index}>{header}</th>
                       ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
+                  </thead>
+                  <tbody>
+                    {tableData.map((row, rowIndex) => (
+                      <tr key={rowIndex}>
+                        {Object.values(row).map((cellValue, cellIndex) => (
+                          <td key={cellIndex}>{cellValue}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </div>
         </div>
       </form>
     </div>

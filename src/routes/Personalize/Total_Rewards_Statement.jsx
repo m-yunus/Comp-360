@@ -90,13 +90,16 @@ const Total_Rewards_Statement = () => {
             Save
           </button>
         </div>
-        <div style={{display:"flex"}} className="content-container  ">
+        <div style={{ display: "flex" }} className="content-container  ">
           <div>
             <div className="heading-container">
               <h4>Total Cash</h4>
               <div style={{ width: "80px" }} className="underline-grey"></div>
             </div>
-            <ul className="Culture-inputbox-list">
+            <ul
+              style={{ display: "flex", alignItems: "center" }}
+              className="Culture-inputbox-list"
+            >
               <li>
                 <input
                   type="number"
@@ -110,11 +113,14 @@ const Total_Rewards_Statement = () => {
                 <button
                   style={{
                     color: "white",
-                    borderRadius: "5px",
+                    borderRadius: "10px",
+                    height: "35px",
+                    width: "35px",
                     background: "#2074d4",
-                    padding: "10px",
+                    padding: "5px",
+                    fontFamily: "'Nunito Sans', sans-serif",
                     border: "none",
-                    marginLeft: "120px",
+                    marginLeft: "130px",
                     marginTop: "-3px",
                   }}
                   onClick={handletotalcash}
@@ -131,7 +137,10 @@ const Total_Rewards_Statement = () => {
               <div style={{ width: "65px" }} className="underline-grey"></div>
             </div>
 
-            <ul className="Culture-inputbox-list">
+            <ul
+              style={{ display: "flex", alignItems: "center" }}
+              className="Culture-inputbox-list"
+            >
               <li>
                 <input
                   type="number"
@@ -146,11 +155,14 @@ const Total_Rewards_Statement = () => {
                 <button
                   style={{
                     color: "white",
-                    borderRadius: "5px",
+                    borderRadius: "10px",
+                    height: "35px",
+                    width: "35px",
                     background: "#2074d4",
-                    padding: "10px",
+                    padding: "5px",
+                    fontFamily: "'Nunito Sans', sans-serif",
                     border: "none",
-                    marginLeft: "120px",
+                    marginLeft: "130px",
                     marginTop: "-3px",
                   }}
                   onClick={handletotalbenefits}
@@ -160,13 +172,16 @@ const Total_Rewards_Statement = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div style={{marginTop:"-100px"}}>
             <div className="heading-container">
               <h4>Additional Columns for Analytics</h4>
-              <div style={{ width: "260px" }} className="underline-grey"></div>
+              <div style={{ width: "250px" }} className="underline-grey"></div>
             </div>
 
-            <ul className="Culture-inputbox-list">
+            <ul
+              style={{ display: "flex", alignItems: "center" }}
+              className="Culture-inputbox-list"
+            >
               <li>
                 <input
                   type="number"
@@ -181,11 +196,14 @@ const Total_Rewards_Statement = () => {
                 <button
                   style={{
                     color: "white",
-                    borderRadius: "5px",
+                    borderRadius: "10px",
+                    height: "35px",
+                    width: "35px",
                     background: "#2074d4",
-                    padding: "10px",
+                    padding: "5px",
+                    fontFamily: "'Nunito Sans', sans-serif",
                     border: "none",
-                    marginLeft: "120px",
+                    marginLeft: "130px",
                     marginTop: "-3px",
                   }}
                   onClick={handleadditionalanalysis}

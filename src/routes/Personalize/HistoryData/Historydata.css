@@ -38,7 +38,7 @@
   .download-button{
     height: 40px;
     width: 160px;
-    border-radius: 50px;
+    border-radius: 10px;
     color: #1877d2;
     border-color: #1877d2;
     display: flex;
@@ -46,7 +46,15 @@
     justify-content: center;
     margin: auto;
     cursor: pointer;
+  
+    font-family: 'Nunito Sans', sans-serif;
+
     
+  }
+
+  .download-button:hover{
+     color: #07437b;
+    border-color: #07437b;
   }
   .history-data-download-icon{
     font-size: 20px;
@@ -54,7 +62,7 @@
   .upload-label{
   
     height: 40px;
-    margin-left: 29%;
-    
+    margin-left: 28%;
+   
    
   }
