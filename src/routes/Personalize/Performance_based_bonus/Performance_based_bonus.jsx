@@ -146,7 +146,7 @@ const Performance_based_bonus = () => {
             <div style={{ display: "flex", marginTop: "20px" }}>
               <div>
                 <div className="heading-container">
-                  <h4>salary-mid</h4>
+                  <h4>Salary-mid</h4>
                   <div
                     style={{ width: "80px" }}
                     className="underline-grey"

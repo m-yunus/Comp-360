@@ -4,7 +4,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999; /* Ensure it's displayed on top */
-    background-color: transparent !important;
+    background-color: white !important;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -15,8 +15,8 @@
   
 
   .error{
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
     background-color: red;
     border-radius: 50%;
  color: white;

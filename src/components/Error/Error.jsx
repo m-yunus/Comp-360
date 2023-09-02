@@ -5,7 +5,7 @@ const Error = ({ status }) => {
     <div className="popup">
       <div className="total">
         <div className="error">
-          <VscError style={{ fontSize: "6rem" }} />
+          <VscError style={{ fontSize: "3rem" }} />
 
           <h1>{status}</h1>
         </div>

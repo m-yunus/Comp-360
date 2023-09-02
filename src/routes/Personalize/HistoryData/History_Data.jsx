@@ -49,7 +49,7 @@ const History_Data = () => {
             <div style={{ width: "90px" }} className="underline-grey"></div>
           </div>
 
-          <div style={{ marginTop:"130px"}}>
+          <div >
             <a
               style={{ textDecoration: "none" }}
               href="/path/to/your/template.xlsx"
