@@ -177,8 +177,9 @@ body {
   margin-bottom: 1rem;
   flex-direction: column;
   margin-left: -1.5rem;
-  
+ font-family: 'Nunito Sans', sans-serif;
 }
+
 
 .underline-grey {
   flex-grow: 1;
@@ -191,6 +192,7 @@ body {
 .additional-input li input{
   margin-top: -10px;
 }
+
 .culture-settings{
  
   align-items: center;
@@ -205,6 +207,9 @@ body {
 }
 .culture-settings li select{
   width: 150px;
+  
+
+
 }
 .rounding-rule-input{
  
@@ -242,6 +247,7 @@ justify-content: space-between;
 position: relative;
 flex: 1 0 calc(20% - 0.5rem); 
   max-width: calc(20% - 0.5rem);
+  
 }
 .Culture-inputbox-listli {
   flex: 0 0 60px;
@@ -254,10 +260,12 @@ flex: 1 0 calc(20% - 0.5rem);
   color: grey;
   top: -7px;
   z-index: 1;
-  left: 15px;
-  font-size: 12px;
+  left: 10px;
+  font-size: 11px;
   background-color: white;
   padding: 0 5px;
+  
+  
   
 }
 
@@ -266,9 +274,21 @@ flex: 1 0 calc(20% - 0.5rem);
   padding: 10px;
   position: relative;
   border-radius: 25px;
-  border: 2px solid grey;
+  border: 1px solid grey;
+  
   
 }
+.Culture-inputbox-list select{
+  border: 1px solid grey;
+}
+.Culture-inputbox-list select:hover{
+  border: 1px solid black;
+}
+
+.Culture-inputbox-list input:hover{
+ border: 1px solid black;
+}
+
 .Culture-inputbox-list  button{
   height: 40px;
   margin-top: 5px;
@@ -323,12 +343,17 @@ flex: 1 0 calc(20% - 0.5rem);
 .salary-list{
   flex-direction: column;
 }
+.radio-input-container{
+font-family: 'Inter', sans-serif;
+font-size: 14px;
+
+}
 .Salary-inputbox-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 2rem;
 }
 
@@ -354,7 +379,12 @@ position: relative;
 }
 .Salary-inputbox-list .component-box input{
   position: relative;
+   border: 1px solid grey;
+   width: 150px;
   
+}
+.Salary-inputbox-list .component-box input:hover{
+   border: 1px solid black;
 }
 .Salary-inputbox-list .component-box label{
   
@@ -362,8 +392,8 @@ position: relative;
  color: grey;
   top: -7px;
   z-index: 1;
-  left: 15px;
-  font-size: 12px;
+  left: 10px;
+  font-size: 11px;
   background-color: white;
   padding: 0 5px;
   
@@ -677,9 +707,45 @@ border-radius: 25px;
 }
 
 
-@media (max-width: 1100px) {
- 
-  
 
-
+.radio-button-group input[type="radio"] {
+  margin-right: 3px; 
+  appearance: none; 
+  width: 14px; 
+  height: 14px; 
+  border: 1px solid #007bff; 
+  border-radius: 50%; 
+  outline: none; 
+  cursor: pointer; 
+  position: relative; 
 }
+
+
+.radio-button-group input[type="radio"]:checked {
+  background-color: transparent;
+}
+
+
+.radio-button-group input[type="radio"]:checked::after {
+  content: ""; 
+  position: absolute; 
+  width: 8px; 
+  height: 8px; 
+  background-color: #007bff; 
+  border-radius: 50%; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+    .countrySelection{
+      width: 100%;
+    padding: 10px;
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid grey;
+    }
+    
+    .countrySelection label{
+      left: 14px;
+    }

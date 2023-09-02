@@ -179,12 +179,12 @@ console.log(selectedCountryData);
             </ul>
             <div className="heading-container" style={{ paddingTop: "1rem" }}>
               <h4>Rounding Rule</h4>
-              <div style={{width:"115px"}} className="underline-grey"></div>
+              <div style={{width:"110px"}} className="underline-grey"></div>
             </div>
 
             <ul className="Culture-inputbox-list rounding-rule-input">
               <li>
-                <label htmlFor="rounding-percentage">Select Percerntage</label>
+                <label htmlFor="rounding-percentage">Select percentage</label>
                 <select className="countrySelection" name="rounding-percentage">
                   <option value="No_decimal">No Decimals</option>
                   <option value="One_decimal">One Decimal</option>
@@ -193,7 +193,7 @@ console.log(selectedCountryData);
                 </select>
               </li>
               <li>
-                <label htmlFor="rounding-percentage">Select Number</label>
+                <label htmlFor="rounding-percentage">Select number</label>
                 <select className="countrySelection" name="rounding-number">
                   <option value="No_decimal">No Decimals</option>
                   <option value="One_decimal">One Decimal</option>
@@ -201,7 +201,7 @@ console.log(selectedCountryData);
                 </select>
               </li>
               <li>
-                <label htmlFor="rounding-curency">Select Currency</label>
+                <label htmlFor="rounding-curency">Select currency</label>
                 <select className="countrySelection" name="rounding-currency">
                   <option value="No_decimal">No Decimals</option>
                   <option value="One_decimal">One Decimal</option>
