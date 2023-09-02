@@ -121,10 +121,10 @@ const Company_Profile = () => {
           <div className="content-container">
             <div className="heading-container">
               <h4>Company Profile</h4>
-              <div className="underline-grey"></div>
+              <div style={{ width: "125px" }} className="underline-grey"></div>
             </div>
 
-            <ul className="Culture-inputbox-list">
+            <ul style={{ gap: "50px" }} className="Culture-inputbox-list ">
               <li>
                 <label htmlFor="">Name</label>
                 <input
@@ -156,7 +156,7 @@ const Company_Profile = () => {
                 />
               </li>
               <li>
-                <label htmlFor="">E-mail</label>
+                <label htmlFor="">Email</label>
                 <input
                   type="text"
                   // placeholder="E-mail"
@@ -165,7 +165,7 @@ const Company_Profile = () => {
                   onChange={handleInputChange}
                 />
               </li>
-              <li>
+              <li style={{ marginTop: "-9px" }}>
                 <label htmlFor="">Address</label>
                 <input
                   type="text"
@@ -175,7 +175,10 @@ const Company_Profile = () => {
                   name="company_address"
                 />
               </li>
-              <li className="company-profile-long">
+              <li
+                style={{ marginTop: "-9px" }}
+                className="company-profile-long"
+              >
                 <label htmlFor="">Company Profile</label>
                 <input
                   type="text"
@@ -190,7 +193,7 @@ const Company_Profile = () => {
             <div className="approver-container">
               <ul className="company-profile-list  three-input">
                 <li>
-                  <label htmlFor="">Approver Name</label>
+                  <label htmlFor="">Approver name</label>
                   <input
                     type="text"
                     // placeholder="Approver name"
@@ -200,7 +203,7 @@ const Company_Profile = () => {
                   />
                 </li>
                 <li>
-                  <label htmlFor="">Approver Email</label>
+                  <label htmlFor="">Approver email</label>
                   <input
                     type="text"
                     // placeholder="Approver email"
@@ -210,7 +213,7 @@ const Company_Profile = () => {
                   />
                 </li>
                 <li>
-                  <label htmlFor="">Replay Email</label>
+                  <label htmlFor="">Replay email</label>
                   <input
                     type="text"
                     // placeholder="Replay email"
@@ -246,7 +249,7 @@ const Company_Profile = () => {
             <ul className="company-profile-list  last-two-input">
               <li>
                 <div className="file-input-container file-input-2">
-                  <label htmlFor="file-input-logo">Company Logo</label>
+                  <label htmlFor="file-input-logo">Company logo</label>
                   <input
                     type="file"
                     id="file-input-logo"
@@ -265,7 +268,7 @@ const Company_Profile = () => {
               </li>
               <li>
                 <div className="file-input-container file-input-3">
-                  <label htmlFor="file-input-hrlogo">HR Logo</label>
+                  <label htmlFor="file-input-hrlogo">HR logo</label>
                   <input
                     type="file"
                     id="file-input-hrlogo"

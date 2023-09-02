@@ -69,8 +69,8 @@ const Workflow = () => {
           </div>
           <div className="content-container">
             <div className="heading-container">
-              <h4>WorkFlow</h4>
-              <div className="underline-grey"></div>
+              <h4>Work Flow</h4>
+              <div style={{width:"80px"}} className="underline-grey"></div>
             </div>
 
             <ul className="Salary-inputbox-list salary-list">

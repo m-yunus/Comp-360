@@ -136,11 +136,14 @@ const Integration_with_HRIS = () => {
             <table className="salary-table user-photos">
               <tbody>
                 <tr>
-                  <td >
+                  <td>
                     <span>Get photo from</span>
                   </td>
                   <td>
-                    <div className="file-input-container  user-photos-input">
+                    <div
+                      style={{ width: "150px" }}
+                      className="file-input-container  user-photos-input"
+                    >
                       <label
                         className="integration-input-title-photos"
                         htmlFor=""

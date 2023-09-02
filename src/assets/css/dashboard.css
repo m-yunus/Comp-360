@@ -320,6 +320,7 @@ flex: 1 0 calc(20% - 0.5rem);
 .Culture-inputbox-list input[name="company_profile"] {
   width: 670px;
 }
+
 .radio-input-container {
   display: flex;
   align-items: center;
@@ -358,6 +359,8 @@ font-size: 14px;
   padding: 0;
   margin-top: 1rem;
   gap: 2rem;
+  
+
 }
 
 .Salary-inputbox-listli {
@@ -469,9 +472,10 @@ position: relative;
     padding: 0;
     margin-top: 2rem;
     gap: 10px;
-    
+  
     
 }
+ 
 .company-profile-list input{
   width: 100%;
     padding: 10px;
@@ -481,12 +485,16 @@ position: relative;
 .last-two-input{
   display: flex;
   gap: 10px;
+  margin-top: 50px;
  
  
 }
 .three-input li input{
 border-radius: 25px;
-    border: 2px solid grey; 
+    border: 1px solid grey; 
+}
+.three-input li input:hover{
+ border: 1px solid black; 
 }
 
 .supervisor-inputbox-list{
@@ -550,7 +558,7 @@ border-radius: 25px;
 .file-input-container {
   position: relative;
   display: inline-block;
-   width: 150px;
+   width: 200px;
    margin-left: 162px;
    height: 40px;
   padding: 5px;
@@ -581,7 +589,7 @@ border-radius: 25px;
   color: grey;
   top: -6px;
   z-index: 1;
-  left: 30px;
+  left: 10px;
   font-size: 12px;
   background-color: white;
   padding: 0 5px;
@@ -716,7 +724,8 @@ border-radius: 25px;
 
 
 
-.radio-button-group input[type="radio"] {
+.radio-button-group input[type="radio"],
+.radio-row label input[type="radio"] {
   margin-right: 3px; 
   appearance: none; 
   width: 14px !important; 
@@ -729,12 +738,14 @@ border-radius: 25px;
 }
 
 
-.radio-button-group input[type="radio"]:checked {
+.radio-button-group input[type="radio"]:checked,
+.radio-row label input[type="radio"]:checked {
   background-color: transparent;
 }
 
 
-.radio-button-group input[type="radio"]:checked::after {
+.radio-button-group input[type="radio"]:checked::after,
+.radio-row label input[type="radio"]:checked::after {
   content: ""; 
   position: absolute; 
   width: 8px; 
