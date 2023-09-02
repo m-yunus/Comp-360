@@ -76,7 +76,7 @@ const Workflow = () => {
             <ul className="Salary-inputbox-list salary-list">
               <li>
                 <label>
-                  <span>How Many Levels Of approval required?</span>
+                  <span className="unni">How Many Levels Of approval required?</span>
                 </label>
               </li>
               <li>
