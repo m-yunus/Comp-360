@@ -757,7 +757,8 @@ border: 1px solid black;
 
 
 .radio-button-group input[type="radio"],
-.radio-row label input[type="radio"] {
+.radio-row label input[type="radio"],
+.radiobuttons label input[type="radio"] {
   margin-right: 3px; 
   appearance: none; 
   width: 14px !important; 
@@ -771,13 +772,15 @@ border: 1px solid black;
 
 
 .radio-button-group input[type="radio"]:checked,
-.radio-row label input[type="radio"]:checked {
+.radio-row label input[type="radio"]:checked,
+.radiobuttons label input[type="radio"]:checked {
   background-color: transparent;
 }
 
 
 .radio-button-group input[type="radio"]:checked::after,
-.radio-row label input[type="radio"]:checked::after {
+.radio-row label input[type="radio"]:checked::after,
+.radiobuttons label input[type="radio"]:checked::after {
   content: ""; 
   position: absolute; 
   width: 8px; 
@@ -816,3 +819,6 @@ border: 1px solid black;
   outline: none;
   box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
 } */
+
+
+

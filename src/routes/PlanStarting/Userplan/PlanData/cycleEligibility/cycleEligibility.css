@@ -23,7 +23,16 @@
 
 .cyclewrapper{
     padding: 20px;
+   font-family: 'Inter', sans-serif;
+
+
 }
+.cyclewrapper h3{
+    font-size: 1.3rem;
+ font-family: 'Nunito Sans', sans-serif;
+ font-weight: 600;
+}
+
 .cycle{
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -48,11 +57,20 @@
     
     width: 70%;
     align-items: center;
+    
+}
+.radiobuttons label{
+    display: flex;
+    align-items: center;
+
 }
 .inputcontainer input{
     border: 1px solid #8080804f;
-    border-radius: 12px;
+    border-radius: 25px!important;
     padding: 7px;
+}
+.inputcontainer input:hover{
+     border: 1px solid black;
 }
 .inputcontainer {
     display: flex;
@@ -78,6 +96,12 @@
 .heading-container{
     padding: 20px;
 }
+.heading-container h3{
+font-size: 1.3rem;
+ font-family: 'Nunito Sans', sans-serif;
+ font-weight: 600;
+ margin-left: 22px;
+}
 label{
     display: flex;
     gap: 16px;
@@ -88,3 +112,11 @@ label{
   
     width: 70%;
 }
+
+
+input[type="radio"]:checked + label span {
+  background-color: #1877d2; /* Example background color when checked */
+  border-color: #1877d2; /* Example border color when checked */
+  color: white; /* Example text color when checked */
+}
+

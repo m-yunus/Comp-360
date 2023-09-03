@@ -35,7 +35,7 @@ console.log(useSalaryComponents,componentName,displayName,useGlobalCurrency);
     <div className="cycle">
    
       <div className="heading-container">
-        <h4>Salary Component</h4>
+        <h3>Salary Component</h3>
       
       </div> 
       <div className="cyclecontainer">
@@ -86,7 +86,7 @@ console.log(useSalaryComponents,componentName,displayName,useGlobalCurrency);
       </div>
        <hr />
        <div className="heading-container">
-        <h4>Global Currency</h4>
+        <h3>Global Currency</h3>
       
       </div>
       <div className="cyclecontainer">
