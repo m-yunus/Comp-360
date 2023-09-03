@@ -202,7 +202,7 @@ console.log(selectedCountryData);
               </li>
               <li>
                 <label htmlFor="rounding-curency">Select currency</label>
-                <select className="countrySelection" name="rounding-currency">
+                <select  className="countrySelection" name="rounding-currency">
                   <option value="No_decimal">No Decimals</option>
                   <option value="One_decimal">One Decimal</option>
                   <option value="Two_decimal">Two Decimal</option>
@@ -211,7 +211,9 @@ console.log(selectedCountryData);
             </ul>
           </div>
           
+          
         </form>
+        
       </div>
       {isSuccess && <SuccessModal status="Success" />}
       {isError && <Error status={errorStatus} />}

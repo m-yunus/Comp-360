@@ -789,5 +789,8 @@ border: 1px solid black;
   transform: translate(-50%, -50%); 
 }
 
-
+.checkbox-input {
+  margin-left: -80px;
+  position: relative; /* Required for pseudo-element positioning */
+}
 

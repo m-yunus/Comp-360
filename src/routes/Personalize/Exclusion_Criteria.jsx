@@ -136,7 +136,7 @@ const ExclusionCriteria = () => {
                 </span>
               </label>
             </li>
-            <li style={{ marginLeft: "-120px" }}>
+            <li style={{ marginLeft: "-100px" }}>
               <label className="checkbox-exclusion">
                 <input
                   type="checkbox"
@@ -199,6 +199,7 @@ const ExclusionCriteria = () => {
               </li>
             ))}
           </ul>
+         
         </div>
       </div>
       {isSuccess && <SuccessModal status="Success" />}
