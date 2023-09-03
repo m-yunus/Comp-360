@@ -794,3 +794,25 @@ border: 1px solid black;
   position: relative; /* Required for pseudo-element positioning */
 }
 
+.custom-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.25rem;
+  /* cursor: pointer; */
+   position: relative;
+}
+
+.custom-checkbox:checked {
+  
+  background-color: #4299e1;
+  border: 1px solid #4299e1;
+  
+}
+
+/* Optional: Add focus styles */
+/* .custom-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+} */

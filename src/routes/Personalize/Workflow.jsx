@@ -73,7 +73,10 @@ const Workflow = () => {
               <div style={{ width: "80px" }} className="underline-grey"></div>
             </div>
 
-            <ul style={{marginTop:"-1rem"}} className="Salary-inputbox-list salary-list">
+            <ul
+              style={{ marginTop: "-1rem" }}
+              className="Salary-inputbox-list salary-list"
+            >
               <li>
                 <label>
                   <span
@@ -90,6 +93,7 @@ const Workflow = () => {
                 <div className="checkbox-input-container">
                   <div className="checkbox-group">
                     <input
+                      className="custom-checkbox"
                       type="checkbox"
                       name="supervisor"
                       checked={checkboxStates.supervisor}
@@ -107,6 +111,7 @@ const Workflow = () => {
                   </div>
                   <div className="checkbox-group">
                     <input
+                      className="custom-checkbox"
                       type="checkbox"
                       name="manager"
                       checked={checkboxStates.manager}
@@ -124,6 +129,7 @@ const Workflow = () => {
                   </div>
                   <div className="checkbox-group">
                     <input
+                      className="custom-checkbox"
                       type="checkbox"
                       name="sub_hr"
                       checked={checkboxStates.sub_hr}
@@ -141,6 +147,7 @@ const Workflow = () => {
                   </div>
                   <div className="checkbox-group">
                     <input
+                      className="custom-checkbox"
                       type="checkbox"
                       name="hr"
                       checked={checkboxStates.hr}
