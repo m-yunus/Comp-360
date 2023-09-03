@@ -1,4 +1,4 @@
-.cyclecountainer{
+.cyclecontainer{
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -27,6 +27,7 @@
 
 
 }
+
 .cyclewrapper h3{
     font-size: 1.3rem;
  font-family: 'Nunito Sans', sans-serif;
@@ -118,5 +119,9 @@ input[type="radio"]:checked + label span {
   background-color: #1877d2; /* Example background color when checked */
   border-color: #1877d2; /* Example border color when checked */
   color: white; /* Example text color when checked */
+}
+
+.inputcontainer input[type="text"]{
+    width: 200px;
 }
 
