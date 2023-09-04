@@ -1,5 +1,6 @@
 import "../assets/css/login.css";
 import Logo from "../assets/images/logo/image-removebg-preview.png";
+
 import LoginForm from "../components/LoginForm";
 
 const Login = () => {
@@ -29,6 +30,7 @@ const Login = () => {
             <p>copyright © 2021 </p>
           </div>
         </div>
+        
       </div>
     </>
   );
