@@ -47,7 +47,7 @@ const ParityGuideline = ({
           </div>
           <div className="ms-[20px] mt-[-1rem] flex flex-col">
             <h5>What is your preferred unit for understanding parity?</h5>
-            <div className="radiobuttons my-5">
+            <div className="radiobuttons my-8">
               <label >
                 <input
                   type="radio"
@@ -134,9 +134,9 @@ const ParityGuideline = ({
             </div>
           </div>
 
-          <div className="ms-[20px]">
+          <div className="ms-[20px] my-3">
             <h5>Validation for supervisor Recommendation</h5>
-            <div className=" my-5 flex-col">
+            <div className=" my-8 flex-col">
               <label>
                 <input
                   type="radio"
@@ -146,7 +146,7 @@ const ParityGuideline = ({
                 />
                 Recommendation is allowed within guidelines only
               </label>
-              <label className="my-5">
+              <label className="my-4">
                 <input
                   type="radio"
                   value="no"

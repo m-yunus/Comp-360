@@ -22,12 +22,12 @@ const PayGroups = ({ onNext, onBack, currentStep , setPlandataValues}) => {
        <TopNav tabActive={"plan"} activeStatus={"Split&Matrix"} firstStatusNumber={"5"} secondStatusNumber={"6"} thirdStatusNumber={"7"} firstStatus={"Split&Matrix"} secondStatus={"Paygroups"} thirdStatus ={"LumpSum&Corrections"}/>
     <div className="cyclewrapper">
     <div className="cycle">
-    <div className="heading-container">
-      <h4>Pay Groups</h4>
+    <div className="heading-container mt-[-1rem]">
+      <h3>Pay Groups</h3>
    
-      <div className="cyclecontainer">
-        <h5>Do you want to apply different merit rules for different employee groups?</h5>
-        <div className="radiobuttons">
+      <div className="cyclecontainer ">
+        <h5 className="w-[35rem]">Do you want to apply different merit rules for different employee groups?</h5>
+        <div className="radiobuttons ">
         <label>
           <input
             type="radio"
@@ -49,12 +49,13 @@ const PayGroups = ({ onNext, onBack, currentStep , setPlandataValues}) => {
         </div>
       </div>
 
-      <div className="cyclecontainer">
-        <h5>What is the basis of pay group?</h5>
-        <div className="inputcontainer">
-        <input
+      <div className="cyclecontainer  ">
+        <h5 className="w-[35rem]">What is the basis of pay group?</h5>
+        <div className="inputcontainer ms-70">
+          <label htmlFor="">Group Criteria</label>
+        <input 
           type="text"
-          placeholder="group criteria"
+          // placeholder="group criteria"
           value={payGroupBasis}
           onChange={(e) => setPayGroupBasis(e.target.value)}
         />
