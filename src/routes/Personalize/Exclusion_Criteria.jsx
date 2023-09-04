@@ -92,60 +92,87 @@ const ExclusionCriteria = () => {
         <div className="content-container">
           <div className="heading-container">
             <h4>Exclusion Criteria</h4>
-            <div style={{width:"130px"}} className="underline-grey"></div>
+            <div style={{ width: "130px" }} className="underline-grey"></div>
           </div>
-          <ul style={{gap:"10px"}} className="Culture-inputbox-list exclusion-criteria">
+          <ul
+            style={{ gap: "10px", display: "flex", alignItems: "center" }}
+            className="Culture-inputbox-list exclusion-criteria"
+          >
             <li>
               <label htmlFor="">Select criteria</label>
               <input
                 type="text"
-                // placeholder="Select Criteria"
                 value={criteria}
                 onChange={(e) => setCriteria(e.target.value)}
               />
             </li>
-            <li >
+            <li>
               <label htmlFor="">Criteria value</label>
               <input
                 type="text"
-                // placeholder="Select Value"
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
               />
             </li>
-            {/* <li> */}
-              <div className="checkbox-input-container">
-                <div className="checkbox-exclusion">
-                  <input
-                    type="checkbox"
-                    name="merit"
-                    value="merit"
-                    checked={checkboxStates.merit}
-                    onChange={handleCheckboxChange}
-                  />
-                  <span className="checkbox-label">Merit</span>
-                </div>
-                <div className="checkbox-exclusion">
-                  <input
-                    type="checkbox"
-                    name="bonus"
-                    value="bonus"
-                    checked={checkboxStates.bonus}
-                    onChange={handleCheckboxChange}
-                  />
-                  <span className="checkbox-label">Bonus</span>
-                </div>
-              </div>
-            {/* </li> */}
-            {/* <li> */}
-              <button style={{height:"35px" , marginLeft:"10px"}}  className="update-button" onClick={handleAdd}>
+            <li style={{ fontSize: "2rem" }}>
+              <label className="checkbox-exclusion">
+                <input
+                  className="custom-checkbox"
+                  type="checkbox"
+                  name="merit"
+                  value="merit"
+                  checked={checkboxStates.merit}
+                  onChange={handleCheckboxChange}
+                />
+                <span
+                  style={{
+                    fontSize: "14px",
+                    marginLeft: "-55px",
+                    fontFamily: "'Inter', sans-serif",
+                    color: "black",
+                  }}
+                  className="checkbox-label"
+                >
+                  Merit
+                </span>
+              </label>
+            </li>
+            <li style={{ marginLeft: "-100px" }}>
+              <label className="checkbox-exclusion">
+                <input
+                  className="custom-checkbox"
+                  type="checkbox"
+                  name="bonus"
+                  value="bonus"
+                  checked={checkboxStates.bonus}
+                  onChange={handleCheckboxChange}
+                />
+                <span
+                  style={{
+                    fontSize: "14px",
+                    marginLeft: "-55px",
+                    fontFamily: "'Inter', sans-serif",
+                    color: "black",
+                  }}
+                  className="checkbox-label"
+                >
+                  Bonus
+                </span>
+              </label>
+            </li>
+            <li>
+              <button
+                style={{ height: "35px", marginLeft: "-130px" }}
+                className="update-button"
+                onClick={handleAdd}
+              >
                 Add
               </button>
-            {/* </li> */}
+            </li>
           </ul>
           <div className="heading-container" style={{ marginTop: "1rem" }}>
             <h4>Exclusion List</h4>
-            <div style={{width:"100px"}} className="underline-grey"></div>
+            <div style={{ width: "100px" }} className="underline-grey"></div>
           </div>
           <ul className="exclusion-list">
             {exclusionList.map((exclusion, index) => (

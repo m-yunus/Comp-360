@@ -1,4 +1,4 @@
-.cyclecountainer{
+.cyclecontainer{
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -18,12 +18,25 @@
     align-items: center;
     padding: 20px;
     justify-content: space-between;
+   
+    
 }
 
 
 .cyclewrapper{
     padding: 20px;
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+
+
 }
+
+.cyclewrapper h3{
+    font-size: 1.3rem;
+ font-family: 'Nunito Sans', sans-serif;
+ font-weight: 600;
+}
+
 .cycle{
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -45,14 +58,24 @@
 }
 .radiobuttons{
     display: flex;
-    
+  gap: 20px!important;
     width: 70%;
     align-items: center;
+    
+}
+.radiobuttons label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
 }
 .inputcontainer input{
     border: 1px solid #8080804f;
-    border-radius: 12px;
+    border-radius: 25px!important;
     padding: 7px;
+}
+.inputcontainer input:hover{
+     border: 1px solid black;
 }
 .inputcontainer {
     display: flex;
@@ -77,6 +100,13 @@
 }
 .heading-container{
     padding: 20px;
+   
+}
+.heading-container h3{
+font-size: 1.3rem;
+ font-family: 'Nunito Sans', sans-serif;
+ font-weight: 600;
+ margin-left: 22px;
 }
 label{
     display: flex;
@@ -88,3 +118,15 @@ label{
   
     width: 70%;
 }
+
+
+input[type="radio"]:checked + label span {
+  background-color: #1877d2; /* Example background color when checked */
+  border-color: #1877d2; /* Example border color when checked */
+  color: white; /* Example text color when checked */
+}
+
+.inputcontainer input[type="text"]{
+    width: 200px;
+}
+

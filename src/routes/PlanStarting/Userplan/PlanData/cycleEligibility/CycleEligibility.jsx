@@ -61,10 +61,12 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
       />
       <div className="cyclewrapper">
         <div className="cycle">
-          <h3 style={{ marginLeft: "20px" }}>Merit Cycle</h3>
+       
+            <h3 style={{ marginLeft: "20px" }}>Merit Cycle</h3>
+         
           <div className="cyclecontainer">
             <div className="labels">
-              <h5>What is merit cycle</h5>
+              <h5>What is the type of merit cycle?</h5>
             </div>
             <div className="radiobuttons">
               <label>
@@ -85,7 +87,7 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                   checked={cycleFrequency === "halfYearly"}
                   onChange={() => handleCycleFrequencyChange("halfYearly")}
                 />
-                Half-Yearly
+                Half Yearly
               </label>
               <label style={{ marginLeft: "-15px" }}>
                 <input
@@ -107,12 +109,13 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                 <label>From date</label>
                 <input
                   type="date"
+                  className=""
                   value={startDate}
                   onChange={(e) => setStartDate(e.target.value)}
                 />
               </div>
 
-              <div style={{ left: "-18rem" }} className="inputcontainer">
+              <div style={{ left: "-15rem" }} className="inputcontainer">
                 <label>To date</label>
                 <input
                   type="date"
@@ -128,9 +131,9 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
             <h3 style={{ marginLeft: "22px" }}>Eligibility</h3>
           </div>
           <div style={{ marginTop: "-35px" }} className="cyclecontainer">
-            <h5>How do you want to define eligibility?</h5>
-            <div style={{gap:"10px"}} className="radiobuttons">
-              <label style={{ width: "200px" }}>
+            <h5>How do you want to define the eligibility?</h5>
+            <div style={{ gap: "10px"}} className="radiobuttons ">
+              <label style={{ width: "200px" , marginLeft:"17px"}}>
                 <input
                   type="radio"
                   value="joinedUntil"
@@ -146,9 +149,9 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
                   checked={eligibilityOption === "MinServiceduringMeritCycle"}
                   onChange={(e) => setEligibilityOption(e.target.value)}
                 />
-                Min Service During the Merit Cycle
+                Min service during the merit cycle
               </label>
-              <div style={{marginLeft:"-60px"}} className="inputcontainer">
+              <div style={{ marginLeft: "-40px" }} className="inputcontainer">
                 <label>From date</label>
                 <input
                   type="date"

@@ -74,14 +74,15 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
       <TopNav tabActive="plan" activeStatus="Bonus&Incentives" firstStatusNumber="9" secondStatusNumber="10" thirdStatusNumber="11" firstStatus="Bonus&Incentives" secondStatus="Bonus&IncentivesScheme" thirdStatus="Review" />
       <div className="cyclewrapper">
         <div className="cycle">
-          <div className="heading-container">
-            <h4>Performance Based Bonus</h4>
+          <div className="heading-container mt-[-1rem]">
+            <h3>Performance Based Bonus</h3>
           </div>
 
 
-          <div className="cyclecontainer">
+          <div className="cyclecontainer mt-[-2rem]">
             <h5>What do you call the bonus program?</h5>
             <div className="inputcontainer">
+              <label htmlFor="">Group criteria</label>
               <input
                 type="text"
                 value={formData.name}
@@ -93,6 +94,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
           <div className="cyclecontainer">
             <h5>What is the eligibility? (joined on or before)</h5>
             <div className="inputcontainer">
+              <label htmlFor="">Eligible date</label>
               <input
                 type="date"
                 value={formData.eligibility_data}
@@ -128,6 +130,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
           <div className="cyclecontainer">
             <h5>How much bonus as a percentage of salary:</h5>
             <div className="inputcontainer">
+              <label htmlFor="">Percentage(%)</label>
               <input
                 type="number"
                 value={formData.bonus_percentage}
@@ -140,6 +143,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
             <h5>Is the bonus based on Performance rating</h5>
             <div className="radiobuttons">
               <label>
+
                 <input
                   type="radio"
                   value={true}
@@ -163,6 +167,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
           <div className="cyclecontainer">
             <h5>Name of the bonus factor</h5>
             <div className="inputcontainer">
+              <label htmlFor="">Name of bonus factor</label>
               <input
                 type="text"
                 value={formData.name_of_bonus_factor}
@@ -219,6 +224,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
           <div className="cyclecontainer">
             <h5>what is the manager recommendation percentage</h5>
             <div className="inputcontainer">
+              <label htmlFor="">Percentage(%)</label>
               <input
                 type="number"
                 value={formData.manager_recommendation_percentage}
@@ -230,6 +236,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
           <div className="cyclecontainer">
             <h5>what is the bonus guideline percentage</h5>
             <div className="inputcontainer">
+              <label htmlFor="">Percentage(%)</label>
               <input
                 type="number"
                 value={formData.bonus_guideline_percentage}

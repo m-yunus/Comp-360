@@ -7,7 +7,7 @@ const SuccessModal = ({status}) => {
     <div className="popup">
       <div className='total'>
         <div className="success">
-          <TiTick style={{ fontSize: "5rem" }} />
+          <TiTick style={{ fontSize: "3rem" }} />
         </div>
         <h1>{status}</h1>
       </div>

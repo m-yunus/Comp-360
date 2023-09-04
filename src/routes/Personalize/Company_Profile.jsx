@@ -124,7 +124,7 @@ const Company_Profile = () => {
               <div style={{ width: "125px" }} className="underline-grey"></div>
             </div>
 
-            <ul style={{ gap: "50px" }} className="Culture-inputbox-list ">
+            <ul style={{ gap: "35px" }} className="Culture-inputbox-list ">
               <li>
                 <label htmlFor="">Name</label>
                 <input

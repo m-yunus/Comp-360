@@ -15,7 +15,10 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    animation: fadeInOut 0.3s ease;
+    animation: fadeInOut 0.5s ease;
+  }
+  .forgot-register-section p p{
+
   }
   
   .popup.success {

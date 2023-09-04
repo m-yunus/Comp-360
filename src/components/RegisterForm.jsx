@@ -37,19 +37,23 @@ const RegisterForm = () => {
       <div className="login-section">
         <form onSubmit={handleSubmit}>
           <div className="login-form">
-            <h3 style={{ textAlign: "center", padding: "20px" }}>Register</h3>
-            <div className="input-container">
+            <h3 style={{ textAlign: "center" }}>Register</h3>
+            <div className="input-container input-set">
               <input
+                className="input"
                 type="text"
-                placeholder="username"
+                // placeholder="username"
                 onChange={handleInput}
                 name="username"
-              />
+              />{" "}
+              <label className="placeholder" htmlFor="">
+                Name
+              </label>
               <span className="icon">
                 <FaUser />
               </span>
             </div>
-            <div className="input-container">
+            {/* <div className="input-container">
               <input
                 type="text"
                 placeholder="Fullname"
@@ -59,31 +63,39 @@ const RegisterForm = () => {
               <span className="icon">
                 <FaUser />
               </span>
-            </div>
-            <div className="input-container">
+            </div> */}
+            <div className="input-container input-set mt-3">
               <input
+                className="input"
                 type="email"
-                placeholder="E-mail"
+                // placeholder="E-mail"
                 onChange={handleInput}
                 name="email"
               />
+              <label className="placeholder" htmlFor="">
+                Email
+              </label>
               <span className="icon">
                 <MdEmail />
               </span>
             </div>
-            <div className="input-container">
+            <div className="input-container input-set mt-3">
               <input
+                className="input"
                 type="password"
-                placeholder="Password"
+                // placeholder="Password"
                 onChange={handleInput}
                 name="password"
               />
+              <label className="placeholder" htmlFor="">
+                Password
+              </label>
               <span className="icon">
                 <FaEye />
               </span>
             </div>
             <button type="submit">Register</button>
-            <div className="forgot-register-section">
+            <div className="forgot-register-section mt-2">
               <p>
                 <Link to="/">
                   <p>Already have an account ? </p>

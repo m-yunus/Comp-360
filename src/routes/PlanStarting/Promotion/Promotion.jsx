@@ -22,8 +22,8 @@ const Promotion = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
        <TopNav tabActive={"plan"} activeStatus={"Lumpsum&Corrections"} firstStatusNumber={"7"} secondStatusNumber={"8"} thirdStatusNumber={"9"} firstStatus={"Lumpsum&Corrections"} secondStatus={"Promotions"} thirdStatus ={"Bonus&Incentives"}/>
     <div className="cyclewrapper">
     <div className="cycle">
-    <div className="heading-container">
-      <h4>Promotions</h4>
+    <div className="heading-container mt-[-1rem]">
+      <h3>Promotions</h3>
       
       <div className="cyclecontainer">
         <h5>Do you want to enable promotion recommendations?</h5>

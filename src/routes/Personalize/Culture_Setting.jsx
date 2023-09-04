@@ -102,10 +102,10 @@ console.log(selectedCountryData);
           <div className="content-container">
             <div className="heading-container">
               <h4>Culture Setting</h4>
-              <div style={{width:"115px"}} className="underline-grey"></div>
+              <div style={{ width: "115px" }} className="underline-grey"></div>
             </div>
 
-            <ul  className="Culture-inputbox-list culture-settings">
+            <ul className=" Culture-inputbox-list culture-settings">
               <li>
                 <label htmlFor="country">Select country</label>
                 <select
@@ -121,7 +121,7 @@ console.log(selectedCountryData);
                   ))}
                 </select>
               </li>
-              <li>
+              <li >
                 <label htmlFor="number">Select number</label>
                 <input
                   type="text"
@@ -179,7 +179,7 @@ console.log(selectedCountryData);
             </ul>
             <div className="heading-container" style={{ paddingTop: "1rem" }}>
               <h4>Rounding Rule</h4>
-              <div style={{width:"110px"}} className="underline-grey"></div>
+              <div style={{ width: "110px" }} className="underline-grey"></div>
             </div>
 
             <ul className="Culture-inputbox-list rounding-rule-input">
@@ -210,7 +210,6 @@ console.log(selectedCountryData);
               </li>
             </ul>
           </div>
-          
         </form>
       </div>
       {isSuccess && <SuccessModal status="Success" />}

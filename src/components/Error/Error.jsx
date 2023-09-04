@@ -1,17 +1,11 @@
 import "./Error.css";
-import { VscError } from "react-icons/vsc";
+import { BiError } from "react-icons/bi";
 const Error = ({ status }) => {
   return (
-    <div className="popup">
-      <div className="total">
-        <div className="error">
-          <VscError style={{ fontSize: "6rem" }} />
+    <div className="error">
+      <BiError className="text-4xl" />
 
-          <h1>{status}</h1>
-        </div>
-      </div>
-
-      {status}
+      <h1>{status}</h1>
     </div>
   );
 };

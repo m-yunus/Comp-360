@@ -642,7 +642,6 @@ border: 1px solid black;
   display: flex;
   gap: 1rem;
   align-items: center;
-  
   margin-top: -10px;
   
  
@@ -686,7 +685,7 @@ border: 1px solid black;
 }
 
 .checkbox-exclusion input{
-  margin-left: -95px;
+  margin-left: -110px;
   
 }
 
@@ -758,7 +757,8 @@ border: 1px solid black;
 
 
 .radio-button-group input[type="radio"],
-.radio-row label input[type="radio"] {
+.radio-row label input[type="radio"],
+.radiobuttons label input[type="radio"] {
   margin-right: 3px; 
   appearance: none; 
   width: 14px !important; 
@@ -772,13 +772,15 @@ border: 1px solid black;
 
 
 .radio-button-group input[type="radio"]:checked,
-.radio-row label input[type="radio"]:checked {
+.radio-row label input[type="radio"]:checked,
+.radiobuttons label input[type="radio"]:checked {
   background-color: transparent;
 }
 
 
 .radio-button-group input[type="radio"]:checked::after,
-.radio-row label input[type="radio"]:checked::after {
+.radio-row label input[type="radio"]:checked::after,
+.radiobuttons label input[type="radio"]:checked::after {
   content: ""; 
   position: absolute; 
   width: 8px; 
@@ -789,6 +791,34 @@ border: 1px solid black;
   left: 50%; 
   transform: translate(-50%, -50%); 
 }
+
+.checkbox-input {
+  margin-left: -80px;
+  position: relative; /* Required for pseudo-element positioning */
+}
+
+.custom-checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0; 
+  border-radius: 0.25rem;
+  /* cursor: pointer; */
+   position: relative;
+}
+
+.custom-checkbox:checked {
+  
+  background-color: #4299e1;
+  border: 1px solid #4299e1;
+  
+}
+
+/* Optional: Add focus styles */
+/* .custom-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5);
+} */
 
 
 
