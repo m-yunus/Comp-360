@@ -5,7 +5,14 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto Condensed",sans-serif;
+}
+.login-container .left-section .quotes p{
+  
+  font-size: 12px;
+  font-style: italic;
+  
+ 
 }
 
 .login-container {
@@ -16,13 +23,23 @@ body {
 .left-section {
   flex: 1;
   background-color: #033772;
-
+  
   color: white;
+}
+.quotes span{
+ font-size:  0.75rem;
+ margin-left: 13rem;
+ 
+}
+.login-line{
+  width: 18px;
+  margin-right: 5px;
+  
 }
 
 .left-section p {
   text-align: center;
-   font-style: italic;
+   
   /* max-width: 80%; */
 }
 
@@ -59,11 +76,12 @@ body {
 .login-form button {
   width: 100%;
   margin-top: 15px;
-  padding: 10px;
-  background-color: #033772;
+
+  background-color: #033673;
   color: white;
   border: none;
   border-radius: 25px;
+  height: 35px;
   cursor: pointer;
 }
 .left-section .logo {
@@ -72,11 +90,15 @@ body {
 }
 .left-section .quotes {
   display: flex;
-
+ justify-content: center;
+ flex-direction: column;
   height: 65%;
   width: 100%;
   padding: 50px;
-  align-items: center;
+  align-items: flex-start;
+  color: #EDEDED;
+ 
+  
 }
 .login-section {
   position: absolute;
@@ -88,13 +110,14 @@ body {
 }
 .forgot-register-section p {
   text-align: center;
-  padding-top: 15px;
-  font-size: 15px;
+  
+  font-size: 14px;
   font-weight: 400;
 }
 .forgot-register-section p a {
   color: grey;
   text-decoration: none;
+  font-size: 14px;
 }
 .input-container {
   position: relative;
@@ -109,7 +132,7 @@ body {
 
 .input-container .icon {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 10px; /* Adjust the position as per your requirements */
   transform: translateY(-50%);
 }
@@ -123,11 +146,54 @@ body {
   margin-left: -50px;
 }
 
-@media (max-width: 1024px) {
-.sub-name{
-  margin-left: -100px;
+
+.login-section .login-form h3{
+  font-size: 14px;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  color: #212529;
 }
+
+
+/* placeholder up */
+.input-set{
+position: relative;
+
+
 }
+.placeholder{
+position: absolute;
+top: 6px;
+left: 12px;
+transition: 0.5s;
+pointer-events: none;
+font-size: 12px;
+    color: #545353;
+    font-weight: 300;
+    font-family: "Roboto Condensed",sans-serif;
+}
+.input{
+  border: none;
+  background-color: white!important;
+  border-bottom: 1px solid rgb(181, 179, 179)!important;
+  height: 30px;
+
+}
+.input:focus + .placeholder{
+  top: -12px;
+  left: 2px;
+  font-size: 10px;
+  color: #5c5b5b;
+  
+}
+
+
+
+.input:focus {
+  outline: none; /* Remove the border when the input field is focused */
+}
+
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -148,11 +214,12 @@ body {
   }
  
 }
- @media (max-width: 420px) {
-    .sub-name{
-     width: 150px;
-    }
-    .sub-name p{
-      font-size: 13px;
-    }
-  }
+@media (max-width: 425px) {
+ .left-section .quotes {
+  padding: 36px 27px;
+ }
+.quotes span{
+ margin-left: 8rem;
+ 
+}
+}

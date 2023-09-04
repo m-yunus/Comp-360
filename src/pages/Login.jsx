@@ -13,12 +13,8 @@ const Login = () => {
             <img src={Logo} alt="logo" />
           </div>
           <div className="quotes">
-            <p>&quot;You gotta be in to create the experience WOW!&quot;</p>
-           
-            <div className="sub-name" style={{display:"flex" , marginTop:"50px"}}>
-              <hr className="straight-line" />
-              <p>Steve Maraboli</p>
-            </div>
+            <p>" You gotta be in to create the experience WOW! "</p>
+            <span className="flex items-center  "><hr className="login-line"/>Steve Maraboli</span>
           </div>
         </div>
         <div className="right-section">

@@ -79,30 +79,30 @@ const LoginForm = () => {
     <>
       <div className="login-section">
         <div className="login-form">
-          <h3 style={{ textAlign: "center", padding: "20px" }}>Login</h3>
+          <h3 style={{ textAlign: "center"}}>Login</h3>
           <form onSubmit={handlelogin}>
-
-          
-          <div className="input-container">
-            <input type="text" placeholder="Username" name="username" onChange={handleonchange} value={loginData.username} />
+          <div className="input-container input-set">
+            <input className="input" type="text"  name="username" onChange={handleonchange} value={loginData.username} />
+            <label className="placeholder" htmlFor="">Email</label>
             <span className="icon">
               <FaUser />
             </span>
           </div>
-          <div className="input-container">
-            <input type="password" placeholder="Password" name="password" onChange={handleonchange}  value={loginData.password} />
+          <div className="input-container input-set mt-5">
+            <input className="input" type="password" name="password" onChange={handleonchange}  value={loginData.password} />
+            <label className="placeholder" htmlFor="">Password</label>
             <span className="icon">
               <FaEye />
             </span>
           </div>
          <button type="submit">Login</button>
-          <div className="forgot-register-section">
+          <div className="forgot-register-section mt-4">
             <p>
               <a href="">Forgot Password?</a>
             </p>
             <p>
               <Link to="/Register">
-                <p>Register Now</p>
+                <p>Register</p>
               </Link>
             </p>
           </div>
