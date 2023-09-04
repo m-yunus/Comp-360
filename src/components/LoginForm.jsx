@@ -79,41 +79,58 @@ const LoginForm = () => {
     <>
       <div className="login-section">
         <div className="login-form">
-          <h3 style={{ textAlign: "center"}}>Login</h3>
+          <h3 style={{ textAlign: "center" }}>Login</h3>
           <form onSubmit={handlelogin}>
-          <div className="input-container input-set">
-            <input className="input" type="text"  name="username" onChange={handleonchange} value={loginData.username} />
-            <label className="placeholder" htmlFor="">Email</label>
-            <span className="icon">
-              <FaUser />
-            </span>
-          </div>
-          <div className="input-container input-set mt-5">
-            <input className="input" type="password" name="password" onChange={handleonchange}  value={loginData.password} />
-            <label className="placeholder" htmlFor="">Password</label>
-            <span className="icon">
-              <FaEye />
-            </span>
-          </div>
-         <button type="submit">Login</button>
-          <div className="forgot-register-section mt-4">
-            <p>
-              <a href="">Forgot Password?</a>
-            </p>
-            <p>
-              <Link to="/Register">
-                <p>Register</p>
-              </Link>
-            </p>
-          </div>
+            <div className="input-container input-set">
+              <input
+                className="input"
+                
+                type="text"
+                name="username"
+                onChange={handleonchange}
+                value={loginData.username}
+              />
+              <label className="placeholder" htmlFor="">
+                Email
+              </label>
+              <span className="icon">
+                <FaUser />
+              </span>
+            </div>
+            <div className="input-container input-set mt-5">
+              <input
+                className="input"
+               
+                type="password"
+                name="password"
+                onChange={handleonchange}
+                value={loginData.password}
+              />
+              <label className="placeholder" htmlFor="">
+                Password
+              </label>
+              <span className="icon">
+                <FaEye />
+              </span>
+            </div>
+            <button type="submit">Login</button>
+            <div className="forgot-register-section mt-4">
+              <p>
+                <a href="">Forgot Password?</a>
+              </p>
+              <p>
+                <Link to="/Register">
+                  <p>Register</p>
+                </Link>
+              </p>
+            </div>
           </form>
         </div>
       </div>
-   
 
-{/* Success Popup */}
-{isSuccess && <SuccessModal status="Success" />}
-{isError && <Error status={errorStatus}/>}
+      {/* Success Popup */}
+      {isSuccess && <SuccessModal status="Success" />}
+      {isError && <Error status={errorStatus} />}
     </>
   );
 };

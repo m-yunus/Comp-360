@@ -5,16 +5,12 @@
 }
 
 body {
-  font-family: "Roboto Condensed",sans-serif;
-    overflow-x: hidden!important;
-
-}
-.login-container .left-section .quotes p{
   
+  overflow-x: hidden !important;
+}
+.login-container .left-section .quotes p {
   font-size: 12px;
   font-style: italic;
-  
- 
 }
 
 .login-container {
@@ -26,23 +22,23 @@ body {
 .left-section {
   flex: 1;
   background-color: #033772;
-  
+
   color: white;
 }
-.quotes span{
- font-size:  0.75rem;
- margin-left: 13rem;
- 
+.quotes span {
+  font-size: 0.75rem;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 13rem;
 }
-.login-line{
-  width: 18px;
+.login-line {
+  width: 10px;
   margin-right: 5px;
-  
 }
 
 .left-section p {
   text-align: center;
-   
+  font-family: "Roboto Condensed", sans-serif;
+
   /* max-width: 80%; */
 }
 
@@ -52,9 +48,8 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  
+  font-family: "Roboto Condensed", sans-serif;
 }
-
 
 .login-form {
   /* width: 80%;
@@ -63,6 +58,7 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .login-form input[type="text"],
@@ -79,7 +75,7 @@ body {
   padding: 30px;
 }
 .half-circle-big {
-border-radius: 50%;
+  border-radius: 50%;
   width: 30rem;
   height: 30rem;
   border: 5px solid rgb(237, 231, 231);
@@ -88,15 +84,10 @@ border-radius: 50%;
   margin-left: auto; /* Push the circles to the right */
   overflow-x: unset;
   margin-right: -25rem;
-  margin-bottom: 7rem;
-  
-  
-  
-  
-  
+  margin-bottom: 12rem;
 }
 .half-circle-small {
-  border-radius:  50%;
+  border-radius: 50%;
   width: 23rem;
   height: 23rem;
   border: 50px solid rgb(237, 231, 231);
@@ -105,12 +96,7 @@ border-radius: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  
- 
 }
-
-
-
 
 .login-form button {
   width: 100%;
@@ -129,15 +115,13 @@ border-radius: 50%;
 }
 .left-section .quotes {
   display: flex;
- justify-content: center;
- flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   height: 65%;
   width: 100%;
   padding: 50px;
   align-items: flex-start;
-  color: #EDEDED;
- 
-  
+  color: #ededed;
 }
 .login-section {
   position: absolute;
@@ -149,7 +133,7 @@ border-radius: 50%;
 }
 .forgot-register-section p {
   text-align: center;
-  
+
   font-size: 14px;
   font-weight: 400;
 }
@@ -157,6 +141,9 @@ border-radius: 50%;
   color: grey;
   text-decoration: none;
   font-size: 14px;
+}
+.forgot-register-section p p{
+  font-family: 'Roboto Condensed', sans-serif!important;
 }
 .input-container {
   position: relative;
@@ -185,53 +172,45 @@ border-radius: 50%;
   margin-left: -50px;
 }
 
-
-.login-section .login-form h3{
+.login-section .login-form h3 {
   font-size: 14px;
   font-weight: bolder;
   padding-bottom: 20px;
   color: #212529;
 }
 
-
 /* placeholder up */
-.input-set{
-position: relative;
-
-
+.input-set {
+  position: relative;
 }
-.placeholder{
-position: absolute;
-top: 6px;
-left: 12px;
-transition: 0.5s;
-pointer-events: none;
-font-size: 12px;
-    color: #545353;
-    font-weight: 300;
-    font-family: "Roboto Condensed",sans-serif;
+.placeholder {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  transition: 0.5s;
+  pointer-events: none;
+  font-size: 12px;
+  color: #3d3c3c;
+  font-weight: 500;
+  font-family: "Roboto Condensed", sans-serif;
 }
-.input{
+.input {
   border: none;
-  background-color: white!important;
-  border-bottom: 1px solid rgb(181, 179, 179)!important;
+  background-color: white !important;
+  border-bottom: 1px solid rgb(181, 179, 179) !important;
   height: 30px;
-
+  
 }
-.input:focus + .placeholder{
+.input:focus + .placeholder {
   top: -12px;
   left: 2px;
   font-size: 10px;
   color: #5c5b5b;
-  
 }
-
-
 
 .input:focus {
   outline: none; /* Remove the border when the input field is focused */
 }
-
 
 @media (max-width: 768px) {
   .container {
@@ -252,17 +231,15 @@ font-size: 12px;
     padding: 36px;
   }
   .half-circle-big,
-  .half-circle-small{
+  .half-circle-small {
     display: none;
   }
- 
 }
 @media (max-width: 425px) {
- .left-section .quotes {
-  padding: 36px 27px;
- }
-.quotes span{
- margin-left: 8rem;
- 
-}
+  .left-section .quotes {
+    padding: 36px 27px;
+  }
+  .quotes span {
+    margin-left: 8rem;
+  }
 }
