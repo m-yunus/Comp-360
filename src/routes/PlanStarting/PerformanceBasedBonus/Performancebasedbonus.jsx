@@ -74,12 +74,12 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
       <TopNav tabActive="plan" activeStatus="Bonus&Incentives" firstStatusNumber="9" secondStatusNumber="10" thirdStatusNumber="11" firstStatus="Bonus&Incentives" secondStatus="Bonus&IncentivesScheme" thirdStatus="Review" />
       <div className="cyclewrapper">
         <div className="cycle">
-          <div className="heading-container">
-            <h4>Performance Based Bonus</h4>
+          <div className="heading-container mt-[-1rem]">
+            <h3>Performance Based Bonus</h3>
           </div>
 
 
-          <div className="cyclecontainer">
+          <div className="cyclecontainer mt-[-2rem]">
             <h5>What do you call the bonus program?</h5>
             <div className="inputcontainer">
               <input

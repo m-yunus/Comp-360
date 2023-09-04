@@ -59,196 +59,230 @@ const TimeBasedBonus = ({ onNext, onBack, currentStep,setTimeBased,timeBased }) 
 
   return (
     <>
-       <TopNav tabActive={"plan"} activeStatus={"Bonus&Incentives"} firstStatusNumber={"9"} secondStatusNumber={"10"} thirdStatusNumber={"11"} firstStatus={"Bonus&Incentives"} secondStatus={"Bonus&IncentivesScheme"} thirdStatus ={"Review"}/>
+      <TopNav
+        tabActive={"plan"}
+        activeStatus={"Bonus&Incentives"}
+        firstStatusNumber={"9"}
+        secondStatusNumber={"10"}
+        thirdStatusNumber={"11"}
+        firstStatus={"Bonus&Incentives"}
+        secondStatus={"Bonus&IncentivesScheme"}
+        thirdStatus={"Review"}
+      />
       <div className="cyclewrapper">
-    
-    <div className="cycle">
-        <div className="heading-container">
-          <h4>Time Based Bonus</h4>
-
-        </div>
-
-        <div className="cyclecontainer">
-          <h5>What do you call the bonus program?</h5>
-          <div className="inputcontainer">
-          <input
-            type="text"
-            value={formData.bonusProgram}
-            onChange={(e) => handleInputChange('bonusProgram', e.target.value)}
-          />
+        <div className="cycle">
+          <div className="heading-container mt-[-1rem]">
+            <h3>Time Based Bonus</h3>
           </div>
-         
-        </div>
 
-        <div className="cyclecontainer">
-          <h5>What is the eligibility? (joined on or before)</h5>
-          <div className="inputcontainer">
-          <input
-            type="date"
-            value={formData.eligibilityDate}
-            onChange={(e) => handleInputChange('eligibilityDate', e.target.value)}
-          />
+          <div className="cyclecontainer mt-[-2rem]">
+            <h5>What do you call the bonus program?</h5>
+            <div className="inputcontainer">
+              <label htmlFor="">Group criteria</label>
+              <input
+                type="text"
+                value={formData.bonusProgram}
+                onChange={(e) =>
+                  handleInputChange("bonusProgram", e.target.value)
+                }
+              />
+            </div>
           </div>
-          
-        </div>
 
-       
+          <div className="cyclecontainer">
+            <h5>What is the eligibility? (joined on or before)</h5>
+            <div className="inputcontainer">
+              <label htmlFor="">Eligible date</label>
+              <input
+                type="date"
+                value={formData.eligibilityDate}
+                onChange={(e) =>
+                  handleInputChange("eligibilityDate", e.target.value)
+                }
+              />
+            </div>
+          </div>
 
-        <div className="cyclecontainer">
-          <h5>Is the bonus based on salary?</h5>
-          <div className="inputcontainer">
-          <label>
-            <input
-              type="radio"
-              value="true"
-              onChange={() => handleInputChange('bonusBasedOnSalary',true)}
-              checked={formData.bonusBasedOnSalary }
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="false"
-              onChange={() => handleInputChange('bonusBasedOnSalary',false)}
-              checked={!formData.bonusBasedOnSalary }
-            />
-            No
-          </label>
+          <div className="cyclecontainer">
+            <h5>Is the bonus based on salary?</h5>
+            <div className="radiobuttons ">
+              <label className="ms-2">
+                <input
+                  type="radio"
+                  value="true"
+                  onChange={() => handleInputChange("bonusBasedOnSalary", true)}
+                  checked={formData.bonusBasedOnSalary}
+                />
+                Yes
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="false"
+                  onChange={() =>
+                    handleInputChange("bonusBasedOnSalary", false)
+                  }
+                  checked={!formData.bonusBasedOnSalary}
+                />
+                No
+              </label>
+            </div>
           </div>
-      
-        </div>
 
-        <div className="cyclecontainer">
-          <h5>How much bonus as a percentage of salary:</h5>
-          <div className="inputcontainer">
-          <input
-            type="number"
-            value={formData.bonusPercentage}
-            onChange={(e) => handleInputChange('bonusPercentage', e.target.value)}
-          />
+          <div className="cyclecontainer">
+            <h5>How much bonus as a percentage of salary:</h5>
+            <div className="inputcontainer">
+              <label htmlFor="">Percentage(%)</label>
+              <input
+                type="number"
+                value={formData.bonusPercentage}
+                onChange={(e) =>
+                  handleInputChange("bonusPercentage", e.target.value)
+                }
+              />
+            </div>
           </div>
-          
-        </div>
 
-        <div className="cyclecontainer">
-          <h5>Do you want to allow manager-recommendation?</h5>
-          <div className="radiobuttons">
-          <label>
-            <input
-              type="radio"
-              value="true"
-              onChange={() => handleInputChange('allowManagerRecommendation',true)}
-              checked={formData.allowManagerRecommendation}
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="no"
-              onChange={() => handleInputChange('allowManagerRecommendation', false)}
-              checked={!formData.allowManagerRecommendation }
-            />
-            No
-          </label>
+          <div className="cyclecontainer">
+            <h5>Do you want to allow manager-recommendation?</h5>
+            <div className="radiobuttons">
+              <label className="ms-2">
+                <input
+                  type="radio"
+                  value="true"
+                  onChange={() =>
+                    handleInputChange("allowManagerRecommendation", true)
+                  }
+                  checked={formData.allowManagerRecommendation}
+                />
+                Yes
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="no"
+                  onChange={() =>
+                    handleInputChange("allowManagerRecommendation", false)
+                  }
+                  checked={!formData.allowManagerRecommendation}
+                />
+                No
+              </label>
+            </div>
           </div>
-        </div>
 
-        <div className="cyclecontainer">
-          <h5>What is the manager recommendation percentage?</h5>
-          <div className="inputcontainer">
-          <input
-            type="number"
-            value={formData.managerRecommendation}
-            onChange={(e) => handleInputChange('managerRecommendation', e.target.value)}
-          />
+          <div className="cyclecontainer">
+            <h5>What is the manager recommendation percentage?</h5>
+            <div className="inputcontainer">
+              <label htmlFor="">Percentage(%)</label>
+              <input
+                type="number"
+                value={formData.managerRecommendation}
+                onChange={(e) =>
+                  handleInputChange("managerRecommendation", e.target.value)
+                }
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="cyclecontainer">
-          <h5>What is the bonus guideline percentage?</h5>
-          <div className="inputcontainer">
-          <input
-            type="number"
-            value={formData.bonusGuidelinePercentage}
-            onChange={(e) => handleInputChange('bonusGuidelinePercentage', e.target.value)}
-          />
+          <div className="cyclecontainer">
+            <h5>What is the bonus guideline percentage?</h5>
+            <div className="inputcontainer">
+              <label htmlFor="">Percentage(%)</label>
+              <input
+                type="number"
+                value={formData.bonusGuidelinePercentage}
+                onChange={(e) =>
+                  handleInputChange("bonusGuidelinePercentage", e.target.value)
+                }
+              />
+            </div>
           </div>
-        
-        </div>
-      
-        <div className="cyclecontainer">
-          <h5>Do you like to prorate the bonus?</h5>
-          <div className="radiobuttons">
-          <label>
-            <input
-              type="radio"
-              value="true"
-              onChange={() => handleInputChange('prorateBonus', true)}
-              checked={formData.prorateBonus }
-            />
-            Yes
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="false"
-              onChange={() => handleInputChange('prorateBonus', false)}
-              checked={!formData.prorateBonus}
-            />
-            No
-          </label>
-          </div>
-        </div>
 
-        <div className="cyclecontainer">
-          <h5>What is the preferred unit to prorate?</h5>
-          <div className="radiobuttons">
-          <label>
-            <input
-              type="radio"
-              value="Monthly"
-              onChange={(e) => handleInputChange('preferredProrateUnit', e.target.value)}
-              checked={formData.preferredProrateUnit === 'Monthly'}
-            />
-            Monthly
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="Weekly"
-              onChange={(e) => handleInputChange('preferredProrateUnit', e.target.value)}
-              checked={formData.preferredProrateUnit === 'Weekly'}
-            />
-            Weekly
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="Daily"
-              onChange={(e) => handleInputChange('preferredProrateUnit', e.target.value)}
-              checked={formData.preferredProrateUnit === 'Daily'}
-            />
-            Daily
-          </label>
-          <label>
-            <input
-              type="radio"
-              value="Hourly"
-              onChange={(e) => handleInputChange('preferredProrateUnit', e.target.value)}
-              checked={formData.preferredProrateUnit === 'Hourly'}
-            />
-            Hourly
-          </label>
+          <div className="cyclecontainer">
+            <h5>Do you like to prorate the bonus?</h5>
+            <div className="radiobuttons">
+              <label className="ms-2">
+                <input
+                  type="radio"
+                  value="true"
+                  onChange={() => handleInputChange("prorateBonus", true)}
+                  checked={formData.prorateBonus}
+                />
+                Yes
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="false"
+                  onChange={() => handleInputChange("prorateBonus", false)}
+                  checked={!formData.prorateBonus}
+                />
+                No
+              </label>
+            </div>
           </div>
-          
+
+          <div className="cyclecontainer">
+            <h5>What is the preferred unit to prorate?</h5>
+            <div className="radiobuttons">
+              <label className="ms-2">
+                <input
+                  type="radio"
+                  value="Monthly"
+                  onChange={(e) =>
+                    handleInputChange("preferredProrateUnit", e.target.value)
+                  }
+                  checked={formData.preferredProrateUnit === "Monthly"}
+                />
+                Monthly
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="Weekly"
+                  onChange={(e) =>
+                    handleInputChange("preferredProrateUnit", e.target.value)
+                  }
+                  checked={formData.preferredProrateUnit === "Weekly"}
+                />
+                Weekly
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="Daily"
+                  onChange={(e) =>
+                    handleInputChange("preferredProrateUnit", e.target.value)
+                  }
+                  checked={formData.preferredProrateUnit === "Daily"}
+                />
+                Daily
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="Hourly"
+                  onChange={(e) =>
+                    handleInputChange("preferredProrateUnit", e.target.value)
+                  }
+                  checked={formData.preferredProrateUnit === "Hourly"}
+                />
+                Hourly
+              </label>
+            </div>
+          </div>
         </div>
-</div>
 
         <div className="button-container">
-          {currentStep > 0 && <button onClick={onBack} className='back_button'>Back</button>}
-          <button onClick={handleContinue} className='continue_button'>Continue</button>
+          {currentStep > 0 && (
+            <button onClick={onBack} className="back_button">
+              Back
+            </button>
+          )}
+          <button onClick={handleContinue} className="continue_button">
+            Continue
+          </button>
         </div>
       </div>
     </>
