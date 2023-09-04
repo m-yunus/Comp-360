@@ -132,8 +132,8 @@ const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) =>
           </div>
           <div style={{ marginTop: "-35px" }} className="cyclecontainer">
             <h5>How do you want to define the eligibility?</h5>
-            <div style={{ gap: "10px"}} className="radiobuttons">
-              <label style={{ width: "200px" }}>
+            <div style={{ gap: "10px"}} className="radiobuttons ">
+              <label style={{ width: "200px" , marginLeft:"17px"}}>
                 <input
                   type="radio"
                   value="joinedUntil"
