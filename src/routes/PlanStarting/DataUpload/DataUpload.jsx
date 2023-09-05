@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import TopNav from "../../../layout/TopNav/TopNav";
 import "./DataUpload.css";
+import { AiOutlineDownload, AiOutlineUpload } from "react-icons/ai";
 
 const DataUpload = ({ onNext, onBack, currentStep }) => {
   const fileInputRef = useRef(null);
@@ -36,22 +37,26 @@ const DataUpload = ({ onNext, onBack, currentStep }) => {
       />
       <div className="cyclewrapper">
         <div className="cycle">
-          <div className="contentplan">
-            <h4>Data Upload</h4>
+          <div className="contentplan ms-[20px]">
+            <h3>Data Upload</h3>
           </div>
-          <div className="datacontainer">
+          <div className="datacontainer ">
             <h5>Download the template</h5>
-            <button>Download</button>
+            <button className="ms-7">
+              Download <AiOutlineDownload className="text-lg ms-1" />
+            </button>
           </div>
           <div className="datacontainer">
             <h5>Upload the Edited Data File</h5>
-            <button onClick={handleUploadButtonClick}>Upload</button>
+            <button onClick={handleUploadButtonClick}>
+              Upload <AiOutlineUpload className="text-lg ms-1" />
+            </button>
             <input
               type="file"
               accept=".xlsx,.csv"
               onChange={handleUpload}
               ref={fileInputRef}
-              style={{ display: 'none' }}
+              style={{ display: "none" }}
             />
           </div>
         </div>

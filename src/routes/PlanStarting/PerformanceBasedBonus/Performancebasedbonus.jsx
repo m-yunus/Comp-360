@@ -71,13 +71,21 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
 
   return (
     <>
-      <TopNav tabActive="plan" activeStatus="Bonus&Incentives" firstStatusNumber="9" secondStatusNumber="10" thirdStatusNumber="11" firstStatus="Bonus&Incentives" secondStatus="Bonus&IncentivesScheme" thirdStatus="Review" />
+      <TopNav
+        tabActive="plan"
+        activeStatus="Bonus&Incentives"
+        firstStatusNumber="9"
+        secondStatusNumber="10"
+        thirdStatusNumber="11"
+        firstStatus="Bonus&Incentives"
+        secondStatus="Bonus&IncentivesScheme"
+        thirdStatus="Review"
+      />
       <div className="cyclewrapper">
         <div className="cycle">
           <div className="heading-container mt-[-1rem]">
             <h3>Performance Based Bonus</h3>
           </div>
-
 
           <div className="cyclecontainer mt-[-2rem]">
             <h5>What do you call the bonus program?</h5>
@@ -86,7 +94,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="text"
                 value={formData.name}
-                onChange={(e) => handleInputChange('name', e.target.value)}
+                onChange={(e) => handleInputChange("name", e.target.value)}
               />
             </div>
           </div>
@@ -98,7 +106,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="date"
                 value={formData.eligibility_data}
-                onChange={(e) => handleInputChange('eligibility_data', e.target.value)}
+                onChange={(e) =>
+                  handleInputChange("eligibility_data", e.target.value)
+                }
               />
             </div>
           </div>
@@ -110,7 +120,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value={true}
-                  onChange={() => handleInputChange('bonus_based_on_salary', true)}
+                  onChange={() =>
+                    handleInputChange("bonus_based_on_salary", true)
+                  }
                   checked={formData.bonus_based_on_salary}
                 />
                 Yes
@@ -119,7 +131,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value={false}
-                  onChange={() => handleInputChange('bonus_based_on_salary', false)}
+                  onChange={() =>
+                    handleInputChange("bonus_based_on_salary", false)
+                  }
                   checked={!formData.bonus_based_on_salary}
                 />
                 No
@@ -134,7 +148,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="number"
                 value={formData.bonus_percentage}
-                onChange={(e) => handleInputChange('bonus_percentage', e.target.value)}
+                onChange={(e) =>
+                  handleInputChange("bonus_percentage", e.target.value)
+                }
               />
             </div>
           </div>
@@ -143,11 +159,10 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
             <h5>Is the bonus based on Performance rating</h5>
             <div className="radiobuttons">
               <label>
-
                 <input
                   type="radio"
                   value={true}
-                  onChange={() => handleInputChange('performance_rating', true)}
+                  onChange={() => handleInputChange("performance_rating", true)}
                   checked={formData.performance_rating}
                 />
                 Yes
@@ -156,7 +171,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value={false}
-                  onChange={() => handleInputChange('performance_rating', false)}
+                  onChange={() =>
+                    handleInputChange("performance_rating", false)
+                  }
                   checked={!formData.performance_rating}
                 />
                 No
@@ -171,9 +188,45 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="text"
                 value={formData.name_of_bonus_factor}
-                onChange={(e) => handleInputChange('name_of_bonus_factor', e.target.value)}
+                onChange={(e) =>
+                  handleInputChange("name_of_bonus_factor", e.target.value)
+                }
               />
             </div>
+          </div>
+
+          <div className="cyclecontainer">
+            <table className="bordered-table">
+              <tbody>
+                <tr>
+                  <td>Bonus slab</td>
+                  <td>
+                    From <input type="number" />
+                    To <input type="number" />
+                  </td>
+                  <td>
+                    From <input type="number" />
+                    To <input type="number" />
+                  </td>
+                  <td>
+                    From <input type="number" />
+                    To <input type="number" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Weight</td>
+                  <td>
+                    <input type="number" />
+                  </td>
+                  <td>
+                    <input type="number" />
+                  </td>
+                  <td>
+                    <input type="number"  />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div className="cyclecontainer">
@@ -182,17 +235,27 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="number"
                 value={formData.org_bonus_multiplier}
-                onChange={(e) => handleInputChange('org_bonus_multiplier', e.target.value)}
+                onChange={(e) =>
+                  handleInputChange("org_bonus_multiplier", e.target.value)
+                }
               />
               <input
                 type="number"
                 value={formData.team_score}
-                onChange={(e) => handleInputChange('team_score',  e.target.value)}
+                onChange={(e) =>
+                  handleInputChange("team_score", e.target.value)
+                }
               />
               <input
                 type="number"
                 value={formData.bonus_multiplier[2]}
-                onChange={(e) => handleInputChange('bonus_multiplier', [formData.bonus_multiplier[0], formData.bonus_multiplier[1], e.target.value])}
+                onChange={(e) =>
+                  handleInputChange("bonus_multiplier", [
+                    formData.bonus_multiplier[0],
+                    formData.bonus_multiplier[1],
+                    e.target.value,
+                  ])
+                }
               />
             </div>
           </div>
@@ -204,7 +267,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value={true}
-                  onChange={() => handleInputChange('manager_recommendation', true)}
+                  onChange={() =>
+                    handleInputChange("manager_recommendation", true)
+                  }
                   checked={formData.manager_recommendation}
                 />
                 Yes
@@ -213,7 +278,9 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value={false}
-                  onChange={() => handleInputChange('manager_recommendation', false)}
+                  onChange={() =>
+                    handleInputChange("manager_recommendation", false)
+                  }
                   checked={!formData.manager_recommendation}
                 />
                 No
@@ -228,7 +295,12 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="number"
                 value={formData.manager_recommendation_percentage}
-                onChange={(e) => handleInputChange('manager_recommendation_percentage', e.target.value)}
+                onChange={(e) =>
+                  handleInputChange(
+                    "manager_recommendation_percentage",
+                    e.target.value
+                  )
+                }
               />
             </div>
           </div>
@@ -240,7 +312,12 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
               <input
                 type="number"
                 value={formData.bonus_guideline_percentage}
-                onChange={(e) => handleInputChange('bonus_guideline_percentage', e.target.value)}
+                onChange={(e) =>
+                  handleInputChange(
+                    "bonus_guideline_percentage",
+                    e.target.value
+                  )
+                }
               />
             </div>
           </div>
@@ -252,7 +329,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value={true}
-                  onChange={() => handleInputChange('pro_rate_bonus', true)}
+                  onChange={() => handleInputChange("pro_rate_bonus", true)}
                   checked={formData.pro_rate_bonus}
                 />
                 Yes
@@ -261,7 +338,7 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value="no"
-                  onChange={() => handleInputChange('pro_rate_bonus', false)}
+                  onChange={() => handleInputChange("pro_rate_bonus", false)}
                   checked={!formData.pro_rate_bonus}
                 />
                 No
@@ -274,10 +351,13 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
             <div className="radiobuttons">
               <label>
                 <input
+                className='ms-1'
                   type="radio"
                   value="Monthly"
-                  onChange={(e) => handleInputChange('pro_rate_bonus_unit', e.target.value)}
-                  checked={formData.pro_rate_bonus_unit === 'Monthly'}
+                  onChange={(e) =>
+                    handleInputChange("pro_rate_bonus_unit", e.target.value)
+                  }
+                  checked={formData.pro_rate_bonus_unit === "Monthly"}
                 />
                 Monthly
               </label>
@@ -285,8 +365,10 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value="Weekly"
-                  onChange={(e) => handleInputChange('pro_rate_bonus_unit', e.target.value)}
-                  checked={formData.pro_rate_bonus_unit === 'Weekly'}
+                  onChange={(e) =>
+                    handleInputChange("pro_rate_bonus_unit", e.target.value)
+                  }
+                  checked={formData.pro_rate_bonus_unit === "Weekly"}
                 />
                 Weekly
               </label>
@@ -294,8 +376,10 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value="Daily"
-                  onChange={(e) => handleInputChange('pro_rate_bonus_unit', e.target.value)}
-                  checked={formData.pro_rate_bonus_unit === 'Daily'}
+                  onChange={(e) =>
+                    handleInputChange("pro_rate_bonus_unit", e.target.value)
+                  }
+                  checked={formData.pro_rate_bonus_unit === "Daily"}
                 />
                 Daily
               </label>
@@ -303,18 +387,25 @@ const Performancebasedbonus = ({ onNext, onBack, currentStep, setPerformanceBase
                 <input
                   type="radio"
                   value="Hourly"
-                  onChange={(e) => handleInputChange('pro_rate_bonus_unit', e.target.value)}
-                  checked={formData.pro_rate_bonus_unit === 'Hourly'}
+                  onChange={(e) =>
+                    handleInputChange("pro_rate_bonus_unit", e.target.value)
+                  }
+                  checked={formData.pro_rate_bonus_unit === "Hourly"}
                 />
                 Hourly
               </label>
             </div>
           </div>
 
-
           <div className="button-container">
-            {currentStep > 0 && <button onClick={onBack} className='back_button'>Back</button>}
-            <button onClick={handleContinue} className='continue_button'>Continue</button>
+            {currentStep > 0 && (
+              <button onClick={onBack} className="back_button">
+                Back
+              </button>
+            )}
+            <button onClick={handleContinue} className="continue_button">
+              Continue
+            </button>
           </div>
         </div>
       </div>

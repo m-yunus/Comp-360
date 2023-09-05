@@ -8,9 +8,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .navbar {
   width: 100%;
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,16 +149,19 @@ body {
   font-weight: 400;
 }
 
-.update-button {
-  padding: 8px 16px;
+
+.update-button{
+   background-color: #2074d4!important;
+   padding: 8px 16px;
   border: none;
-  background-color: #2074d4;
-  color: #fff;
+   color: #fff;
   font-size: 14px;
-  cursor: pointer;
+   cursor: pointer;
    font-family: 'Nunito Sans', sans-serif;
-   
-  border-radius: 10px;
+    display: block!important;
+    border-radius: 10px;
+
+
 }
 
 
@@ -266,7 +270,7 @@ flex: 1 0 calc(20% - 0.5rem);
   
   position: absolute;
   color: grey;
-  top: -7px;
+  top: -8px;
   z-index: 1;
   left: 10px;
   font-size: 11px;
@@ -290,11 +294,19 @@ flex: 1 0 calc(20% - 0.5rem);
   border: 1px solid grey;
 }
 .Culture-inputbox-list select:hover{
-  border: 1px solid black;
+  border: 1px solid #1877d2;
+}
+.Culture-inputbox-list select:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
 }
 
 .Culture-inputbox-list input:hover{
- border: 1px solid black;
+ border: 1px solid #1877d2;
+}
+.Culture-inputbox-list input:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
 }
 
 .Culture-inputbox-list  button{
@@ -310,11 +322,15 @@ flex: 1 0 calc(20% - 0.5rem);
 .company-profile-list li input{
   width: 200px;
 }
+.Culture-inputbox-list input:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
+}
 
 .approver-container ul li label{
    position: absolute;
   color: gray;
-  top: -7px;
+  top: -8px;
   z-index: 1;
   left: 15px;
   font-size: 12px;
@@ -403,13 +419,17 @@ position: relative;
   
 }
 .Salary-inputbox-list .component-box input:hover{
-   border: 1px solid black;
+   border: 1px solid #1877d2;
+}
+.Salary-inputbox-list .component-box input:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
 }
 .Salary-inputbox-list .component-box label{
   
   position: absolute;
  color: grey;
-  top: -7px;
+  top: -8px;
   z-index: 1;
   left: 10px;
   font-size: 11px;
@@ -432,7 +452,11 @@ position: relative;
   border: 1px solid grey;
 }
 .salary-table input[type="text"]:hover {
-  border: 1px solid black;
+  border: 1px solid #1877d2;
+}
+.salary-table input[type="text"]:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
 }
 
  
@@ -507,8 +531,13 @@ border-radius: 25px;
     border: 1px solid grey; 
 }
 .three-input li input:hover{
- border: 1px solid black; 
+ border: 1px solid #1877d2; 
 }
+.three-input li input:focus{
+ border: 2px solid #1877d2; 
+ outline: none; 
+}
+
 
 .supervisor-inputbox-list{
   position: relative;
@@ -555,7 +584,11 @@ border-radius: 25px;
   margin-left: 160px;
 }
 .supervisor-inputbox-list .supervisor-page-video-url:hover{
-border: 1px solid black;
+border: 1px solid #1877d2;
+}
+.supervisor-inputbox-list .supervisor-page-video-url:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
 }
 
 
@@ -585,11 +618,24 @@ border: 1px solid black;
   justify-content: center;
   
 }
+.Performance_based_list input[type="number"]:hover{
+  border: 1px solid #1877d2; ;
+}
+.Performance_based_list input[type="number"]:focus{
+  border: 2px solid #1877d2; 
+  outline: none;
+}
+
 
 
 .file-input-container:hover {
-  border: 1px solid black;
+  border: 1px solid #1877d2;
 }
+.file-input-container:focus {
+  border: 2px solid #1877d2;
+  outline: none;
+}
+
 
 .file-input-2{
   margin-left: 0px;
@@ -602,7 +648,7 @@ border: 1px solid black;
 .company-profile-list li  label{
   position: absolute;
   color: grey;
-  top: -6px;
+  top: -8px;
   z-index: 1;
   left: 10px;
   font-size: 12px;

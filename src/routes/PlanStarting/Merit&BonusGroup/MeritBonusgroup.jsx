@@ -14,11 +14,11 @@ const MeritBonusgroup = ({ onNext, onBack, currentStep,setPerformanceBased }) =>
       
      
        <div className="datacontainer">
-        <h5>Merit Group</h5>
+        <h5>Merit Groups</h5>
         <button>Create +</button>
         </div>
         <div className="datacontainer">
-        <h5>Bonus Group</h5>
+        <h5>Bonus Groups</h5>
         <button>Create +</button>
         </div>
          </div>

@@ -5,6 +5,29 @@
     justify-content: center;
     width: 100%;
 }
+.bordered-table {
+  border-collapse: collapse;
+  width: 90%;
+}
+.bordered-table tr{
+height: 70px!important;
+}
+.bordered-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align:center;
+  gap: 10rem!important;
+}
+.bordered-table td input{
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-left: 5px;
+}
+.bordered-table td input:first-child {
+  margin-right: 15px; 
+}
 
 .cycleradios{
     display: flex;

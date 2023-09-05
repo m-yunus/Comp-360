@@ -5,7 +5,7 @@ const Error = ({ status }) => {
     <div className="error">
       <BiError className="text-4xl" />
 
-      <h1>{status}</h1>
+      <h2>{status}</h2>
     </div>
   );
 };
