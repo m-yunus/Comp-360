@@ -83,7 +83,7 @@ try {
                 </h5>
                 <label>
                   <input
-                  className="ms-4"
+                  className="ms-10"
                     type="radio"
                     value="yes"
                     checked={useDifferentRules === "yes"}
