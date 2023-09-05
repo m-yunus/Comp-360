@@ -84,7 +84,7 @@ const ExclusionCriteria = () => {
           </div>
           <input
             type="submit"
-            className="update-button"
+            className="update-button "
             value="Update"
             onClick={handleSubmit}
           />

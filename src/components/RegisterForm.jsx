@@ -53,17 +53,21 @@ const RegisterForm = () => {
                 <FaUser />
               </span>
             </div>
-            {/* <div className="input-container">
+            <div className="input-container input-set mt-3">
               <input
+                className="input"
                 type="text"
-                placeholder="Fullname"
+                // placeholder="Fullname"
                 onChange={handleInput}
                 name="fullName"
               />
+              <label className="placeholder" htmlFor="">
+                Fullname
+              </label>
               <span className="icon">
                 <FaUser />
               </span>
-            </div> */}
+            </div>
             <div className="input-container input-set mt-3">
               <input
                 className="input"

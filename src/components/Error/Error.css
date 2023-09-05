@@ -9,11 +9,11 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 80%; /* Adjust as needed */
-    width: 350px; /* Adjust as needed */
-    height: 70px;
+    width: 300px; /* Adjust as needed */
+    height: 50px;
     border-radius: 50px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     align-items: center;
     display: flex;
     font-family: 'Nunito Sans', sans-serif;

@@ -35,8 +35,12 @@
     gap: 10px; /* Adjust the gap between text fields */
   }
   .text-fields-row select:hover{
- border: 1px solid black;
+ border: 1px solid #1877d2;
   }
+  .text-fields-row select:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
+}
   .text-fields-row input{
     padding: 5px;
     border-radius: 5px;
@@ -44,8 +48,12 @@
      border: 1px solid grey;
   }
   .text-fields-row input:hover{
-     border: 1px solid black;
+     border: 1px solid #1877d2;
   }
+  .text-fields-row input:focus {
+  border: 2px solid #1877d2;
+  outline: none; 
+}
 
   .radio-row{
     display: flex;
@@ -77,8 +85,13 @@ font-size: 14px;
   
   }
   .access-row input:hover,select:hover{
-    border: 1px solid black;
+    border: 1px solid #1877d2;
   }
+    .access-row input:focus,select:focus {
+  border: 2px solid #1877d2; 
+  outline: none; 
+}
+
 
   .accesitem-container{
     display: flex;
