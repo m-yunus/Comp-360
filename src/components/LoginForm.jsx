@@ -81,38 +81,53 @@ const LoginForm = () => {
         <div className="login-form">
           <h3 style={{ textAlign: "center" }}>Login</h3>
           <form onSubmit={handlelogin}>
-            <div className="input-container input-set">
-              <input
-                className="input"
-                
-                type="text"
-                name="username"
-                onChange={handleonchange}
-                value={loginData.username}
-              />
-              <label className="placeholder" htmlFor="">
-                Email
-              </label>
-              <span className="icon">
-                <FaUser />
-              </span>
+            <div>
+              <div className="relative flex items-center z-0 w-full mb-6 group">
+                <input
+                  className="block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
+                  placeholder=" "
+                  required
+                  type="text"
+                  name="username"
+                  onChange={handleonchange}
+                  value={loginData.username}
+                />
+                <span className="icon">
+                  <FaUser />
+                </span>
+                <label
+                  className="peer-focus:font-small absolute text-sm text-gray-800 dark:text-gray-900 duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  htmlFor=""
+                >
+                  Email
+                </label>
+              </div>
             </div>
-            <div className="input-container input-set mt-5">
-              <input
-                className="input"
-               
-                type="password"
-                name="password"
-                onChange={handleonchange}
-                value={loginData.password}
-              />
-              <label className="placeholder" htmlFor="">
-                Password
-              </label>
-              <span className="icon">
-                <FaEye />
-              </span>
+
+            <div>
+              <div className="relative flex items-center z-0 w-full mb-6 group">
+                <input
+                  className="block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
+                  type="password"
+                  placeholder=" "
+                  required
+                  name="password"
+                  onChange={handleonchange}
+                  value={loginData.password}
+                />
+                <span className="icon">
+                  <FaEye />
+                </span>
+                <label
+                  className="floating_password"
+                  class="peer-focus:font-small absolute text-sm text-gray-800 dark:text-gray-900 duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  htmlFor=""
+                >
+                  Password
+                </label>
+              </div>
             </div>
+
             <button type="submit">Login</button>
             <div className="forgot-register-section mt-4">
               <p>

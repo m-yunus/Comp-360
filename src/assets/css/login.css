@@ -67,9 +67,9 @@ body {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: none;
+  /* border: none; */
   border-radius: 5px;
-  background-color: #dae9f7;
+  /* background-color: #dae9f7; */
 }
 .right-section .footer {
   padding: 30px;
@@ -156,11 +156,12 @@ body {
   border-radius: 3px;
 }
 
-.input-container .icon {
-  position: absolute;
-  top: 45%;
-  right: 10px; /* Adjust the position as per your requirements */
-  transform: translateY(-50%);
+.icon {
+  margin-left: -20px;
+  /* position: absolute;
+  top: 25%;
+  right: 10px; /* Adjust the position as per your requirements 
+  transform: translateY(-50%); */
 }
 .straight-line {
   color: white;
@@ -180,10 +181,10 @@ body {
 }
 
 /* placeholder up */
-.input-set {
+/* .input-set {
   position: relative;
-}
-.placeholder {
+} */
+/* .placeholder {
   position: absolute;
   top: 6px;
   left: 12px;
@@ -194,25 +195,28 @@ body {
   font-weight: 500;
   font-family: "Roboto Condensed", sans-serif;
 }
-.input {
+.input { */
   /* position: absolute; */
-  border: none;
+  /* border: none;
   background-color: white !important;
   border-bottom: 1px solid rgb(181, 179, 179) !important;
   height: 30px;
   
-}
-.input:focus ~ .placeholder {
+} */
+/* .input:focus ~ .placeholder {
   top: -12px;
   left: 2px;
   font-size: 10px;
   color: #5c5b5b;
-}
+} */
 
 
-.input:focus {
-  outline: none; /* Remove the border when the input field is focused */
-}
+/* .input:focus {
+  outline: none; 
+} */
+
+
+
 
 @media (max-width: 768px) {
   .container {
