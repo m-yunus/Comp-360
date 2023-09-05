@@ -100,6 +100,17 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
+.login-form input[type="text"]:-webkit-autofill,
+.login-form input[type="password"]:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  background-color: transparent !important;
+}
+.login-form input[type="text"]:-webkit-autofill + label,
+.login-form input[type="password"]:-webkit-autofill + label {
+  top: -14px!important;
+  font-size: 10px;
+  color: #5c5b5b;
+}
 
 .login-form button {
   width: 100%;

@@ -5,7 +5,20 @@
     justify-content: center;
     width: 100%;
 }
-
+.cyclecontainer input:hover{
+    border: 1px solid #1877d2!important;
+}
+.cyclecontainer input:focus{
+    border: 2px solid #1877d2!important;
+    outline: none;
+}
+.cyclewrapper input:hover{
+     border: 1px solid #1877d2!important;
+}
+.cyclewrapper input:focus{
+    border: 2px solid #1877d2!important;
+    outline: none;
+}
 .cycleradios{
     display: flex;
     gap: 20px;
