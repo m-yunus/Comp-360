@@ -149,16 +149,19 @@ body {
   font-weight: 400;
 }
 
+
 .update-button{
-  padding: 8px 16px;
+   background-color: #2074d4!important;
+   padding: 8px 16px;
   border: none;
-  background-color: #2074d4;
-  color: #fff;
+   color: #fff;
   font-size: 14px;
-  cursor: pointer;
+   cursor: pointer;
    font-family: 'Nunito Sans', sans-serif;
-   display: block!important;
-  border-radius: 10px;
+    display: block!important;
+    border-radius: 10px;
+
+
 }
 
 

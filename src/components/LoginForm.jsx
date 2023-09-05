@@ -84,7 +84,7 @@ const LoginForm = () => {
             <div>
               <div className="relative flex items-center z-0 w-full mb-6 group">
                 <input
-                  className="block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
+                  className=" block py-2.5 px-0 w-full text-sm  bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
                   placeholder=" "
                   required
                   type="text"
