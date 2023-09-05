@@ -81,15 +81,20 @@ label{
 .datacontainer{
     display: flex;
     align-items: center;
-    /* gap: 2rem; */
-    justify-content: space-around;
+    gap: 12rem;
+    justify-content: left!important;
     padding: 20px;
 }
 .datacontainer button{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+   height: 35px;
     background: white;
     color: #1877d2;
     border-radius: 50px;
+    font-size: 0.8rem;
     border: 1px solid #1877d2;
 }
 .upload-label {
