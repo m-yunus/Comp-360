@@ -78,3 +78,38 @@ label{
     display: flex;
     gap: 1.3rem;
 }
+.merit-section h2{
+    font-size: 1.2rem;
+    color: #1877d2;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+.merit-section h4{
+    color: gray;
+}
+.merit-section h5{
+    font-size: 0.8rem;
+}
+.merit-section button{
+    color: #1877d2;
+    background-color: #accfef;
+    font-size: 0.7rem;
+    padding: 4px;
+    height: 25px;
+}
+.bonus-table {
+  border-collapse: collapse;
+  width: 95%;
+}
+.bonus-table tr{
+height: 40px!important;
+}
+.bonus-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align:center;
+  gap: 10rem!important;
+}
+.bonus-table tr:not(:first-child) {
+  background-color: #cfc8c8; /* You can change this color as needed */
+}

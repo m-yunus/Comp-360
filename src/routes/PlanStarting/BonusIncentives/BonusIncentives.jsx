@@ -54,7 +54,7 @@ try {
             <div className="cyclecontainer">
               <h5>Do you want to enable Bonus & Incentives?</h5>
               <div className="radiobuttons ">
-                <label className="ms-[12.2rem]">
+                <label className="ms-[13.8rem]">
                   <input
                     type="radio"
                     value="yes"
@@ -105,7 +105,7 @@ try {
 
             <div className="cyclecontainer">
               <h5 className="w-[20rem]">What is the basis of bonus group?</h5>
-              <div className="inputcontainer ms-[17rem] ">
+              <div className="inputcontainer ms-[20.5rem] ">
                 <label htmlFor="">Group criteria</label>
                 <input 
                   type="text"
