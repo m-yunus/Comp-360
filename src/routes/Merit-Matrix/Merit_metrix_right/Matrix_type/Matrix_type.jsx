@@ -4,8 +4,8 @@ import "./Matrix_type.css";
 const Matrix_type= () => {
   return (
     <>
-      <div className="right-side">
-        <div>
+      <div className="">
+     
           <h2 className="font-semibold">
             What is the merit matrix type suitable for {"Group Name"}{" "}
           </h2>
@@ -27,12 +27,8 @@ const Matrix_type= () => {
               No Matrix is required
             </span>
           </div>
-        </div>
-        <div className="button-container">
-          <button className="back_button">Back</button>
-
-          <button className="continue_button">Continue</button>
-        </div>
+        
+       
       </div>
     </>
   );
