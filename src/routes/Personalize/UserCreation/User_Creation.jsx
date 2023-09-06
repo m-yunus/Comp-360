@@ -9,6 +9,10 @@ import SuccessModal from "../../../components/Loginsuccess/SuccessModal";
 import Error from "../../../components/Error/Error";
 
 const User_Creation = () => {
+   const [isEditing, setIsEditing] = useState(false);
+   const [editingIndex, setEditingIndex] = useState(-1);
+
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [accessItems, setAccessItems] = useState([]);
   const [additionalField, setAdditionalField] = useState("");
@@ -38,6 +42,34 @@ const User_Creation = () => {
       value: accessItems.value,
     },
   };
+
+
+
+   const handleEdit = (index) => {
+     setIsEditing(true);
+     setEditingIndex(index);
+     const itemToEdit = accessItems[index];
+     setSelectedAccessOption(itemToEdit.option);
+     setAdditionalField(itemToEdit.value);
+   };
+   
+     const handleSaveEdit = () => {
+       const updatedAccessItems = [...accessItems];
+       updatedAccessItems[editingIndex] = {
+         option: selectedAccessOption,
+         value: additionalField,
+       };
+       setAccessItems(updatedAccessItems);
+       setIsEditing(false);
+       setSelectedAccessOption("Country"); 
+       setAdditionalField("");
+     };
+
+
+
+
+
+
 
   const handleSubmitdata = async (e) => {
     setIsModalOpen(false);
@@ -157,6 +189,52 @@ const User_Creation = () => {
   };
 
   console.log(gettedData);
+  const renderAccessItems = () => {
+    return accessItems.map((item, index) => (
+      <div className="access-item" key={index}>
+        {isEditing && editingIndex === index ? (
+          <>
+            <select className="edit-select"
+              value={selectedAccessOption}
+              onChange={(e) => setSelectedAccessOption(e.target.value)}
+            >
+              <option value="Country">Country</option>
+              <option value="Department">Department</option>
+              <option value="Grade">Grade</option>
+              <button onClick={handleSaveEdit}>Save</button>
+            </select>
+            <input
+            className=" border border-gray-500 w-20 edit-input"
+              type="text"
+              value=          {additionalField}
+              onChange={(e) => setAdditionalField(e.target.value)}
+            />
+            <button className="edit-save" onClick={handleSaveEdit}>Save</button>
+          </>
+        ) : (
+          <>
+            <input
+              type="text"
+              value={`${item.option}: ${item.value}`}
+              readOnly
+            />
+            <span>
+              <FaEdit
+                className="user-creation-edit"
+                onClick={() => handleEdit(index)}
+              />
+            </span>
+            <span
+              onClick={() => handleDelete(index)}
+              style={{ cursor: "pointer", fontSize: "20px" }}
+            >
+              <AiFillDelete className="user-creation-delete" />
+            </span>
+          </>
+        )}
+      </div>
+    ));
+  };
 
   return (
     <>
@@ -199,8 +277,6 @@ const User_Creation = () => {
                   <span>
                     <FaEdit />
                   </span>
-                  {""}
-                  {""}
                   <span
                     onClick={() => handleDeleteUser(item._id)}
                     style={{ cursor: "pointer" }}
@@ -263,10 +339,10 @@ const User_Creation = () => {
                   onChange={handleInputChange}
                 />
               </div>
-              <div className="radio-row">
-                <span >Do You want to limit the access for the user</span>
-                
-                <label>
+              <div className="radio-row flex ">
+                <span>Do You want to limit the access for the user</span>
+
+                <label className="flex items-center">
                   <input
                     type="radio"
                     name="limit_access"
@@ -281,7 +357,7 @@ const User_Creation = () => {
                   />
                   Yes
                 </label>
-                <label>
+                <label className="flex items-center">
                   <input
                     type="radio"
                     name="limit_access"
@@ -317,10 +393,14 @@ const User_Creation = () => {
               </div>
               <div className="heading-container">
                 <h4>Access Granted</h4>
-                <div style={{width:"120px"}} className="underline-grey"></div>
+                <div
+                  style={{ width: "120px" }}
+                  className="underline-grey"
+                ></div>
               </div>
               <div className="accesitem-container">
-                {accessItems.map((item, index) => (
+                {renderAccessItems()}
+                {/* {accessItems.map((item, index) => (
                   <div className="access-item" key={index}>
                     <input
                       type="text"
@@ -338,7 +418,7 @@ const User_Creation = () => {
                       <AiFillDelete className="user-creation-delete" />
                     </span>
                   </div>
-                ))}
+                ))} */}
               </div>
               <button onClick={handleSubmitdata}>Add user</button>
             </div>

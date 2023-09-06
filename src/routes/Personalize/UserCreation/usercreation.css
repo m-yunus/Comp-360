@@ -13,6 +13,33 @@
     justify-content: center;
     z-index: 1000; /* Make sure the modal is on top of other content */
   }
+  .edit-input{
+border-radius: 5px!important;
+    width: 100px!important;
+    height: 30px!important;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+    .edit-input:hover{
+      border: 1px solid #1877d2;
+    }
+    .edit-input:focus{
+      border: 2px solid #1877d2!important;
+      outline: none;
+    }
+  .edit-select{
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .edit-save{
+    margin-left: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13px!important;
+    border-radius: 5px!important;
+  }
   .usermodal-content button{
     padding: 8px 16px;
     border: none;
@@ -105,6 +132,7 @@ font-size: 14px;
   }
   .user-creation-edit{
     margin-left: -45px;
+    cursor: pointer;
   }
   .access-item{
     display: flex;
