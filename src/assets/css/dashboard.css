@@ -811,7 +811,8 @@ border: 1px solid #1877d2;
 
 .radio-button-group input[type="radio"],
 .radio-row label input[type="radio"],
-.radiobuttons label input[type="radio"] {
+.radiobuttons label input[type="radio"],
+.merit input[type="radio"] {
   margin-right: 3px; 
   appearance: none; 
   width: 14px !important; 
@@ -826,14 +827,16 @@ border: 1px solid #1877d2;
 
 .radio-button-group input[type="radio"]:checked,
 .radio-row label input[type="radio"]:checked,
-.radiobuttons label input[type="radio"]:checked {
+.radiobuttons label input[type="radio"]:checked,
+.merit input[type="radio"]:checked  {
   background-color: transparent;
 }
 
 
 .radio-button-group input[type="radio"]:checked::after,
 .radio-row label input[type="radio"]:checked::after,
-.radiobuttons label input[type="radio"]:checked::after {
+.radiobuttons label input[type="radio"]:checked::after,
+.merit input[type="radio"]:checked::after {
   content: ""; 
   position: absolute; 
   width: 8px; 

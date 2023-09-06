@@ -22,6 +22,8 @@ import Userplan from "../../routes/PlanStarting/Userplanmain/Userplan"
 import History_Data from "../../routes/Personalize/HistoryData/History_Data"
 
 import PlanData from "../../routes/PlanStarting/Plandata/PlanData"
+import Merit_budjet from "../../components/Merit/Merit_Budjet/Merit_budjet"
+import Merit_matrix from "../../pages/Merit_matrix"
 
 
 
@@ -57,6 +59,8 @@ const RouteLayout = () => {
          
         <Route path="/userplan" element={<Userplan/>}/>
        <Route path="/PlanData" element={<PlanData/>}/>
+       <Route path="/Merit-Budjet" element={<Merit_budjet/>}/>
+       <Route path="/Merit-metrix" element={<Merit_matrix/>}/>
         </Routes>
       </BrowserRouter>
     </>
