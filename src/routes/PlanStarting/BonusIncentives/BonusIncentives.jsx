@@ -54,7 +54,7 @@ try {
             <div className="cyclecontainer">
               <h5>Do you want to enable Bonus & Incentives?</h5>
               <div className="radiobuttons ">
-                <label className="ms-[13.8rem]">
+                <label className="ms-[12.1rem]">
                   <input
                     type="radio"
                     value="yes"
