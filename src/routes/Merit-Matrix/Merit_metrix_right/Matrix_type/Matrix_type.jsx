@@ -2,6 +2,7 @@ import React from 'react'
 import "./Matrix_type.css";
 
 const Matrix_type= () => {
+  
   return (
     <>
       <div className="">
@@ -26,6 +27,7 @@ const Matrix_type= () => {
             No Matrix is required
           </span>
         </div>
+       
       </div>
     </>
   );

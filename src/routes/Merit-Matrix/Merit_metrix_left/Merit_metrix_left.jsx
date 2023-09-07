@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Merit_metrix_left.css"
 import {ImTarget} from "react-icons/im"
+import {TiTick} from "react-icons/ti"
 
 
 const Merit_metrix_left = ({activeStep}) => {
@@ -8,7 +9,7 @@ const Merit_metrix_left = ({activeStep}) => {
   return (
     <>
       <div className="flex flex-col merit-metrix-left ">
-        <div className="flex items-center  p-8">
+        <div className="flex items-center  p-8 ">
           <ImTarget style={{ color: getColor(1) }} className="target-icon" />
           <span>
             <h2 style={{ color: getColor(1) }}>Step 1</h2>
@@ -16,6 +17,14 @@ const Merit_metrix_left = ({activeStep}) => {
               Matrix Type
             </h3>
           </span>
+          {/* <div className='flex flex-col'>
+            <div className='path-circle'>
+              <TiTick/>
+            </div>
+            <div className='path-line'>
+
+            </div>
+          </div> */}
         </div>
         <div className="flex items-center  p-8">
           <ImTarget style={{ color: getColor(2) }} className="target-icon" />
@@ -53,6 +62,8 @@ const Merit_metrix_left = ({activeStep}) => {
             </h3>
           </span>
         </div>
+
+      
       </div>
     </>
   );
