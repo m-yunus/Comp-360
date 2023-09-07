@@ -1,16 +1,21 @@
-import React from "react";
-import "./Performance_weights.css"
+import React from 'react'
+import "./Parity_weights.css"
 
-const Performance_weights = () => {
+const Parity_weights = () => {
   return (
     <>
-      <div className="">
+      <div>
         <h2 className="font-semibold">
-          How do you diffrentiate performance levels?
+          How do you diffrentiate parity/ &#123; Parity Measure &#125; levels?{" "}
         </h2>
         <ul className="Culture-inputbox-list performance-inputs mt-10">
           <li>
-            <label htmlFor="currency">Rating</label>
+            <label htmlFor="currency">From</label>
+            <input type="number" />
+          </li>
+
+          <li className="ms-[-40px]">
+            <label htmlFor="currency">Until</label>
             <input type="number" />
           </li>
           <li className="ms-[-40px]">
@@ -22,9 +27,14 @@ const Performance_weights = () => {
             <input className="performance-label" type="text" />
           </li>
         </ul>
-        <ul className="Culture-inputbox-list performance-inputs">
+        <ul className="Culture-inputbox-list performance-inputs ">
           <li>
-            <label htmlFor="currency">Rating</label>
+            <label htmlFor="currency">From</label>
+            <input type="number" />
+          </li>
+
+          <li className="ms-[-40px]">
+            <label htmlFor="currency">Until</label>
             <input type="number" />
           </li>
           <li className="ms-[-40px]">
@@ -36,9 +46,14 @@ const Performance_weights = () => {
             <input className="performance-label" type="text" />
           </li>
         </ul>
-        <ul className="Culture-inputbox-list performance-inputs">
+        <ul className="Culture-inputbox-list performance-inputs ">
           <li>
-            <label htmlFor="currency">Rating</label>
+            <label htmlFor="currency">From</label>
+            <input type="number" />
+          </li>
+
+          <li className="ms-[-40px]">
+            <label htmlFor="currency">Until</label>
             <input type="number" />
           </li>
           <li className="ms-[-40px]">
@@ -50,9 +65,14 @@ const Performance_weights = () => {
             <input className="performance-label" type="text" />
           </li>
         </ul>
-        <ul className="Culture-inputbox-list performance-inputs">
+        <ul className="Culture-inputbox-list performance-inputs ">
           <li>
-            <label htmlFor="currency">Rating</label>
+            <label htmlFor="currency">From</label>
+            <input type="number" />
+          </li>
+
+          <li className="ms-[-40px]">
+            <label htmlFor="currency">Until</label>
             <input type="number" />
           </li>
           <li className="ms-[-40px]">
@@ -64,9 +84,14 @@ const Performance_weights = () => {
             <input className="performance-label" type="text" />
           </li>
         </ul>
-        <ul className="Culture-inputbox-list performance-inputs items-center">
+        <ul className="Culture-inputbox-list performance-inputs ">
           <li>
-            <label htmlFor="currency">Rating</label>
+            <label htmlFor="currency">From</label>
+            <input type="number" />
+          </li>
+
+          <li className="ms-[-40px]">
+            <label htmlFor="currency">Until</label>
             <input type="number" />
           </li>
           <li className="ms-[-40px]">
@@ -78,14 +103,17 @@ const Performance_weights = () => {
             <input className="performance-label" type="text" />
           </li>
           <li>
-            <button className="plus-button performance-plus-btn ms-[-20px]">
-              +
-            </button>
+            {" "}
+            <li className='mt-[-5px]'>
+              <button className="plus-button performance-plus-btn ms-[-20px]">
+                +
+              </button>
+            </li>
           </li>
         </ul>
       </div>
     </>
   );
-};
+}
 
-export default Performance_weights;
+export default Parity_weights
