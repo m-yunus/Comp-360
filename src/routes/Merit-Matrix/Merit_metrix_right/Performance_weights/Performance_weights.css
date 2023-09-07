@@ -1,0 +1,14 @@
+.performance-inputs{
+    display: flex;
+    flex-direction: row!important;
+ 
+   
+    
+}
+.performance-inputs input{
+width: 100px;
+height: 30px;
+}
+.performance-inputs .performance-label{
+    width: 130px;
+}
