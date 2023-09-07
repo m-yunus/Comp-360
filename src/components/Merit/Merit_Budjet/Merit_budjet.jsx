@@ -1,5 +1,6 @@
 import React from "react";
 import "./Merit_Budjet.css";
+import { Link } from "react-router-dom";
 
 const Merit_budjet = () => {
   return (
@@ -68,14 +69,10 @@ const Merit_budjet = () => {
           </div>
         </div>
         <div className="button-container">
-          
-            <button  className="back_button">
-              Back
-            </button>
-          
-          <button className="continue_button">
-            Continue
-          </button>
+          {/* <button className="back_button">Back</button> */}
+          <Link to="/merit-metrix">
+            <button className="continue_button">Continue</button>
+          </Link>
         </div>
       </div>
     </>
