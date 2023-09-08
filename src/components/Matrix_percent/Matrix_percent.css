@@ -4,6 +4,7 @@
   gap: 50px;
   font-size: 14px;
   font-family: "Inter", sans-serif;
+  justify-content: center;
 }
 .matrix-percent-1,
 .matrix-percent-2 {
@@ -42,6 +43,7 @@
 
 
 .matrix-percent-1 button,
+.aply-btn,
 .matrix-percent-2 button {
   background-color: #1877d2;
   color: white;

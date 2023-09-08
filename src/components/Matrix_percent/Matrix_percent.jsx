@@ -64,7 +64,6 @@ const Matrix_percent = () => {
               <h3>$ 300,000, 42%</h3>
               <p>95%pay gap</p>
             </div>
-            
           </div>
           <div className="flex justify-end my-4">
             <div className="flex w-[22rem]  bg-gray-200 justify-around">
@@ -106,6 +105,9 @@ const Matrix_percent = () => {
           <div className="flex justify-end">
             <button>Apply</button>
           </div>
+        </div>
+        <div>
+          <button className="aply-btn">Create</button>
         </div>
       </div>
     </>
