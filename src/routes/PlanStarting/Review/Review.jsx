@@ -2,11 +2,30 @@ import { FaDownload } from "react-icons/fa"
 import TopNav from "../../../layout/TopNav/TopNav"
 import { AiFillMessage } from "react-icons/ai"
 import "./Review.css"
-
+import { useDataContext } from "../../../Context/Context"
+import { useRef } from "react"
+import html2canvas from "html2canvas"
+import jsPDF from "jspdf"
 const Review = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
+
+const {data}=useDataContext()
+
+console.log("datareview",data);
   const handleContinue = () => {
     // Move to the next step
     onNext();
+  }
+  const contentRef = useRef(null);
+
+  const captureScreenshot = () => {
+    const content = contentRef.current;
+
+    html2canvas(content).then((canvas) => {
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF('p', 'mm', 'a4');
+      pdf.addImage(imgData, 'PNG', 0, 0, 210, 297); // Adjust width and height as needed
+      pdf.save('Plan_daa_review.pdf');
+    });
   }
   return (
     <>
@@ -20,13 +39,13 @@ const Review = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
         secondStatus={"Review"}
         thirdStatus={"Dataupload"}
       />
-      <div className="cyclewrapper">
+      <div className="cyclewrapper" ref={contentRef}>
         <div className="cycle">
           <div className="headerplan mt-[-1rem]">
             <h3>Merit Compensation 2021-22</h3>
 
             <div className="iconsheader">
-              <FaDownload style={{ color: "grey" }} />
+              <FaDownload style={{ color: "grey" }} onClick={captureScreenshot}   className="cursor-pointer" />
               <AiFillMessage style={{ color: "grey" }} />
             </div>
           </div>
@@ -38,7 +57,7 @@ const Review = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
               <div className="flex gap-80 my-3">
                 <div className="flex flex-col">
                   <h4>Base currency</h4>
-                  <h5>Denmark INR</h5>
+                  <h5>{data?.cultural?.country}{" "}{data?.cultural?.currency}</h5>
                 </div>
                 <div className="flex gap-4">
                   <button>Merit</button>
@@ -49,7 +68,7 @@ const Review = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
               <div className="flex gap-80 my-3">
                 <div className="flex flex-col">
                   <h4>Date format</h4>
-                  <h5>dd-MM-yyyy</h5>
+                  <h5>{data?.cultural?.date_format}</h5>
                 </div>
                 <div className="flex flex-col ms-4">
                   <h4>Time zone</h4>
@@ -62,17 +81,17 @@ const Review = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
               <div className="flex gap-80 my-3">
                 <div className="flex flex-col">
                   <h4>Number</h4>
-                  <h5>Roundoff</h5>
+                  <h5>{data?.cultural?.number_round}</h5>
                 </div>
                 <div className="flex flex-col ms-10">
                   <h4>Currency</h4>
-                  <h5>2Decimel</h5>
+                  <h5>{data?.cultural?.currency_round}</h5>
                 </div>
               </div>
               <div className="flex gap-80 my-3">
                 <div className="flex flex-col">
                   <h4>Percentage</h4>
-                  <h5>Roundoff</h5>
+                  <h5>{data?.cultural?.percentage_round}</h5>
                 </div>
               </div>
             </div>
@@ -295,4 +314,4 @@ const Review = ({ onNext, onBack, currentStep ,setPlandataValues}) => {
   );
 }
 
-export default Review
+export default Review;

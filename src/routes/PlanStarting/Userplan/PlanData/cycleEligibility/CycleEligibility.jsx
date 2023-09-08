@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./cycleEligibility.css";
 import TopNav from "../../../../../layout/TopNav/TopNav";
+import { getYear } from "date-fns";
 
 const CycleEligibility = ({ onNext, onBack, currentStep, setPlandataValues }) => {
   const [cycleFrequency, setCycleFrequency] = useState("yearly");

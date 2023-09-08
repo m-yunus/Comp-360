@@ -68,7 +68,7 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     getAllData();
     gettinguserData();
-  }, [data, progresValue]);
+  }, [data, progresValue,loadingData]);
   console.log(data);
   return (
     <DataContext.Provider
