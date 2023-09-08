@@ -38,65 +38,77 @@ const RegisterForm = () => {
         <form onSubmit={handleSubmit}>
           <div className="login-form">
             <h3 style={{ textAlign: "center" }}>Register</h3>
-            <div className="input-container input-set">
+            <div className="relative flex items-center z-0 w-full mb-6 group">
               <input
-                className="input"
+                className=" block py-2.5 px-0 w-full text-sm   bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
                 type="text"
-                // placeholder="username"
+                placeholder=""
                 onChange={handleInput}
                 name="username"
               />{" "}
-              <label className="placeholder" htmlFor="">
-                Name
-              </label>
               <span className="icon">
                 <FaUser />
               </span>
+              <label
+                className="peer-focus:font-small absolute text-sm text-gray-800 dark:text-gray-900 duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                htmlFor=""
+              >
+                Name
+              </label>
             </div>
-            <div className="input-container input-set mt-3">
+            <div className="relative flex items-center z-0 w-full mb-6 group">
               <input
-                className="input"
+                className=" block py-2.5 px-0 w-full text-sm   bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
                 type="text"
-                // placeholder="Fullname"
+                placeholder=""
                 onChange={handleInput}
                 name="fullName"
               />
-              <label className="placeholder" htmlFor="">
-                Fullname
-              </label>
               <span className="icon">
                 <FaUser />
               </span>
+              <label
+                className="peer-focus:font-small absolute text-sm text-gray-800 dark:text-gray-900 duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                htmlFor=""
+              >
+                Fullname
+              </label>
             </div>
-            <div className="input-container input-set mt-3">
+            <div className="relative flex items-center z-0 w-full mb-6 group">
               <input
-                className="input"
+                className=" block py-2.5 px-0 w-full text-sm   bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
                 type="email"
-                // placeholder="E-mail"
+                placeholder=""
                 onChange={handleInput}
                 name="email"
               />
-              <label className="placeholder" htmlFor="">
-                Email
-              </label>
               <span className="icon">
                 <MdEmail />
               </span>
+              <label
+                className="peer-focus:font-small absolute text-sm text-gray-800 dark:text-gray-900 duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                htmlFor=""
+              >
+                Email
+              </label>
             </div>
-            <div className="input-container input-set mt-3">
+            <div className="relative flex items-center z-0 w-full mb-6 group">
               <input
-                className="input"
+                className=" block py-2.5 px-0 w-full text-sm   bg-transparent border-0 border-b-2 border-gray-100 appearance-none  dark:border-gray-600 dark:focus:border-blue-800 focus:outline-none focus:ring-0 focus:border-blue-800 peer"
                 type="password"
-                // placeholder="Password"
+                placeholder=""
                 onChange={handleInput}
                 name="password"
               />
-              <label className="placeholder" htmlFor="">
-                Password
-              </label>
               <span className="icon">
                 <FaEye />
               </span>
+              <label
+                className="peer-focus:font-small absolute text-sm text-gray-800 dark:text-gray-900 duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-800 peer-focus:dark:text-blue-800 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                htmlFor=""
+              >
+                Password
+              </label>
             </div>
             <button type="submit">Register</button>
             <div className="forgot-register-section mt-2">

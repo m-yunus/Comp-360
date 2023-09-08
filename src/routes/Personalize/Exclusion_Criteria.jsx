@@ -5,6 +5,7 @@ import { BaseUrl } from "../../ApiService/ApiService";
 import Error from "../../components/Error/Error";
 import SuccessModal from "../../components/Loginsuccess/SuccessModal";
 
+
 const ExclusionCriteria = () => {
   const [checkboxStates, setCheckboxStates] = useState({
     merit: true,
@@ -178,22 +179,31 @@ const ExclusionCriteria = () => {
             {exclusionList.map((exclusion, index) => (
               <li key={index}>
                 <div style={{ textAlign: "justify" }}>
-                  <span>Criteria: {exclusion.criteria}</span>
-                  <span>Value: {exclusion.value}</span>
-                  <span
-                    className={exclusion.merit ? "merit-Bonus" : "bg-white"}
-                  >
-                    {exclusion.merit ? "Merit" : ""}
-                  </span>
-                  <span
-                    className={exclusion.bonus ? "merit-Bonus" : "bg-white"}
-                  >
-                    {exclusion.bonus ? "Bonus" : ""}
-                  </span>
+                  <div>
+                    <span>Criteria : </span>
+                    <span className="ms-1">{exclusion.criteria}</span>
+                  </div>
+                  <div>
+                    <span>Value : </span>
+                    <span className="ms-4">{exclusion.value}</span>
+                  </div>
+                  <div>
+                    <span>Schema:</span>
+                    <span
+                      className={exclusion.merit ? "merit-Bonus" : "bg-white"}
+                    >
+                      {exclusion.merit ? "Merit" : ""}
+                    </span>
+                    <span
+                      className={exclusion.bonus ? "merit-Bonus" : "bg-white"}
+                    >
+                      {exclusion.bonus ? "Bonus" : ""}
+                    </span>
+                  </div>
                 </div>
                 <button
                   className="delete-button"
-                  style={{ marginLeft: "1rem" }}
+                  style={{ marginLeft: ".5rem",marginTop:"" }}
                   onClick={() => handleDelete(index)}
                 >
                   <FaTrash />

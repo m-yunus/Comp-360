@@ -18,6 +18,7 @@ import { MdSettings } from "react-icons/md";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import logoonly from "../../../assets/images/logo/logo-only.png"
 
+
 const Userplan = () => {
 
   const [showButtons,setShowButtons] = useState(false);
@@ -120,6 +121,7 @@ const formattedNewDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}$
             />
           </div>
         </div>
+      
       </div>
       <div>
         <button className="fixed-button" onClick={toggleButtons}><img src={logoonly} alt="" /></button>

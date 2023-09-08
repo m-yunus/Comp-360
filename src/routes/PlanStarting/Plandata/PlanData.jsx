@@ -14,8 +14,14 @@ import Performancebasedbonus from '../PerformanceBasedBonus/Performancebasedbonu
 import Review from '../Review/Review';
 import DataUpload from '../DataUpload/DataUpload';
 import MeritBonusgroup from '../Merit&BonusGroup/MeritBonusgroup';
+import { BsPlayCircle, BsHeadset, BsFillShareFill } from "react-icons/bs";
+import { BiMessageDetail } from "react-icons/bi";
+import { AiOutlineFileImage } from "react-icons/ai";
+import logoonly from "../../../assets/images/logo/logo-only.png";
+
 
 const PlanData = () => {
+   const [showButtons, setShowButtons] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
 const[Data,setPlandataValues]=useState({
   cycle_type: "",
@@ -92,6 +98,9 @@ const handleNext = () => {
   setCurrentStep(prevStep => prevStep + 1);
   
 };
+  const toggleButtons = () => {
+    setShowButtons(!showButtons);
+  };
 
 const handleBack = () => {
   setCurrentStep(prevStep => prevStep - 1);
@@ -167,7 +176,27 @@ console.log(Data,timeBased,performanceBased);
     <div>
       <Navbar />
       {displayedComponent}
-      
+      <div>
+        <button className="fixed-button" onClick={toggleButtons}>
+          <img src={logoonly} alt="" />
+        </button>
+        {showButtons && (
+          <div className="additional-buttons">
+            <button>
+              <BsHeadset />
+            </button>
+            <button>
+              <BsFillShareFill />
+            </button>
+            <button>
+              <BiMessageDetail />
+            </button>
+            <button>
+              <AiOutlineFileImage />
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

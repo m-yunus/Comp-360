@@ -49,7 +49,7 @@ const History_Data = () => {
             <div style={{ width: "90px" }} className="underline-grey"></div>
           </div>
 
-          <div >
+          <div>
             <a
               style={{ textDecoration: "none" }}
               href="/path/to/your/template.xlsx"
@@ -60,18 +60,39 @@ const History_Data = () => {
                 <AiOutlineDownload className="history-data-download-icon" />
               </button>
             </a>
-            <label
-              style={{
-                color: "gray",
-                backgroundColor: "white",
-                fontFamily: "'Inter', sans-serif",
-                fontSize: "14px",
-              }}
-              className="upload-label "
-            >
-              Already have the template?
-              <input type="file" accept=".xlsx" onChange={handleUpload} />
-            </label>
+            <div className="flex items-center ms-16">
+              <label
+                style={{
+                  color: "gray",
+                  backgroundColor: "white",
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "14px",
+                }}
+                className="upload-label flex  "
+              >
+                Already have the template?{" "}
+                <label
+                  style={{
+                    color: "blue", // Change the text color to blue to indicate a link
+                    cursor: "pointer", // Add a cursor style to indicate it's clickable
+                    textDecoration: "underline", // Add underline style to indicate it's a link
+                  }}
+                  htmlFor="file-input"
+                >
+                  Upload now{" "}
+                  <input
+                    type="file"
+                    accept=".xlsx"
+                    id="file-input"
+                    style={{
+                      display: "none", // Hide the input element
+                    }}
+                    onChange={handleUpload}
+                  />{" "}
+                </label>
+              </label>
+            </div>
+
             {uploadedFile && tableData.length > 0 && (
               <div className="uploaded-table-container">
                 <table>
