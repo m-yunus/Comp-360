@@ -1,44 +1,59 @@
-.matrix_percent{
-    display: flex;
-    padding: 40px;
-    gap: 50px;
-    font-size: 14px;
-   font-family: 'Inter', sans-serif;
-  
+.matrix_percent {
+  display: flex;
+  padding: 40px;
+  gap: 50px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+.matrix-percent-1,
+.matrix-percent-2 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  width: 550px;
+  height: auto;
+}
+.matrix_percent h4 {
+  font-size: 12px;
+}
+.matrix_percent span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.matrix-percent-1 input,
+.matrix-percent-2 input {
+  border: solid 1px gray;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+}
+.matrix-percent-1 input:hover,
+.matrix-percent-2 input:hover {
+    border: solid 1px #1877d2;
 
 }
-.matrix-percent-1,.matrix-percent-2{
-    border: 1px  solid gray;
-    border-radius: 10px;
-    padding: 20px;
-    width: 550px;
-    height: auto;
-}
-.matrix_percent h4{
-    font-size: 12px;
-}
-.matrix_percent span{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.matrix-percent-1 input,.matrix-percent-2 input{
-    border: solid 1px gray;
-    width: 100px;
-    height: 30px;
-    border-radius: 30px;
-
-}
-.matrix-percent-1 button,.matrix-percent-2 button{
-    background-color: #1877d2;
-    color: white
-    ;
-    border-radius: 30px;
-    width: 100px;
-    height: 30px;
-margin-top: 20px;
-margin-right: 10px;
+.matrix-percent-1 input:focus,
+.matrix-percent-2 input:focus {
+    border: solid 2px #1877d2;
+    outline: none;
 
 }
 
 
+.matrix-percent-1 button,
+.matrix-percent-2 button {
+  background-color: #1877d2;
+  color: white;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.matrix-percent-2 p {
+  color: gray;
+  font-size: 12px;
+  display: flex;
+  justify-content: end;
+}
