@@ -24,6 +24,7 @@ import History_Data from "../../routes/Personalize/HistoryData/History_Data"
 import PlanData from "../../routes/PlanStarting/Plandata/PlanData"
 import Merit_budjet from "../../components/Merit/Merit_Budjet/Merit_budjet"
 import Merit_matrix from "../../pages/Merit_matrix"
+import Matrix_percent from "../../components/Matrix_percent/Matrix_percent"
 
 
 
@@ -61,6 +62,7 @@ const RouteLayout = () => {
        <Route path="/PlanData" element={<PlanData/>}/>
        <Route path="/Merit-Budjet" element={<Merit_budjet/>}/>
        <Route path="/Merit-metrix" element={<Merit_matrix/>}/>
+       <Route path="/Matrix-percent" element={<Matrix_percent/>}/>
         </Routes>
       </BrowserRouter>
     </>
