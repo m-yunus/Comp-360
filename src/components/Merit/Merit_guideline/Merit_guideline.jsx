@@ -70,14 +70,13 @@ const Merit_guideline = () => {
             </div>
           </div>
         </div>
-       <div className="merit-buttons flex gap-20">
-        <button className="bck-btn">Back</button>
-        <button className="cnt-btn">Continue</button>
-
-       </div>
-       <div className="budjet">
-<h1>Budjet</h1>
-       </div>
+        <div className="merit-buttons flex gap-20">
+          <button className="bck-btn">Back</button>
+          <button className="cnt-btn">Continue</button>
+        </div>
+        <div className="budjet">
+          <h1>Budjet</h1>
+        </div>
       </div>
     </>
   );
