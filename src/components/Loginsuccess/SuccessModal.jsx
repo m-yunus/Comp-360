@@ -2,14 +2,14 @@
 import './success.css';
 import {TiTick} from "react-icons/ti"
 
-const SuccessModal = ({status}) => {
+const SuccessModal = ({}) => {
   return (
     <div className="popup">
       <div className='total'>
         <div className="success">
-          <TiTick style={{ fontSize: "3rem" }} />
+          <TiTick style={{ fontSize: "4rem" }} />
         </div>
-        <h1>{status}</h1>
+        <h1>Log in Successfull</h1>
       </div>
     </div>
   );
