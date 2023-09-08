@@ -25,6 +25,7 @@ import PlanData from "../../routes/PlanStarting/Plandata/PlanData"
 import Merit_budjet from "../../components/Merit/Merit_Budjet/Merit_budjet"
 import Merit_matrix from "../../pages/Merit_matrix"
 import Matrix_percent from "../../components/Matrix_percent/Matrix_percent"
+import Merit_guideline from "../../components/Merit/Merit_guideline/Merit_guideline"
 
 
 
@@ -32,8 +33,7 @@ import Matrix_percent from "../../components/Matrix_percent/Matrix_percent"
 const RouteLayout = () => {
   return (
     <>
-    
-    <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="Register" element={<Register />} />
@@ -41,32 +41,40 @@ const RouteLayout = () => {
             <Route index element={<Culture_Setting />} />
             <Route path="culture-setting" element={<Culture_Setting />} />
             <Route path="Salary-Components" element={<Salary_components />} />
-            <Route path="Integration-with-HRIS" element={<Integration_with_HRIS/>} />
-            <Route path="Company-profile" element={<Company_Profile/>} />
-            <Route path="User-Creation" element={<User_Creation/>} />
-            <Route path="Workflow" element={<Workflow/>} />
-            <Route path="Exclusion-Criteria" element={<ExclusionCriteria/>} />
-            <Route path="SuperVisor-Page" element={<SuperVisor_page/>} />
-            <Route path="HR-Review-Settings" element={<HR_Review_Settings/>} />
-            <Route path="History-Data" element={<History_Data/>} />
-            <Route path="Total-Rewards-Statement" element={<Total_Rewards_Statement/>} />
-            <Route path="TurnAroundtime" element={<Turn_Around_time/> } />
-            <Route path="Performance_based_bonus" element={<Performance_based_bonus/>} />
-            <Route path="Terminology" element={<Terminology/>} />
-            <Route path="Additional_Matrix" element={<Addition_matrix/>} />
-
+            <Route
+              path="Integration-with-HRIS"
+              element={<Integration_with_HRIS />}
+            />
+            <Route path="Company-profile" element={<Company_Profile />} />
+            <Route path="User-Creation" element={<User_Creation />} />
+            <Route path="Workflow" element={<Workflow />} />
+            <Route path="Exclusion-Criteria" element={<ExclusionCriteria />} />
+            <Route path="SuperVisor-Page" element={<SuperVisor_page />} />
+            <Route path="HR-Review-Settings" element={<HR_Review_Settings />} />
+            <Route path="History-Data" element={<History_Data />} />
+            <Route
+              path="Total-Rewards-Statement"
+              element={<Total_Rewards_Statement />}
+            />
+            <Route path="TurnAroundtime" element={<Turn_Around_time />} />
+            <Route
+              path="Performance_based_bonus"
+              element={<Performance_based_bonus />}
+            />
+            <Route path="Terminology" element={<Terminology />} />
+            <Route path="Additional_Matrix" element={<Addition_matrix />} />
           </Route>
-         
-         
-        <Route path="/userplan" element={<Userplan/>}/>
-       <Route path="/PlanData" element={<PlanData/>}/>
-       <Route path="/Merit-Budjet" element={<Merit_budjet/>}/>
-       <Route path="/Merit-metrix" element={<Merit_matrix/>}/>
-       <Route path="/Matrix-percent" element={<Matrix_percent/>}/>
+
+          <Route path="/userplan" element={<Userplan />} />
+          <Route path="/PlanData" element={<PlanData />} />
+          <Route path="/Merit-Budjet" element={<Merit_budjet />} />
+          <Route path="/Merit-metrix" element={<Merit_matrix />} />
+          <Route path="/Matrix-percent" element={<Matrix_percent />} />
+          <Route path="/Merit_guideline" element={<Merit_guideline/>} />
         </Routes>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default RouteLayout
