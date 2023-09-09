@@ -2,17 +2,24 @@
 
 /* Centered Popup */
 .popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999; /* Ensure it's displayed on top */
-  background-color: white!important;
-  padding: 20px;
-  border-radius: 5px;
- box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 20%;
-  max-height: 30%
+ position: fixed;
+    top: 10%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 999; /* Ensure it's displayed on top */
+     background: linear-gradient(to right, green, lightgreen);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Adjust as needed */
+    width: 300px; /* Adjust as needed */
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
   
    /* Adjust as needed */
 
@@ -22,8 +29,8 @@
 }
 /* ... Your existing CSS ... */
 .success{
-  width: 5rem;
-  height: 5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: rgb(79, 230, 79);
   border-radius: 50%;
   color: white;
@@ -34,14 +41,14 @@
 }
 .total{
   display: flex;
-  flex-direction: column;
+ gap: 10px;
   align-items: center;
   justify-content: center;
 
 }
 .total h1{
-  font-size: 1.5rem;
-  color: black;
-  margin-top: 30px;
+  font-size: 1rem;
+  color: white;
+ 
 
 }

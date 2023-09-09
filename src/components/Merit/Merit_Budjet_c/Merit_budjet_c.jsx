@@ -1,6 +1,7 @@
 import React from "react";
 import "./Merit_budjet_c.css";
 
+
 const Merit_budjet_c = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const Merit_budjet_c = () => {
 
         </div>
       </div>
+     
     </>
   );
 };
