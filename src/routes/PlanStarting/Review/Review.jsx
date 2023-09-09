@@ -15,18 +15,31 @@ console.log("datareview",data);
     // Move to the next step
     onNext();
   }
+
   const contentRef = useRef(null);
 
-  const captureScreenshot = () => {
-    const content = contentRef.current;
-
-    html2canvas(content).then((canvas) => {
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      pdf.addImage(imgData, 'PNG', 0, 0, 210, 297); // Adjust width and height as needed
-      pdf.save('Plan_daa_review.pdf');
+  const captureScreenshot = async () => {
+    const elementToCapture = contentRef.current;
+    const canvas = await html2canvas(elementToCapture, {
+      scale: 2, // Increase the scale for higher resolution
+      useCORS: true, // Enable CORS to capture images from external sources
     });
-  }
+    return canvas.toDataURL('image/jpeg', 0.8); // Adjust JPEG quality (0.0 - 1.0) for file size optimization
+  };
+
+  const convertToPDF = async () => {
+    const screenshotDataUrl = await captureScreenshot();
+
+    // Create a new PDF document
+    const pdf = new jsPDF('p', 'mm', 'a4'); // Portrait orientation, A4 size
+
+    // Add the screenshot as an image to the PDF
+    pdf.addImage(screenshotDataUrl, 'JPEG', 0, 0, 210, 297); // Adjust dimensions as needed
+
+    // Download the PDF
+    pdf.save('screenshot.pdf');
+  };
+
   return (
     <>
       <TopNav
@@ -45,7 +58,7 @@ console.log("datareview",data);
             <h3>Merit Compensation 2021-22</h3>
 
             <div className="iconsheader">
-              <FaDownload style={{ color: "grey" }} onClick={captureScreenshot}   className="cursor-pointer" />
+              <FaDownload style={{ color: "grey" }} onClick={convertToPDF}   className="cursor-pointer" />
               <AiFillMessage style={{ color: "grey" }} />
             </div>
           </div>
