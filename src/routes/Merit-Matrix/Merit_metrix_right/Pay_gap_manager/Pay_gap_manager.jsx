@@ -18,7 +18,7 @@ const Pay_gap_manager = () => {
             <input type="radio" name="" id="" />
             Yes
           </span>
-          <span className="radio-button-group">
+          <span className="radio-button-group ">
             <input type="radio" name="" id="" />
             No
           </span>

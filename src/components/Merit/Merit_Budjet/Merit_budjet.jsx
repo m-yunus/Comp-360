@@ -68,12 +68,16 @@ const Merit_budjet = () => {
             </span>
           </div>
         </div>
-        <div className="button-container">
-          {/* <button className="back_button">Back</button> */}
+        <div className="merit-buttons absolute bottom-0  right-10 pb-10 flex gap-20">
+          <button className="bck-btn">Back</button>
           <Link to="/merit-metrix">
-            <button className="continue_button">Continue</button>
+            <button className="cnt-btn">Continue</button>
           </Link>
         </div>
+        <div className="budjet">
+          <h1>Budjet</h1>
+        </div>
+        
       </div>
     </>
   );
