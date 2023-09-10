@@ -9,9 +9,8 @@ import SuccessModal from "../../../components/Loginsuccess/SuccessModal";
 import Error from "../../../components/Error/Error";
 
 const User_Creation = () => {
-   const [isEditing, setIsEditing] = useState(false);
-   const [editingIndex, setEditingIndex] = useState(-1);
-
+  const [isEditing, setIsEditing] = useState(false);
+  const [editingIndex, setEditingIndex] = useState(-1);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [accessItems, setAccessItems] = useState([]);
@@ -43,33 +42,25 @@ const User_Creation = () => {
     },
   };
 
+  const handleEdit = (index) => {
+    setIsEditing(true);
+    setEditingIndex(index);
+    const itemToEdit = accessItems[index];
+    setSelectedAccessOption(itemToEdit.option);
+    setAdditionalField(itemToEdit.value);
+  };
 
-
-   const handleEdit = (index) => {
-     setIsEditing(true);
-     setEditingIndex(index);
-     const itemToEdit = accessItems[index];
-     setSelectedAccessOption(itemToEdit.option);
-     setAdditionalField(itemToEdit.value);
-   };
-   
-     const handleSaveEdit = () => {
-       const updatedAccessItems = [...accessItems];
-       updatedAccessItems[editingIndex] = {
-         option: selectedAccessOption,
-         value: additionalField,
-       };
-       setAccessItems(updatedAccessItems);
-       setIsEditing(false);
-       setSelectedAccessOption("Country"); 
-       setAdditionalField("");
-     };
-
-
-
-
-
-
+  const handleSaveEdit = () => {
+    const updatedAccessItems = [...accessItems];
+    updatedAccessItems[editingIndex] = {
+      option: selectedAccessOption,
+      value: additionalField,
+    };
+    setAccessItems(updatedAccessItems);
+    setIsEditing(false);
+    setSelectedAccessOption("Country");
+    setAdditionalField("");
+  };
 
   const handleSubmitdata = async (e) => {
     setIsModalOpen(false);
@@ -112,8 +103,6 @@ const User_Creation = () => {
       setSelectedAccessOption("Country");
     }
   };
-   
-
 
   const handleDelete = (index) => {
     const updatedAccessItems = accessItems.filter((_, i) => i !== index);
@@ -194,7 +183,8 @@ const User_Creation = () => {
       <div className="access-item" key={index}>
         {isEditing && editingIndex === index ? (
           <>
-            <select className="edit-select"
+            <select
+              className="edit-select"
               value={selectedAccessOption}
               onChange={(e) => setSelectedAccessOption(e.target.value)}
             >
@@ -204,12 +194,14 @@ const User_Creation = () => {
               <button onClick={handleSaveEdit}>Save</button>
             </select>
             <input
-            className=" border border-gray-500 w-20 edit-input"
+              className=" border border-gray-500 w-20 edit-input"
               type="text"
-              value=          {additionalField}
+              value={additionalField}
               onChange={(e) => setAdditionalField(e.target.value)}
             />
-            <button className="edit-save" onClick={handleSaveEdit}>Save</button>
+            <button className="edit-save" onClick={handleSaveEdit}>
+              Save
+            </button>
           </>
         ) : (
           <>
