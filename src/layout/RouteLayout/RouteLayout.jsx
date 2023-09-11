@@ -28,6 +28,7 @@ import Matrix_percent from "../../components/Matrix_percent/Matrix_percent"
 import Merit_guideline from "../../components/Merit/Merit_guideline/Merit_guideline"
 import Merit_budjet_b from "../../components/Merit/Merit_budjet_b/Merit_budjet_b"
 import Merit_budjet_c from "../../components/Merit/Merit_Budjet_c/Merit_budjet_c"
+import Bomnus_budjet from "../../components/Bonus_Budjet/Bonus_budjet"
 
 
 
@@ -75,7 +76,8 @@ const RouteLayout = () => {
           <Route path="/Matrix-percent" element={<Matrix_percent />} />
           <Route path="/Merit-guideline" element={<Merit_guideline />} />
           <Route path="/Merit-budjet-b" element={<Merit_budjet_b />} />
-          <Route path="/Merit-budjet-c" element={<Merit_budjet_c />} />v
+          <Route path="/Merit-budjet-c" element={<Merit_budjet_c />} />
+          <Route path="/Bonus-budjet" element={<Bomnus_budjet/>}/>
         </Routes>
       </BrowserRouter>
     </>
