@@ -1,0 +1,59 @@
+.search-budget-review{
+border-bottom: 2px solid gray;
+}
+.search-budget-review:hover{
+    border-bottom: 2px solid #1877d2;
+}
+.search-budget-review:focus{
+    border-bottom: 3px solid #1877d2;
+
+    outline: none;
+}
+.budget-review input[type="checkbox"]{
+    margin-left: 30px;
+    
+}
+.budget-review label{
+   color: gray;
+   margin-left: 10px;
+  
+    
+}
+
+.budjet-review-table th{
+border-bottom: solid 1px grey;
+
+font-size: 12px;
+color: gray;
+
+
+align-items: center;
+
+}
+.budjet-review-table td{
+border-bottom: solid 1px grey;
+
+font-size: 12px;
+color: gray;
+
+
+align-items: center;
+
+}
+.budjet-review-table {
+    width: 100%;
+   
+}
+.budjet-review-table td {
+    line-height: 20px;
+   
+}
+.budjet-review-table button {
+background-color: #1877d2;
+width: 50px;
+color: white;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+}

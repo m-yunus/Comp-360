@@ -1,7 +1,7 @@
 import React from "react";
-import "./Merit_budjet_c.css";
+import "./Merit_budget_c.css";
 
-const Merit_budjet_c = () => {
+const Merit_budget_c = () => {
   return (
     <>
       <div className="merit">
@@ -128,11 +128,11 @@ const Merit_budjet_c = () => {
           <button className="cnt-btn">Continue</button>
         </div>
         <div className="budjet">
-          <h1>Budjet</h1>
+          <h1>Budget</h1>
         </div>
       </div>
     </>
   );
 };
 
-export default Merit_budjet_c;
+export default Merit_budget_c;

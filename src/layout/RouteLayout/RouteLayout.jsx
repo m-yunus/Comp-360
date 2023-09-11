@@ -22,13 +22,14 @@ import Userplan from "../../routes/PlanStarting/Userplanmain/Userplan"
 import History_Data from "../../routes/Personalize/HistoryData/History_Data"
 
 import PlanData from "../../routes/PlanStarting/Plandata/PlanData"
-import Merit_budjet from "../../components/Merit/Merit_Budjet/Merit_budjet"
+import Merit_budget from "../../components/Merit/Merit_Budget/Merit_budget"
 import Merit_matrix from "../../pages/Merit_matrix"
 import Matrix_percent from "../../components/Matrix_percent/Matrix_percent"
 import Merit_guideline from "../../components/Merit/Merit_guideline/Merit_guideline"
-import Merit_budjet_b from "../../components/Merit/Merit_budjet_b/Merit_budjet_b"
-import Merit_budjet_c from "../../components/Merit/Merit_Budjet_c/Merit_budjet_c"
-import Bomnus_budjet from "../../components/Bonus_Budjet/Bonus_budjet"
+import Merit_budget_b from "../../components/Merit/Merit_budget_b/Merit_budget_b"
+import Merit_budget_c from "../../components/Merit/Merit_Budget_c/Merit_budget_c"
+import Bonus_budget from "../../components/Bonus_Budget/Bonus_budget"
+import Budjet_Review from "../../components/Budget-Review/Budget_Review"
 
 
 
@@ -71,13 +72,14 @@ const RouteLayout = () => {
 
           <Route path="/userplan" element={<Userplan />} />
           <Route path="/PlanData" element={<PlanData />} />
-          <Route path="/Merit-Budjet" element={<Merit_budjet />} />
+          <Route path="/Merit-Budget" element={<Merit_budget />} />
           <Route path="/Merit-metrix" element={<Merit_matrix />} />
           <Route path="/Matrix-percent" element={<Matrix_percent />} />
           <Route path="/Merit-guideline" element={<Merit_guideline />} />
-          <Route path="/Merit-budjet-b" element={<Merit_budjet_b />} />
-          <Route path="/Merit-budjet-c" element={<Merit_budjet_c />} />
-          <Route path="/Bonus-budjet" element={<Bomnus_budjet/>}/>
+          <Route path="/Merit-Budget-b" element={<Merit_budget_b />} />
+          <Route path="/Merit-Budget-c" element={<Merit_budget_c />} />
+          <Route path="/Bonus-Budget" element={<Bonus_budget/>}/>
+          <Route path="/Budget-Review" element={<Budjet_Review/>}/>
         </Routes>
       </BrowserRouter>
     </>

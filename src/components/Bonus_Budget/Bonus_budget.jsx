@@ -1,7 +1,7 @@
 import React from 'react'
-import "./Bonus_budjet.css"
+import "./Bonus_budget.css"
 
-const Bomnus_budjet = () => {
+const Bonus_budget = () => {
   return (
     <>
       <div className="merit">
@@ -30,11 +30,11 @@ const Bomnus_budjet = () => {
           <button className="cnt-btn">Continue</button>
         </div>
         <div className="budjet">
-          <h1>Budjet</h1>
+          <h1>Budget</h1>
         </div>
       </div>
     </>
   );
 }
 
-export default Bomnus_budjet
+export default Bonus_budget

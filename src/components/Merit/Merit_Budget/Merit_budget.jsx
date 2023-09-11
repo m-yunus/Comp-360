@@ -1,8 +1,8 @@
 import React from "react";
-import "./Merit_Budjet.css";
+import "./Merit_Budget.css";
 import { Link } from "react-router-dom";
 
-const Merit_budjet = () => {
+const Merit_budget = () => {
   return (
     <>
       <div className="merit ">
@@ -75,7 +75,7 @@ const Merit_budjet = () => {
           </Link>
         </div>
         <div className="budjet">
-          <h1>Budjet</h1>
+          <h1>Budget</h1>
         </div>
         
       </div>
@@ -83,4 +83,4 @@ const Merit_budjet = () => {
   );
 };
 
-export default Merit_budjet;
+export default Merit_budget;
