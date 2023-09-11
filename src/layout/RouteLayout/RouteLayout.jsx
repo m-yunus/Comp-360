@@ -30,6 +30,7 @@ import Merit_budget_b from "../../components/Merit/Merit_budget_b/Merit_budget_b
 import Merit_budget_c from "../../components/Merit/Merit_Budget_c/Merit_budget_c"
 import Bonus_budget from "../../components/Bonus_Budget/Bonus_budget"
 import Budjet_Review from "../../components/Budget-Review/Budget_Review"
+import Budget_Allocation from "../../components/Budget_Allocation/Budget_Allocation"
 
 
 
@@ -80,6 +81,7 @@ const RouteLayout = () => {
           <Route path="/Merit-Budget-c" element={<Merit_budget_c />} />
           <Route path="/Bonus-Budget" element={<Bonus_budget/>}/>
           <Route path="/Budget-Review" element={<Budjet_Review/>}/>
+          <Route path="/Budget-Allocation" element={<Budget_Allocation/>}/>
         </Routes>
       </BrowserRouter>
     </>
