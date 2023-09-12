@@ -1,0 +1,64 @@
+.merit-popup{
+    width: 500px;
+    height: 350px;
+    border: 1px solid gray;
+    margin: auto;
+    font-size: 12px;
+   margin-top: 10rem;
+
+}
+.merit-popup-top{
+    background-color:#1877d2 ;
+    padding: 0 10px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between
+    ;
+    display: flex;
+}
+.merit-popup-top h1{
+    color: white;
+    font-weight: 700;
+}
+.merit-popup-top .popup-button{
+    background-color: green;
+    margin-right: 10px;
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+
+}
+.merit-popup-input input{
+    width: 130px!important;
+
+}
+.merit-popup-input label{
+    font-size: 10px!important;
+    
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.merit-popup-input-2 input{
+    width: 480px!important;
+    height: 40px;
+    border-radius: 5px;
+  
+
+}
+.merit-popup-input-2 label{
+margin-top: -1px;
+ height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
