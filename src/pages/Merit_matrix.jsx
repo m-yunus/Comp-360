@@ -55,7 +55,7 @@ const handleNext = () => {
         </div>
       </div>
       {showPopup && (
-        <div className="popup">
+        <div className="pop mx-auto ">
           <div className="popup-content">
             <h2 className="font-semibold">Pay Gaps in &#123; Group 1 &#125;</h2>
             <table className="popup-table">

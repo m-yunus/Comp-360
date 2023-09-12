@@ -1,0 +1,51 @@
+.merit_guideline {
+ 
+  padding: 40px;
+
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  margin-left: 100px;
+  position: relative;
+  
+}
+.merit_guideline h4 {
+    font-size: 12px;
+
+}
+
+.bck-btn{
+    border: solid 1px gray;
+    width: 100px;
+    height: 35px;
+      border-radius: 20px;
+      margin-right: 15px;
+}
+.cnt-btn{
+    
+    width: 100px;
+     height: 35px;
+     border-radius: 20px;
+     background-color:#1877d2;
+     color: white;
+     
+}
+.merit-buttons{
+    gap: 10px!important;
+    margin-top: 40px;
+  padding-left: 330px;
+  
+  width: 50%;
+}
+.budjet{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    background-color: #1877d2;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    font-size: 14px;
+}

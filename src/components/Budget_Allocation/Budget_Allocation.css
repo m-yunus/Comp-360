@@ -1,0 +1,9 @@
+.budget-allocation-rect{
+    display: flex;
+  margin: 20px auto;
+
+    width: 80%;
+    height: 180px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
