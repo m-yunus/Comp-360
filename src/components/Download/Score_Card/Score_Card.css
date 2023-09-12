@@ -1,0 +1,13 @@
+.score-card{
+    width: 400px;
+    height: 220px;
+    border: solid 1px gray;
+    margin-top: 10px;
+    margin: 20px auto;
+ 
+}
+.vertical-line{
+    background-color: gray;
+    height: 150px;
+    width: 2px;
+}

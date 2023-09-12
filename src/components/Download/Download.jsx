@@ -1,5 +1,7 @@
 import React from "react";
 import "./Download.css";
+import Download_Budget from "./Download_Budget/Download_Budget";
+import Score_Card from "./Score_Card/Score_Card";
 
 const Download = () => {
   return (
@@ -56,6 +58,13 @@ const Download = () => {
               <input type="radio" name="" id="" />
               <h3>Letter n</h3>
             </span>
+          </div>
+          <div>
+            <Download_Budget />
+            <Score_Card/>
+          </div>
+          <div>
+
           </div>
         </div>
         <div className="payrol-extract  ">
