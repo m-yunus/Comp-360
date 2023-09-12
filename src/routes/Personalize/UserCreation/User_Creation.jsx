@@ -36,10 +36,9 @@ const User_Creation = () => {
     user_password: uservalues.user_password,
     role: uservalues.role,
     limit_access: uservalues.limit_access,
-    user_access_criteria: {
-      option: accessItems.option,
-      value: accessItems.value,
-    },
+    access_grant: accessItems
+      
+    ,
   };
 
   const handleEdit = (index) => {
@@ -95,15 +94,19 @@ const User_Creation = () => {
 
   const handleRestrict = () => {
     if (additionalField.trim() !== "") {
+    
+     
       setAccessItems([
         ...accessItems,
-        { option: selectedAccessOption, value: additionalField },
+        { [selectedAccessOption]:additionalField},
       ]);
       setAdditionalField("");
       setSelectedAccessOption("Country");
-    }
-  };
 
+    }
+   
+  };
+  console.log(accessItems,"jdgshjgsdhsdg");
   const handleDelete = (index) => {
     const updatedAccessItems = accessItems.filter((_, i) => i !== index);
     setAccessItems(updatedAccessItems);
@@ -205,9 +208,12 @@ const User_Creation = () => {
           </>
         ) : (
           <>
+           
+
+
             <input
               type="text"
-              value={`${item.option}: ${item.value}`}
+              value={`${Object.keys(item)}: ${item}`}
               readOnly
             />
             <span>
@@ -263,7 +269,7 @@ const User_Creation = () => {
                 <td>{item?.user_email}</td>
                 <td>{item?.role}</td>
                 <td>
-                  {item?.user_access_criteria?.map((items) => items?.option)}
+                  {item?.user_access_criteria?.map((items) => items?.access_grant)}
                 </td>
                 <td>
                   <span>

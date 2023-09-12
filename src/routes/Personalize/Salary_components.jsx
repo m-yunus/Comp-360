@@ -5,9 +5,9 @@ import SuccessModal from "../../components/Loginsuccess/SuccessModal";
 import Error from "../../components/Error/Error";
 
 const Salary_components = () => {
-  const [salaryComponent, setSalaryComponent] = useState(false);
+  const [salaryComponent, setSalaryComponent] = useState(null);
   const [meritAppliedOn, setMeritAppliedOn] = useState({
-    value: "All_Components",
+    value: "",
     component: "",
   });
   const [isSuccess, setIsSuccess] = useState(false);
@@ -74,7 +74,7 @@ const Salary_components = () => {
                       type="radio"
                       name="salaryComponents"
                       value="true"
-                      checked={salaryComponent}
+                      checked={salaryComponent === true}
                       onChange={() => setSalaryComponent(true)}
                     />{" "}
                     Yes
@@ -82,7 +82,7 @@ const Salary_components = () => {
                       type="radio"
                       name="salaryComponents"
                       value="false"
-                      checked={!salaryComponent}
+                      checked={salaryComponent === false}
                       onChange={() => setSalaryComponent(false)}
                     />{" "}
                     No

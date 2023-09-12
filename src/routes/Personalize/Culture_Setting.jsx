@@ -4,6 +4,7 @@ import { BaseUrl } from "../../ApiService/ApiService";
 import SuccessModal from "../../components/Loginsuccess/SuccessModal";
 import Error from "../../components/Error/Error";
 
+
 const Culture_Setting = () => {
   const [ipCountry, setIpCountry] = useState({});
   const [countries, setCountries] = useState([]);
@@ -13,6 +14,8 @@ const Culture_Setting = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIserror] = useState(false);
   const [errorStatus, seterrorStatus] = useState("");
+ 
+
   useEffect(() => {
     axios.get("https://hr-project.onrender.com/api/user/getIP").then((res) => {
       const countryName = res.data;
