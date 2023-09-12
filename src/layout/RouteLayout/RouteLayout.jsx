@@ -36,6 +36,7 @@ import Merit_Pop_Up from "../../components/Merit_Pop_Up/Merit_Pop_Up"
 import Bonus_Popup from "../../components/Bonus_Popup/Bonus_Popup"
 import Promotion_Popup from "../../components/Promotion_Popup/Promotion_Popup"
 import Attachment_Popup from "../../components/Attachment_Popup/Attachment_Popup"
+import Download from "../../components/Download/Download"
 
 
 
@@ -96,6 +97,7 @@ const RouteLayout = () => {
           <Route path="/bonus-popup" element={<Bonus_Popup />} />
           <Route path="/promotion-popup" element={<Promotion_Popup />} />
           <Route path="/attachment-popup" element={<Attachment_Popup />} />
+          <Route path="/download" element={<Download/>} />
         </Routes>
       </BrowserRouter>
     </>

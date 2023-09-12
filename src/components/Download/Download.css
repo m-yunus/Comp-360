@@ -1,0 +1,19 @@
+.filter-btn{
+    color: gray;
+    border: solid 1px  gray;
+    width: 100px;
+    border-radius: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payrol-extract{
+    width: 350px;
+    height: 270px;
+    border: solid 1px gray;
+    margin-left: 20px;
+}
+.payrol-extract label{
+    color: gray;
+}
