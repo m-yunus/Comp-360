@@ -35,6 +35,8 @@ import HR_Review from "../../components/HR_Review/HR_Review"
 import Merit_Pop_Up from "../../components/Merit_Pop_Up/Merit_Pop_Up"
 import Bonus_Popup from "../../components/Bonus_Popup/Bonus_Popup"
 import Promotion_Popup from "../../components/Promotion_Popup/Promotion_Popup"
+import Attachment_Popup from "../../components/Attachment_Popup/Attachment_Popup"
+
 
 
 
@@ -93,6 +95,7 @@ const RouteLayout = () => {
           <Route path="/merit-popup" element={<Merit_Pop_Up />} />
           <Route path="/bonus-popup" element={<Bonus_Popup />} />
           <Route path="/promotion-popup" element={<Promotion_Popup />} />
+          <Route path="/attachment-popup" element={<Attachment_Popup />} />
         </Routes>
       </BrowserRouter>
     </>
