@@ -34,6 +34,7 @@ import Budget_Allocation from "../../components/Budget_Allocation/Budget_Allocat
 import HR_Review from "../../components/HR_Review/HR_Review"
 import Merit_Pop_Up from "../../components/Merit_Pop_Up/Merit_Pop_Up"
 import Bonus_Popup from "../../components/Bonus_Popup/Bonus_Popup"
+import Promotion_Popup from "../../components/Promotion_Popup/Promotion_Popup"
 
 
 
@@ -90,7 +91,8 @@ const RouteLayout = () => {
           <Route path="/Budget-Allocation" element={<Budget_Allocation />} />
           <Route path="/HR-Review" element={<HR_Review />} />
           <Route path="/merit-popup" element={<Merit_Pop_Up />} />
-          <Route path="/bonus-popup" element={<Bonus_Popup/>} />
+          <Route path="/bonus-popup" element={<Bonus_Popup />} />
+          <Route path="/promotion-popup" element={<Promotion_Popup />} />
         </Routes>
       </BrowserRouter>
     </>
