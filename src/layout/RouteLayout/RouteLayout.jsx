@@ -38,6 +38,7 @@ import Promotion_Popup from "../../components/Promotion_Popup/Promotion_Popup"
 import Attachment_Popup from "../../components/Attachment_Popup/Attachment_Popup"
 import Download from "../../components/Download/Download"
 import Dashboard from "../../components/Dashboard/Dashboard"
+import Supervisor from "../../components/Supervisor/Supervisor"
 
 
 
@@ -98,8 +99,9 @@ const RouteLayout = () => {
           <Route path="/bonus-popup" element={<Bonus_Popup />} />
           <Route path="/promotion-popup" element={<Promotion_Popup />} />
           <Route path="/attachment-popup" element={<Attachment_Popup />} />
-          <Route path="/download" element={<Download/>} />
-          <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/download" element={<Download />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/supervisor" element={<Supervisor />} />
         </Routes>
       </BrowserRouter>
     </>
