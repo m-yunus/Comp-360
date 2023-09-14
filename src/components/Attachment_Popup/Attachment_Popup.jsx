@@ -40,8 +40,9 @@ const Attachment_Popup = () => {
               <h3>No</h3>
             </span>
           </div>
+
           <div className="flex justify-end px-2">
-            <input class="popup-input" type="file" name="" id="" />
+            <input className="popup-input" type="file" name="" id="" />
           </div>
 
           <div className=" flex gap-2 justify-center mt-4 px-2">

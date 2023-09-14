@@ -1,0 +1,20 @@
+.save-btn{
+    background-color: #1877d2;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+}
+.super-admin-table{
+    margin-top: 10px;
+    width: 80%;
+}
+.super-admin-table td{
+    border: solid 1px black;
+    color: gray;
+    padding: 1px 10px;
+
+}

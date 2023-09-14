@@ -40,6 +40,7 @@ import Download from "../../components/Download/Download"
 import Dashboard from "../../components/Dashboard/Dashboard"
 import Supervisor from "../../components/Supervisor/Supervisor"
 import Communication from "../../components/Communication/Communication"
+import Super_Admin_Page from "../../components/Super_Admin_Page/Super_Admin_Page"
 
 
 
@@ -103,7 +104,8 @@ const RouteLayout = () => {
           <Route path="/download" element={<Download />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/supervisor" element={<Supervisor />} />
-          <Route path="/communication" element={<Communication/>}/>
+          <Route path="/communication" element={<Communication />} />
+          <Route path="/super-admin-page" element={<Super_Admin_Page />} />
         </Routes>
       </BrowserRouter>
     </>
