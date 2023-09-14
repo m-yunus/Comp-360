@@ -1,0 +1,14 @@
+.subs-mngmnt input[type="text"]{
+    border-radius: 20px;
+    border: solid 1px gray!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center!important;
+    width: 150px!important;
+
+}
+.subs-mngmnt input[type="text"]::placeholder{
+    margin-left: 10px;
+    margin-top: 4px;
+}

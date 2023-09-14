@@ -6,15 +6,14 @@
     position: absolute;
     top: 50px;
     right: 50px;
-
 }
 .super-admin-table{
     margin-top: 10px;
     width: 80%;
+     
 }
 .super-admin-table td{
     border: solid 1px black;
     color: gray;
     padding: 1px 10px;
-
 }

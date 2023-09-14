@@ -41,6 +41,7 @@ import Dashboard from "../../components/Dashboard/Dashboard"
 import Supervisor from "../../components/Supervisor/Supervisor"
 import Communication from "../../components/Communication/Communication"
 import Super_Admin_Page from "../../components/Super_Admin_Page/Super_Admin_Page"
+import Subscription_Management from "../../components/Subscription_Management/Subscription_Management"
 
 
 
@@ -106,6 +107,7 @@ const RouteLayout = () => {
           <Route path="/supervisor" element={<Supervisor />} />
           <Route path="/communication" element={<Communication />} />
           <Route path="/super-admin-page" element={<Super_Admin_Page />} />
+          <Route path="/subscription-management" element={<Subscription_Management/>} />
         </Routes>
       </BrowserRouter>
     </>
