@@ -1,0 +1,59 @@
+.communication-table td {
+  border: 1px solid gray;
+  text-align: center;
+}
+.communication-table {
+  width: 100%;
+}
+.communication-popup {
+  position: fixed;
+  z-index: 1000;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+.communication-popup h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.communication-popup h3 {
+  color: black;
+}
+
+.communication-popup select,
+.communication-popup input[type="text"] {
+  width: 100%;
+  height: 35px;
+  margin: 10px 0;
+  border-radius: 0px;
+  border: 1px solid gray;
+}
+.communication-popup input[type="date"],
+.communication-popup input[type="time"],
+.btm-slct {
+  border: solid 1px gray !important;
+  width: 130px !important;
+  height: 30px !important;
+  border-radius: 5px !important;
+}
+.communication-popup label {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.btm-slct {
+  margin-top: 0px !important;
+}
+.communication-popup input[type="text"]:hover,
+.communication-popup input[type="time"]:hover,
+.communication-popup input[type="date"]:hover,
+.communication-popup select:hover {
+  border: solid 1px #1877d2 !important;
+}

@@ -39,6 +39,7 @@ import Attachment_Popup from "../../components/Attachment_Popup/Attachment_Popup
 import Download from "../../components/Download/Download"
 import Dashboard from "../../components/Dashboard/Dashboard"
 import Supervisor from "../../components/Supervisor/Supervisor"
+import Communication from "../../components/Communication/Communication"
 
 
 
@@ -102,6 +103,7 @@ const RouteLayout = () => {
           <Route path="/download" element={<Download />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/supervisor" element={<Supervisor />} />
+          <Route path="/communication" element={<Communication/>}/>
         </Routes>
       </BrowserRouter>
     </>
