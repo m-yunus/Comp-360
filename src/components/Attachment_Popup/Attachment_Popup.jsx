@@ -23,6 +23,7 @@ const Attachment_Popup = () => {
             <div className="flex justify-between mt-2">
               <h3>Bonus</h3>
               <BsFillCheckCircleFill className="text-green-500 text-xl" />
+              
             </div>
             <div className="flex justify-between mt-2">
               <h3>Promotion</h3>
