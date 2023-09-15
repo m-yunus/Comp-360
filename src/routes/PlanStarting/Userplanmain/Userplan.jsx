@@ -65,7 +65,7 @@ const formattedNewDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}$
     <div>
       <Navbar />
       <div className="heading-userplan">
-        <h3>
+        <h3 className="flex gap-2 items-center">
           <FaSun style={{ color: "orange" }} />
           Good Morning {user}
         </h3>
@@ -89,14 +89,18 @@ const formattedNewDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}$
             <FaUser style={{ color: "grey" }} />
             <div className="country">{data?.cultural?.country}</div>
           </div>
-          <div className="tat-timer">
-            <div className="tat-days">
+          <div className="tat-timer ">
+            <div className="tat-days ">
               <h5>TAT : {data?.tat} days</h5>
               <h5>Ends on : {formattedNewDate}</h5>
             </div>
 
-            <div className="countdown">
+            <div className="countdown ">
               <Countdown date={targetTime} renderer={renderer} />
+              <div className="flex  gap-6">
+                <p>Days</p> <p>Hours</p> <p>Minute</p>
+              </div>
+              
               {/* <p>{timeDifference} days, {hoursLeft} hours, {minutesLeft} minutes left</p> */}
             </div>
           </div>

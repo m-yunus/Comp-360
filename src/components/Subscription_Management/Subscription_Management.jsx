@@ -143,11 +143,20 @@ const Subscription_Management = () => {
               </span>
               <span className="flex items-center mt-[-6px]">
                 <FaSquare className="w-1 ms-4 me-1 " />{" "}
-                <p className=" w-[276px]">
-                  Reuse plan
-                </p>{" "}
+                <p className=" w-[276px]">Reuse plan</p>{" "}
                 <input type="checkbox" name="" id="" />{" "}
               </span>
+            </div>
+            <div className=" flex gap-2 ms-32 mt-4 px-2">
+              <button
+                
+                className="bck-btn w-20 h-7 flex items-center justify-center"
+              >
+                Cancel
+              </button>
+              <button className="cnt-btn  w-20 h-7 flex items-center justify-center">
+                Save
+              </button>
             </div>
           </ul>
         </div>

@@ -13,3 +13,6 @@
     margin-top: 4px;
     
 }
+.subs-mngmnt input[type="text"]:hover{
+    border: solid 1px #1877d2!important;
+}
