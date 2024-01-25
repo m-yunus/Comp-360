@@ -42,7 +42,6 @@ import Promotion_Popup from "../../components/Promotion_Popup/Promotion_Popup"
 
 
 
-
 const RouteLayout = () => {
   return (
     <>
